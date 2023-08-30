@@ -1,20 +1,18 @@
-/* FONTS */
-
 /* FONTS SPARTAN */
 @font-face {
     font-family: "SpartanBold" ;
-    src: url(../assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
+    src: url(./assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
 }
 
 /* FONTS VERDANA */
 @font-face {
     font-family: "VerdanaRegular";
-    src: url(../assets/fonts/Verdana/verdana_regular.ttf);
+    src: url(./assets/fonts/Verdana/verdana_regular.ttf);
 }
 
 @font-face {
     font-family: "VerdanaBold";
-    src: url(../assets/fonts/Verdana/verdana_bold.ttf);
+    src: url(./assets/fonts/Verdana/verdana_bold.ttf);
 }
 
 
