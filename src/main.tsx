@@ -9,7 +9,7 @@ import Entrar from './pages/Entrar'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
 
-    <Entrar/>
-    
+    <Entrar/>  
+      
   </React.StrictMode>
 )

@@ -2,10 +2,11 @@ import { Icon } from "@iconify/react";
 import "./style.css";
 import "../../index.css";
 
-import entrar_logo from "../../assets/images/images/logo_colorida.svg";
+import entrar_logo from "../../assets/images/logo_colorida.svg";
 
 function Entrar() {
   return (
+
     <div id="entrar">
       <main>
         <section className="section_logo">
@@ -20,16 +21,16 @@ function Entrar() {
           <div className="section_input">
             <div className="email">
               <label htmlFor="Chapa">E-mail</label>
-              <div className="input-icons">
+              <div className="input_icons">
                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                <input name="Chapa" className="input-field" type="text" />
+                <input name="Chapa" className="input_field" type="text" />
               </div>
             </div>
             <div>
               <label htmlFor="Senha">Senha</label>
-              <div className="input-icons">
+              <div className="input_icons">
                 <Icon className="icon" icon="mdi:password" />
-                <input name="Senha" className="input-field" type="password" />
+                <input name="Senha" className="input_field" type="password" />
               </div>
             </div>
             <a className="sublinado" href="../esqueceu_senha/esqueceu_senha.html">
