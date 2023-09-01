@@ -40,17 +40,19 @@
 
 .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
+    /* z-index: 1; */
 }
 
-.input-icons {
+/* .input-icons {
     width: 30%;
     margin-top: 10px;
     position: relative;
-}
+} */
 
 .input-field {
     width: 100%;
