@@ -8,6 +8,15 @@ import Entrar from './pages/Entrar'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
+    <BrowserRouter>
+    <Routes>
+      <Route/>
+
+      
+
+    </Routes>
+    
+    </BrowserRouter>
 
     <Entrar/>
     
