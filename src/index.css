@@ -1,0 +1,75 @@
+/* FONTS SPARTAN */
+@font-face {
+    font-family: "SpartanBold" ;
+    src: url(./assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
+}
+
+/* FONTS VERDANA */
+@font-face {
+    font-family: "VerdanaRegular";
+    src: url(./assets/fonts/Verdana/verdana_regular.ttf);
+}
+
+@font-face {
+    font-family: "VerdanaBold";
+    src: url(./assets/fonts/Verdana/verdana_bold.ttf);
+}
+
+
+/* OPÇOES DE RESET */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarelo: #ffd100;
+    --azule: #2274ac;
+    --azulc: #0094c4;
+    --preto: #474545;
+    --cinza: #BEBCBC;
+    --verdee: #2C9123;
+    --vermelho: #C25348;
+    --branco: #fff;
+}
+
+
+/* RESET ICONES */
+
+.icon {
+    position: absolute;
+    padding: 11px 20px 7.5px 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+.input-icons {
+    width: 30%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+input[type="date"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "VerdanaRegular";
+    width: 100%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
