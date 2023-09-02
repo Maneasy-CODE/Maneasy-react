@@ -1,16 +1,12 @@
 /*SECTION PROJETO*/
 
-#projeto_atualizar .container{
+#projeto_cadastro .container {
     width: 80%;
     margin: 0 auto;
 }
 
 
-#projeto_atualizar label{
-    margin-bottom: 10px;
-}
-
-#projeto_atualizar .titulo_projeto{
+#projeto_cadastro .titulo_projeto {
     width: 100%;
     display: flex;
     align-items: center;
@@ -18,36 +14,35 @@
     /*background-color: rebeccapurple;*/
 }
 
-#projeto_atualizar label{
+#projeto_cadastro label {
     margin-bottom: 10px;
 }
 
-#projeto_atualizar h1{
+#projeto_cadastro h1 {
     color: var(--azule);
     font-family: "SpartanBold";
     margin-left: 20px;
     font-size: 45px;
 }
 
-#projeto_atualizar .atualizar_e_consultar{
-    font-family: "VerdanaRegular";  
+#projeto_cadastro .cadastrar_e_consultar {
+    font-family: "VerdanaRegular";
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
-    margin:25px 0px 39px 0px;
-   
+    margin: 25px 0px 39px 0px;
 }
 
-#projeto_atualizar .atualizar_e_consultar a {
+#projeto_cadastro .cadastrar_e_consultar a {
     width: 130px;
     height: 50px;
     background: none;
     border: none;
     text-align: center;
     text-decoration: none;
-    
+
     font-family: "VerdanaRegular";
     font-size: 20px;
     line-height: 34px;
@@ -62,7 +57,7 @@
     overflow: hidden;
 }
 
-#projeto_atualizar .btn_atualizar:before {
+#projeto_cadastro .btn_cadastrar:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -77,13 +72,15 @@
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}
 
-#projeto_atualizar .btn_atualizar:hover:before, .btn_atualizar:focus:before, .btn_atualizar:active:before {
+#projeto_cadastro .btn_cadastrar:hover:before,
+.btn_cadastrar:focus:before,
+.btn_cadastrar:active:before {
     left: 0;
-  }
+}
 
-#projeto_atualizar .btn_consultar:before {
+#projeto_cadastro .btn_consultar:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -98,16 +95,17 @@
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}
 
-#projeto_atualizar .btn_consultar:hover:before, .btn_consultar:focus:before, .btn_consultar:active:before {
+#projeto_cadastro .btn_consultar:hover:before,
+.btn_consultar:focus:before,
+.btn_consultar:active:before {
     right: 0;
-  }
-
+}
 
 
 /*CAMPO PROJETO*/
-#projeto_atualizar .input_projeto{
+#projeto_cadastro .input_projeto {
     margin: 40px 0 0;
     font-family: "VerdanaRegular";
     color: var(--preto);
@@ -115,35 +113,10 @@
     flex-direction: column;
 }
 
-/* #projeto_atualizar .icon {
-    position: absolute;
-    padding: 12.5px 20px 7.5px 10px;
-    align-items: center;
-    color: #474545;
-    min-width: 40px;
-    font-size: 16px;
-} */
-
-#projeto_atualizar .input-icons {
-    width: 100%;
-    position: relative;
-    
-}
-
-
-#projeto_atualizar .input-field {
-    height: 40px;
-    background: transparent;
-    border-radius: 100px;
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #474545;
-    font-family: "VerdanaRegular";
-}
 
 /*section calendario*/
 
-#projeto_atualizar .input_criacao{
+#projeto_cadastro .input_criacao {
     width: 30%;
     margin: 10px 0;
     font-family: "VerdanaRegular";
@@ -152,13 +125,14 @@
     flex-direction: column;
 }
 
-#projeto_atualizar .section_calendario{
+#projeto_cadastro .section_calendario {
     display: flex;
-   /* background-color: rgb(186, 150, 219);*/
+    /* background-color: rgb(186, 150, 219);*/
     justify-content: space-between;
 }
 
-#projeto_atualizar .input-calendario{
+
+#projeto_cadastro .input-calendario {
     height: 40px;
     background: transparent;
     border-radius: 100px;
@@ -168,7 +142,8 @@
     font-family: "VerdanaRegular";
 }
 
-#projeto_atualizar input[type="date" i] {
+#projeto_cadastro input[type="date" i] {
+    height: 40px;
     font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
@@ -182,16 +157,17 @@
 
 /*CAMPO OBJETIVO DO PROJETO*/
 
-#projeto_atualizar .input_objetivo{
+#projeto_cadastro .input_objetivo {
     width: 100%;
     margin: 10px 0;
     font-family: "VerdanaRegular";
     color: var(--preto);
     display: flex;
     flex-direction: column;
+    font-family: "VerdanaRegular";
 }
 
-#projeto_atualizar .input_objetivo_projeto{
+#projeto_cadastro .input_objetivo_projeto {
     background: transparent;
     border-radius: 100px;
     width: 100%;
@@ -199,27 +175,27 @@
     border: 1px solid #474545;
 }
 
-#projeto_atualizar .campo_objetivo_do_projeto{
+#projeto_cadastro .campo_objetivo_do_projeto {
     display: flex;
     justify-content: center;
 }
 
 
-#projeto_atualizar textarea{
-  /*  font-family: "VerdanaRegular";*/
+#projeto_cadastro textarea {
     width: 100%;
-   /* height: 200px;*/
+    /*height: 200px;*/
     padding: 20px;
     border-radius: 20px;
     border: 1px solid #474545;
     background: transparent;
-   /* resize: none;*/
+    /*resize: none;
+    font-family: "VerdanaRegular";*/
 }
 
 
 /*Orçamento E Status*/
 
-#projeto_atualizar .section_orcamento_e_status{
+#projeto_cadastro .section_orcamento_e_status {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
@@ -227,27 +203,28 @@
     color: var(--preto);
 }
 
-#projeto_atualizar .input_orcamento,
-.select_status{
+#projeto_cadastro .input_orcamento,
+.select_status {
     width: 45%;
     display: flex;
     flex-direction: column;
     font-family: "VerdanaRegular";
 }
 
-#projeto_atualizar select{
+#projeto_cadastro select {
     width: 100%;
     height: 40px;
     padding: 10px 40px;
-    font-family: "VerdanaRegular";
     color: var(--preto);
     border-radius: 40px;
     border: 1px solid #474545;
     background: transparent;
+    font-family: "VerdanaRegular";
     font-size: 16px;
+
 }
 
-#projeto_atualizar .icon_start{
+#projeto_cadastro .icon_start {
     width: 30px;
     height: 30px;
 }
@@ -255,28 +232,34 @@
 
 /*LINK E BUTTON*/
 
-#projeto_atualizar .link_button{
+#projeto_cadastro .link_button {
     display: flex;
     justify-content: space-between;
     margin: 30px 0 10px 0;
 }
 
-#projeto_atualizar .link_button img{
+#projeto_cadastro .link_button img {
     width: 34px;
     height: 34px;
+
 }
 
-#projeto_atualizar .btn_links button{
+#projeto_cadastro .btn_links button {
     border: none;
     background: transparent;
-    margin: 0 4px;
 }
 
-#projeto_atualizar .fundo_amarelo {
+#projeto_cadastro .btn_links {
+    display: flex;
+    gap: 10px;
+}
+
+#projeto_cadastro .fundo_amarelo {
     background-color: var(--amarelo);
+
 }
 
-#projeto_atualizar .section_titulo {
+#projeto_cadastro .section_titulo {
     max-width: 80%;
     display: flex;
     margin: 50px 0;
@@ -285,12 +268,10 @@
     font-size: 30px;
 }
 
-
-#projeto_atualizar select {
+#projeto_cadastro select {
     -webkit-appearance: none;
 }
 
-#projeto_atualizar textarea {
+#projeto_cadastro textarea {
     resize: none;
 }
-
