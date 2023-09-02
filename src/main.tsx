@@ -2,8 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
+
 import Menu from './components/Menu'
 import ProjetoConsulta from './pages/ProjetoConsulta'
+import Entrar from './pages/Entrar'
+
 
 //rotas
 import { BrowserRouter, Routes, Route } from "react-router-dom";

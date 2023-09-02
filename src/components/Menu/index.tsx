@@ -10,44 +10,73 @@ function Menu() {
     return (
         <aside id="aside_menu">
 
-            <img className="aside_logo" src={logo_branca} alt="Logo Maneasy" />
 
             <nav className="nav_btn_menu">
-                <a id="input_dashboard" href="../dashboard/dashboard.html">
-                    <Icon icon="ph:chart-bar-bold" />
+
+                <img className="aside_logo" src={logo_branca} alt="Logo Maneasy" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="ph:chart-bar-bold" />
+                    </div>
                     Dashboard
                 </a>
-                <a href="../profissional_cadastro/profissional_cadastro.html">
-                    <Icon icon="ion:people-circle" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="ion:people-circle" />
+                    </div>
+
                     Profissionais
                 </a>
-                <a href="../projeto_cadastro/projeto_cadastro.html">
-                    <Icon icon="la:project-diagram" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="la:project-diagram" />
+                    </div>
                     Projetos
                 </a>
-                <a id="input_demanda" href="../demanda_cadastro/demanda_cadastro.html">
-                    <Icon icon="mdi:clipboard-edit-outline" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="mdi:clipboard-edit-outline" />
+                    </div>
                     Demandas
                 </a>
-                <a href="../chamado_cadastro/chamado_cadastro.html">
-                    <Icon icon="mdi:bell-alert-outline" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="mdi:bell-alert-outline" />
+                    </div>
                     Chamados
                 </a>
-                <a href="../squad_atualizar/squad_atualizar.html">
-                    <Icon icon="mdi:people-group" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="mdi:people-group" />
+                    </div>
+
                     Squad
                 </a>
-                <a href="../consulta/consulta.html">
-                    <Icon icon="mdi:file-report-outline" />
+
+                <a href="#">
+                    <div className="icon_menu">
+                        <Icon icon="mdi:file-report-outline" />
+                    </div>
                     Consultas
                 </a>
+
             </nav>
+
             <footer id="footer_menu">
-                <a href="../entrar/entrar.html">
-                    <Icon icon="iconamoon:exit-bold" />
+                <a href="#">
+                    <div className="icon_footer">
+                        <Icon icon="iconamoon:exit-bold" />
+                    </div>
                     Sair
                 </a>
             </footer>
+
         </aside>
 
     )
