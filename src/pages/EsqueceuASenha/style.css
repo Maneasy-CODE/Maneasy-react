@@ -1,0 +1,93 @@
+#tela_esqueceu_senha {
+    background-image: linear-gradient(#ffffffe1, #ffffffe1), url("../assets/images/background_maneasy.svg");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+
+#tela_esqueceu_senha .section_esqueceu_password {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#tela_esqueceu_senha .nav_btn_voltar iconify-icon {
+    font-size: 40px;
+    padding: 50px 0 0 50px;
+    color: var(--azule);
+    cursor: pointer;
+
+}
+
+#tela_esqueceu_senha .section_logo {
+    width: 25%;
+}
+
+#tela_esqueceu_senha .section_img_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tela_esqueceu_senha .section_img_logo img {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+#tela_esqueceu_senha .section_esqueceu_senha {
+    width: 40%;
+}
+
+#tela_esqueceu_senha .section_esqueceu_senha h1 {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    padding-bottom: 50px;
+}
+
+#tela_esqueceu_senha .section_esqueceu_senha span {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--amarelo);
+}
+
+#tela_esqueceu_senha .section_input label {
+    color: var(--azule);
+    font-family: "VerdanaRegular";
+}
+
+#tela_esqueceu_senha .section_btn_confirmar {
+    display: flex;
+    justify-content: center;
+}
+
+#tela_esqueceu_senha .section_btn_confirmar a {
+    border-radius: 100px;
+    height: 40px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--azule);
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 250px;
+    width: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+#tela_esqueceu_senha button:hover {
+    background-color: var(--azulc);
+}
