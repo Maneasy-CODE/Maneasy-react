@@ -1,0 +1,116 @@
+#cadastrar {
+    background-image: url("../assets/images/background_maneasy.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#cadastrar main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cadastrar .nav_btn_voltar iconify-icon {
+    font-size: 40px;
+    padding: 50px 0 0 50px;
+    color: var(--azule);
+    cursor: pointer;
+
+}
+
+#cadastrar .section_logo {
+    margin-top: 80px;
+    width: 25%;
+}
+
+#cadastrar .section_img_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cadastrar .section_img_logo img {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+#cadastrar .section_esqueceu_senha {
+    width: 40%;
+}
+
+#cadastrar .section_esqueceu_senha h1 {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    padding-bottom: 50px;
+}
+
+#cadastrar .section_esqueceu_senha span {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--amarelo);
+}
+
+#cadastrar .section_input label {
+    color: var(--azule);
+    font-family: "VerdanaRegular";
+}
+
+
+#cadastrar .section_btn_confirmar {
+    display: flex;
+    justify-content: center;
+}
+
+#cadastrar .section_btn_confirmar a {
+    border-radius: 100px;
+    height: 40px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--azule);
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 250px;
+    width: 60%;
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#cadastrar button:hover {
+    background-color: var(--azulc);
+}
+
+#cadastrar .section_input_senha {
+    display: flex;
+}
+
+#cadastrar .section_input_senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cadastrar .section_input_senha>div {
+    width: 48%;
+
+}
+
+#cadastrar .input-field_senha {
+    width: 335%;
+    margin-bottom: 20px;
+    height: 40px;
+    background: transparent;
+    border-radius: 100px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
