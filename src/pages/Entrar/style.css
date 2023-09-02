@@ -118,12 +118,23 @@
     text-decoration: none;
 }
 
-.input_field{
+.icon {
+    position: absolute;
+    margin: 10px 0  0 10px;
+    align-items: center;
+    color: var(--azule);
+    font-size: 20px;
+}
+
+.input_field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
     height: 40px;
     padding: 10px 10px 10px 40px;
-    border: 1px solid #474545;
+    border: 1px solid var(--azule);
+}
+
+.input_icons{
     margin-top: 5px;
 }
