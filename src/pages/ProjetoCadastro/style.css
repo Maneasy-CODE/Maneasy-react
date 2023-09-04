@@ -1,4 +1,11 @@
-/*SECTION PROJETO*/
+/* SECTION PROJETO*/ 
+#projeto_cadastro{
+    display: flex;
+}
+
+#projeto_cadastro > section{
+    width: 100%;
+}
 
 #projeto_cadastro .container{
     width: 80%;
