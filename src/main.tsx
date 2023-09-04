@@ -2,14 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 
-import Menu from './components/Menu'
-import Entrar from './pages/Entrar'
+import Btn_submit_cancel_squad from './components/Btn_submit_cancel_squad';
+import Squad_cadastro from "./pages/Squad_cadastro";
 
-
+//IMPORT DE ROTAS
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-
-    <Entrar/>
-    
-  </React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Squad_cadastro />}></Route>
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
 )
+
