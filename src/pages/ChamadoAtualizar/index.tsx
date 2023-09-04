@@ -21,7 +21,6 @@ function ChamadoAtualizar() {
 
         <main id="demanda_atualizar">
             <Menu />
-
             <section>
                 <div className="container-grid">
                     <div className="conteudo">
@@ -114,7 +113,7 @@ function ChamadoAtualizar() {
                         </div>
                         <div className="progresso-demanda">
                             <div className="orcamento-demanda">
-                                <span>Orçamento de demanda</span>
+                                <span>Orçamento de demanda </span>
                                 <div className="data-conte input-icons">
 
                                     <Icon icon="bx:calendar" />
