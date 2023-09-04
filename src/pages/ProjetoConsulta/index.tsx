@@ -15,56 +15,68 @@ function ProjetoConsulta() {
         <div id="projeto_consulta">
             <main>
                 <Menu />
-                <section>
+                <section className="conteudo">
                     <div className="container-grid">
-                        <div className="conteudo">
-                            <div className="section_titulo">
-                                <img src={imagemIconeTitulo} alt="" />
-                                <h1>Projeto</h1>
-                            </div>
-                            <div className="buttons-grid">
-                                <Link to={""} className="button-cadastrar">Cadastrar</Link>
-                                <Link to={""} className="button-consultar">Consultar</Link>
-                            </div>
+                        <div className="section_titulo">
+                            <img src={imagemIconeTitulo} alt="" />
+                            <h1>Projeto</h1>
+                        </div>
+                        <div className="buttons-grid">
+                            <Link to={""} className="button-cadastrar">Cadastrar</Link>
+                            <Link to={""} className="button-consultar">Consultar</Link>
+                        </div>
 
-                            <div className="pesquisas">
+                        <div className="pesquisas">
 
-                                <div className="input_id">
-                                    <label htmlFor="id">ID</label>
-                                    <div className="input-icons_pesquisa">
-                                        {/* <iconify-icon class="icon" icon="ic:outline-badge"></iconify-icon> */}
-                                        <input name="id" className="input-field_pesquisa" type="text" />
-                                    </div>
-                                </div>
-
-                                <div className="ou">
-                                    <p>ou</p>
-                                </div>
-
-                                <div className="input_nome">
-                                    <label htmlFor="Nome">Nome</label>
-                                    <div className="input-icons_pesquisa">
-                                        {/* <iconify-icon class="icon" icon="mingcute:user-4-fill"></iconify-icon> */}
-                                        <input name="Nome" className="input-field_pesquisa" type="text" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <Link to={""} className="section_consulta_chamado_btn"><img src={imagemPesquisar} alt="" /></Link>
+                            <div className="input_id">
+                                <label htmlFor="id">ID</label>
+                                <div className="input-icons_pesquisa">
+                                    {/* <iconify-icon class="icon" icon="ic:outline-badge"></iconify-icon> */}
+                                    <input name="id" className="input-field_pesquisa" type="text" />
                                 </div>
                             </div>
 
-                            <div className="lista-projetos">
-                                <h2>Lista de Projetos</h2>
-                                <div className="container_lista_projetos">
-                                    <ul className="num-projetos">
-                                        <li>01010101</li>
-                                        <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                        <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
-                                    </ul>
-
-                                </div>
-
+                            <div className="ou">
+                                <p>ou</p>
                             </div>
+
+                            <div className="input_nome">
+                                <label htmlFor="Nome">Nome</label>
+                                <div className="input-icons_pesquisa">
+                                    {/* <iconify-icon class="icon" icon="mingcute:user-4-fill"></iconify-icon> */}
+                                    <input name="Nome" className="input-field_pesquisa" type="text" />
+                                </div>
+                            </div>
+                            <div>
+                                <Link to={""} className="section_consulta_chamado_btn"><img src={imagemPesquisar} alt="" /></Link>
+                            </div>
+                        </div>
+
+                        <div className="lista-projetos">
+                            <h2>Lista de Projetos</h2>
+                            <div className="container_lista_projetos">
+                                <ul className="num-projetos">
+                                    <li>01010101</li>
+                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
+                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
+                                </ul>
+                                <ul className="num-projetos">
+                                    <li>01010101</li>
+                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
+                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
+                                </ul>
+                                <ul className="num-projetos">
+                                    <li>01010101</li>
+                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
+                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
+                                </ul>
+                                <ul className="num-projetos">
+                                    <li>01010101</li>
+                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
+                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>    
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
                 </section>

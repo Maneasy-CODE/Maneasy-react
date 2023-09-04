@@ -1,16 +1,17 @@
 /* TITULO */
 #projeto_consulta section .container-grid {
     font-family: "VerdanaRegular";
-    width: 100%;
-    height: 100%;
+    width: 80%;
     border-radius: 40px 0 0 40px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    margin: 0 auto;
 }
 
-#projeto_consulta section .conteudo {
-    width: 80%;
+#projeto_consulta .conteudo {
+    width: 100%;
     margin: 0 auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
 }
 
 #projeto_consulta section .cadastrar {
@@ -264,12 +265,10 @@ li {
 }
 
 #projeto_consulta .btn_editar {
-    margin: auto 0;
-}
-
-#projeto_consulta .btn_editar {
     display: flex;
     justify-content: center;
+    margin: auto 0;
+    width: 34px;
 }
 
 
@@ -305,10 +304,6 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
-select {
-    -webkit-appearance: none;
-}
-
-#projeto_consulta main{
+#projeto_consulta main {
     display: flex;
 }
