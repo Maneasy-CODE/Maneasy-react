@@ -42,10 +42,8 @@ function ChamadoAtualizar() {
                         <div className="demanda">
                             <span>Nome da Demanda</span>
                             <div className="demanda-cadastrar input-icons">
-
-                                <Icon icon="mdi:clipboard-edit-outline" />
-
                                 <input className="input-field" name="nome-demanda" type="text" />
+                                <Icon className="icon" icon="mdi:clipboard-edit-outline" />
                             </div>
                         </div>
                         <div className="datas">
@@ -53,7 +51,7 @@ function ChamadoAtualizar() {
                                 <span>Criação</span>
                                 <div className="data-conte input-icons">
 
-                                    <Icon icon="bx:calendar" />
+                                    <Icon className="icon" icon="bx:calendar" />
 
                                     <input className="input-field" name="criacao" type="date" />
                                 </div>
@@ -62,7 +60,7 @@ function ChamadoAtualizar() {
                                 <span>Ínicio</span>
                                 <div className="data-conte input-icons">
 
-                                    <Icon icon="bx:calendar" />
+                                    <Icon className="icon" icon="bx:calendar" />
 
                                     <input className="input-field" name="criacao" type="date" />
                                 </div>
@@ -71,7 +69,7 @@ function ChamadoAtualizar() {
                                 <span>Término</span>
                                 <div className="data-conte input-icons">
 
-                                    <Icon icon="bx:calendar" />
+                                    <Icon className="icon" icon="bx:calendar" />
 
                                     <input className="input-field" name="criacao" type="date" />
                                 </div>
@@ -113,10 +111,10 @@ function ChamadoAtualizar() {
                         </div>
                         <div className="progresso-demanda">
                             <div className="orcamento-demanda">
-                                <span>Orçamento de demanda </span>
+                                <span>Orçamento de demanda</span>
                                 <div className="data-conte input-icons">
 
-                                    <Icon icon="bx:calendar" />
+                                    <Icon className="icon" icon="fa:dollar" />
 
                                     <input className="input-field" name="criacao" type="text" />
                                 </div>
@@ -125,7 +123,7 @@ function ChamadoAtualizar() {
                                 <span>Tempo de demanda</span>
                                 <div className="data-conte input-icons">
 
-                                    <Icon icon="bx:calendar" />
+                                    <Icon className="icon" icon="ps:clock" />
 
                                     <input className="input-field" name="criacao" type="text" />
                                 </div>
@@ -134,7 +132,7 @@ function ChamadoAtualizar() {
                                 <span>Status da Demanda</span>
                                 <div className="select-icons">
 
-                                    <Icon icon="el:ok-sign" />
+                                    <Icon className="icon_select" icon="el:ok-sign" />
 
                                     <select className="data-conte" name="status" id="">
                                         <option value="">Aberto</option>

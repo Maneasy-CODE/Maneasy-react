@@ -3,22 +3,29 @@ section {
     display: flex;
     height: 100vh;
     width: 100%;
-   
 }
 
 /* CLASSES GENERICAS */
 .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
+    margin: 0 0  0 10px;
+}
+
+.icon_select{
+    position: absolute;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+    margin: 10px 0  0 20px;
 }
 
 .input-icons {
-    width: 30%;
-    margin-top: 10px;
-    position: relative;
+    
+    margin-top: 5px;
+   
 }
 
 .input-field {
@@ -55,9 +62,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #demanda_atualizar section .conteudo{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    
 }
 
 #demanda_atualizar section .cadastrar{
@@ -214,7 +220,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 #demanda_atualizar section .data-conte{
     width: 100%;
     height: 40px;
-    
+    margin: 10px 0  0 10px;
+
     display: flex;
     align-items: center;
     position: relative;
@@ -378,4 +385,13 @@ html ::-webkit-scrollbar-track {
 
 #demanda_atualizar textarea {
     resize: none;
+}
+
+#demanda_atualizar{
+    display: flex;
+}
+
+#demanda_atualizar > section{
+    width: 100%;
+    
 }
