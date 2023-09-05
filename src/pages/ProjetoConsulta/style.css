@@ -1,3 +1,29 @@
+/* ICONES */
+#projeto_consulta .icon {
+    position: absolute;
+    /* padding: 10.5px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+#projeto_consulta .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+#projeto_consulta .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+
+
 /* TITULO */
 #projeto_consulta section .container-grid {
     font-family: "VerdanaRegular";
@@ -11,7 +37,9 @@
     margin: 0 auto;
     overflow-y: scroll;
     scroll-behavior: smooth;
-
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #projeto_consulta section .cadastrar {

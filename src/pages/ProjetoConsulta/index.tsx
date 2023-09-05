@@ -8,6 +8,8 @@ import Menu from "../../components/Menu"
 import imagemEditar from "../../assets/images/btn_editar.svg"
 import imagemIconeTitulo from "../../assets/images/icone_titulo.svg"
 import imagemPesquisar from "../../assets/images/btn_pesquisar.svg"
+import { Icon } from '@iconify/react';
+
 
 function ProjetoConsulta() {
     return (
@@ -31,7 +33,7 @@ function ProjetoConsulta() {
                             <div className="input_id">
                                 <label htmlFor="id">ID</label>
                                 <div className="input-icons_pesquisa">
-                                    {/* <iconify-icon class="icon" icon="ic:outline-badge"></iconify-icon> */}
+                                    <Icon className="icon" icon="ic:outline-badge"></Icon>
                                     <input name="id" className="input-field_pesquisa" type="text" />
                                 </div>
                             </div>
@@ -43,7 +45,7 @@ function ProjetoConsulta() {
                             <div className="input_nome">
                                 <label htmlFor="Nome">Nome</label>
                                 <div className="input-icons_pesquisa">
-                                    {/* <iconify-icon class="icon" icon="mingcute:user-4-fill"></iconify-icon> */}
+                                    <Icon className="icon" icon="mingcute:user-4-fill"></Icon>
                                     <input name="Nome" className="input-field_pesquisa" type="text" />
                                 </div>
                             </div>
