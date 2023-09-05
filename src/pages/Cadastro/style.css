@@ -8,6 +8,11 @@
     height: 100vh;
 }
 
+.main_cadastro{
+    display: flex;
+    align-items: center;
+}
+
 
 #cadastrar main {
     display: flex;
@@ -21,7 +26,6 @@
     padding: 50px 0 0 50px;
     color: var(--azule);
     cursor: pointer;
-
 }
 
 #cadastrar .section_logo {

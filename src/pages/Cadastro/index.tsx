@@ -11,16 +11,18 @@ function Cadastro() {
 
             <nav className="nav_btn_voltar">
                 <a href="../entrar/entrar.html">
-                    <Icon className="icon"icon="clarity:circle-arrow-solid" />
+                    <Icon className="icon" icon="clarity:circle-arrow-solid" />
                 </a>
             </nav>
 
-            <main>
+            <main className="main_cadastro">
+
                 <section className="section_logo">
                     <div className="section_img_logo">
                         <img src={entrar_logo} alt="Logo Maneasy" />
                     </div>
                 </section>
+
                 <section className="section_esqueceu_senha">
                     <h1>
                         Cadastre<span>-se</span>
