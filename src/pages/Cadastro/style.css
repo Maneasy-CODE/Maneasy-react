@@ -1,5 +1,5 @@
 #cadastrar {
-    background-image: url("../assets/images/background_maneasy.svg");
+    background-image: url("../../assets/images/background_deslogado.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,10 +8,12 @@
     height: 100vh;
 }
 
+
 #cadastrar main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
 }
 
 #cadastrar .nav_btn_voltar iconify-icon {
@@ -114,3 +116,41 @@
     padding: 10px 10px 10px 40px;
     border: 1px solid var(--azule);
 }
+
+/* Input e icon */
+
+
+.icon {
+    position: absolute;
+    margin: 10px 0  0 10px;
+    align-items: center;
+    color: var(--azule);
+    font-size: 20px;
+}
+
+.input_field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+.input_icons{
+    margin-top: 5px;
+}
+
+.input_field_senha{
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+.section_cadastro{
+    margin-bottom: 10px;
+}
+

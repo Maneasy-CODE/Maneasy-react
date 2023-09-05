@@ -11,7 +11,7 @@ function Cadastro() {
 
             <nav className="nav_btn_voltar">
                 <a href="../entrar/entrar.html">
-                    <Icon icon="clarity:circle-arrow-solid" />
+                    <Icon className="icon"icon="clarity:circle-arrow-solid" />
                 </a>
             </nav>
 
@@ -26,40 +26,40 @@ function Cadastro() {
                         Cadastre<span>-se</span>
                     </h1>
                     <form className="section_input" action="">
-                        <div>
+                        <div className="section_cadastro">
                             <label htmlFor="Chapa">Chapa</label>
-                            <div className="input-icons">
+                            <div className="input_icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="Chapa" className="input-field" type="text" />
+                                <input name="Chapa" className="input_field" type="text" />
                             </div>
                         </div>
-                        <div>
-                            <label htmlFor="Chapa">Nome</label>
-                            <div className="input-icons">
+                        <div className="section_cadastro">
+                            <label htmlFor="Nome">Nome</label>
+                            <div className="input_icons">
                                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                                <input name="Chapa" className="input-field" type="text" />
+                                <input name="Nome" className="input_field" type="text" />
                             </div>
                         </div>
-                        <div>
-                            <label htmlFor="Chapa">E-mail</label>
-                            <div className="input-icons">
+                        <div className="section_cadastro">
+                            <label htmlFor="Email">E-mail</label>
+                            <div className="input_icons">
                                 <Icon className="icon" icon="ic:round-email" />
-                                <input name="Chapa" className="input-field" type="text" />
+                                <input name="Email" className="input_field" type="text" />
                             </div>
                         </div>
                         <div className="section_input_senha">
                             <div>
-                                <label htmlFor="E-mail">Senha</label>
-                                <div className="input-icons">
+                                <label htmlFor="Senha">Senha</label>
+                                <div className="input_icons">
                                     <Icon className="icon" icon="mdi:password" />
-                                    <input name="E-mail" className="input-field_senha" type="email" />
+                                    <input name="Senha" className="input_field_senha" type="email" />
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="E-mail">Confirmar Senha</label>
-                                <div className="input-icons">
+                                <label htmlFor="ConfirmarSenha">Confirmar Senha</label>
+                                <div className="input_icons">
                                     <Icon className="icon" icon="mdi:password" />
-                                    <input name="E-mail" className="input-field_senha" type="email" />
+                                    <input name="ConfirmarSenha" className="input_field_senha" type="email" />
                                 </div>
                             </div>
                         </div>
