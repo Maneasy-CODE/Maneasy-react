@@ -1,4 +1,4 @@
-import "./style.css"
+import "./style.css";
 import btn_squad from "../../assets/images/btn_squad.svg";
 import btn_confirmar from "../../assets/images/btn_confirmar.svg";
 import btn_cancelar from "../../assets/images/btn_cancelar.svg";

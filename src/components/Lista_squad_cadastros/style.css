@@ -1,0 +1,51 @@
+
+#squad_atualizar .section_resultado_dados {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+
+}
+
+#squad_atualizar .section_resultado_dados div {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+#squad_atualizar .section_resultado_dados img {
+    margin: 0;
+    width: 34px;
+}
+
+#squad_atualizar .section_resultado_dados_id {
+    width: 20%;
+}
+
+#squad_atualizar .section_resultado_dados_tipo {
+    width: 20%;
+}
+
+#squad_atualizar .section_resultado_dados_nome {
+    width: 60%;
+}
+
+#squad_atualizar .section_resultado_dados_btn {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#squad_atualizar .lista_consultas {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    color: var(--preto);
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding-right: 5%;
+
+
+}
