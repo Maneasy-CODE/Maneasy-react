@@ -1,0 +1,196 @@
+main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#consulta section{
+    width: 100%;
+}
+
+#consulta label {
+    font-family: "VerdanaRegular";
+}
+
+#consulta .section_titulo {
+    display: flex;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+}
+
+#consulta .section_titulo img {
+    padding-right: 20px;
+}
+
+#consulta .icon {
+    position: absolute;
+    padding: 7.5px 20px 7.5px 10px;
+    align-items: center;
+    color: #474545;
+    min-width: 40px;
+    font-size: 25px;
+}
+
+#consulta .container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+   
+    
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#consulta section .conteudo {
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+}
+
+#consulta .pesquisas {
+    /*background-color: aquamarine;*/
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+#consulta .ou {
+    /*background-color: bisque;*/
+    padding: 30px 10px 10px 10px;
+    font-family: "VerdanaRegular";
+}
+
+#consulta .input-field {
+    background: transparent;
+    border-radius: 100px;
+    width: 350px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+#consulta .section_pesquisa_btn {
+    /* background-color: blueviolet;*/
+    color: #474545;
+    font-size: 45px;
+    padding: 35px 8px 0 8px;
+}
+
+#consulta h2 {
+    font-size: 20px;
+    font-family: "VerdanaRegular";
+    padding: 40px 0 20px 0;
+    color: #474545;
+}
+
+#consulta table {
+    table-layout: fixed;
+
+    font-family: "VerdanaRegular";
+    /* color: #474545;*/
+
+    justify-content: space-between;
+    border-spacing: 0;
+}
+
+#consulta td {
+
+    border-bottom: #27272729 solid 1px;
+    height: 50px;
+    border-collapse: collapse;
+}
+
+#consulta select {
+    border-radius: 100px;
+    padding: 4px;
+    background: transparent;
+}
+
+#consulta .tabela-teste {
+    width: 100%;
+    background-color: royalblue;
+    height: 311px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#consulta .fundo_amarelo {
+    background-color: var(--amarelo);
+}
+
+#consulta .section_pesquisa_resultado_input {
+    width: 100%;
+}
+
+#consulta .icon {
+    position: absolute;
+    padding: 11px 20px 7.5px 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+#consulta .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+#consulta .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+
+
+#consulta .section_pesquisa p {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    padding: 30px 10px 10px 10px;
+
+}
+
+#consulta .section_pesquisa_btn img {
+    width: 34px;
+    margin-left: 10px;
+}
+
+#consulta .section_pesquisa_resultado {
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+}
+
+#consulta .section_pesquisa {
+    display: flex;
+    justify-content: space-between;
+    color: var(--preto);
+}
+
+
+
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+#consulta select {
+    -webkit-appearance: none;
+}
+
+

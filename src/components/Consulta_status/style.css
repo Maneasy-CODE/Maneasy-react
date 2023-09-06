@@ -1,0 +1,59 @@
+
+#consulta select {
+    border-radius: 100px;
+    padding: 4px;
+    background: transparent;
+    -webkit-appearance: none;
+}
+ 
+/*tabela*/
+
+#consulta .lista_consultas {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    color: var(--preto);
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5%;
+    width: 100%;
+}
+
+#consulta .linha_consultas {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+
+}
+
+#consulta button {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#consulta .linha_consultas_id{
+    width: 259px;
+}
+
+#consulta .linha_consultas_tipo{
+    width: 518px;
+}
+
+#consulta .linha_consultas_status{
+    width: 15%;
+    padding: 0 0 0 10px;
+    height: 25px;
+    font-family: "VerdanaRegular";
+}
+
+#consulta button img {
+    width: 34px;
+}
+
+
