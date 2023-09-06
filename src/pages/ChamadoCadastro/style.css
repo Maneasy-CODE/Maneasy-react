@@ -1,3 +1,13 @@
+.main_cadastro{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#chamado_cadastro .section-width{
+    width: 100%;
+}
+
 /* CLASSE Generica */
 #chamado_cadastro section .container-grid{
     width: 100%;
@@ -7,6 +17,10 @@
     padding-bottom: 70px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #chamado_cadastro section .conteudo{
@@ -121,10 +135,18 @@
     left: 0;
   }
 
+.icon_select{
+    position: absolute;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+    margin: 0 0  0 10px;
+}
 
 .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
@@ -296,7 +318,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 #chamado_cadastro .icones{
     width: 100%;
-    display: flex;
     justify-content: space-between;
 }
 

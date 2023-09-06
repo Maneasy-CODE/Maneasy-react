@@ -1,34 +1,27 @@
 //estilizacacao
 import "./style.css"
 import { Icon } from "@iconify/react";
+import Menu from "../../components/Menu";
+import bolinha from "../../assets/images/icone_titulo.svg";
+
 //rotas
 import { Link } from "react-router-dom";
+import Btn_submit_cancel_squad from "../../components/Btn_submit_cancel_squad";
 
 function ChamadoCadastro() {
     return (
-        <main id="chamado_cadastro">
-            <section>
+        <main id="chamado_cadastro" className="main_cadastro">
+            <Menu/>
+            <section className="section-width">
                 <div className="container-grid">
                     <div className="conteudo">
                         <div className="cadastrar">
-                            <img src="../assets/images/bolinha_azul.svg" alt="" />
+                            <img src={bolinha} alt="" />
                             <h1>Chamados</h1>
                         </div>
                         <div className="botao">
-                            
-                            <a
-                                href="../chamado_cadastro/chamado_cadastro.html"
-                                className="button_cadastrar"
-                            >
-                                Cadastrar
-                            </a>
-                            
-                            <a
-                                href="../chamado_consulta/chamado_consulta.html"
-                                className="button_consultar"
-                            >
-                                Consultar
-                            </a>
+                            <Link  className="button_cadastrar" to={""}>Cadastrar</Link>
+                            <Link className="button_consultar" to={""}>Consultar</Link>
                         </div>
                         <div className="section_formulario1">
                             <div className="input_setor">
@@ -133,7 +126,7 @@ function ChamadoCadastro() {
                                 <label htmlFor="file">Status Chamado</label>
                                 <div className="input-icons input_status">
 
-                                    <Icon className="icon" icon="el:ok-circle" />
+                                    <Icon className="icon_select" icon="el:ok-circle" />
 
                                     <select
                                         className="selecao input-field-medium"
@@ -148,17 +141,7 @@ function ChamadoCadastro() {
                             </div>
                         </div>
                         <div className="icones">
-                            <a href="../squad_cadastro/squad_cadastro.html">
-                                <img src="../assets/images/btn_squad.svg" alt="squad" />
-                            </a>
-                            <div>
-                                <a href="">
-                                    <img src="../assets/images/btn_confirmar.svg" alt="" />
-                                </a>
-                                <a href="">
-                                    <img src="../assets/images/btn_cancelar.svg" alt="" />
-                                </a>
-                            </div>
+                           <Btn_submit_cancel_squad></Btn_submit_cancel_squad>
                         </div>
                     </div>
                 </div>
