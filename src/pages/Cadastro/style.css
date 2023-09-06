@@ -1,4 +1,6 @@
-#cadastrar {
+/* 
+
+/* #cadastrar {
     background-image: url("../../assets/images/background_deslogado.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,6 +8,13 @@
     background-position: right bottom;
     overflow: hidden;
     height: 100vh;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;    
 }
 
 .main_cadastro{
@@ -124,7 +133,7 @@
 /* Input e icon */
 
 
-.icon {
+/* .icon {
     position: absolute;
     margin: 10px 0  0 10px;
     align-items: center;
@@ -154,7 +163,178 @@
     border: 1px solid var(--azule);
 }
 
-.section_cadastro{
+
+ */
+
+.icon_voltar {
+    font-size: 40px;
+    color: var(--azule);
+    cursor: pointer;
+}
+
+.section_cadastro {
     margin-bottom: 10px;
 }
 
+#entrar main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../assets/images/background_deslogado.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+#entrar .section_logo {
+    width: 25%;
+}
+
+#entrar .section_img_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#entrar .section_img_logo img {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+#entrar .section_esqueceu_senha {
+    width: 40%;
+}
+
+#entrar .section_esqueceu_senha h1 {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    padding-bottom: 50px;
+}
+
+#entrar .section_esqueceu_senha span {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--amarelo);
+}
+
+#entrar .section_input label {
+    color: var(--azule);
+    font-family: "VerdanaRegular";
+    gap: 10px;
+}
+
+#entrar .email {
+    margin-bottom: 30px;
+
+}
+
+#entrar .section_btn_confirmar {
+    display: flex;
+    justify-content: center;
+}
+
+#entrar .section_btn_confirmar a {
+    border-radius: 100px;
+    height: 40px;
+    border: none;
+    color: var(--branco);
+    background-color: var(--azule);
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 250px;
+    width: 60%;
+    margin: 40px 0 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+#entrar button:hover {
+    background-color: var(--azulc);
+}
+
+#entrar .nav_esqueceu_senha {
+    font-family: "VerdanaRegular";
+    text-align: right;
+    padding: 5px;
+    color: var(--azule);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#entrar .nav_esqueceu_senha:hover {
+    color: var(--amarelo);
+}
+
+#entrar .nav_cadastro {
+    margin-top: 40px;
+    font-family: "VerdanaRegular";
+    text-align: center;
+    color: var(--azule);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#entrar .nav_cadastro:hover {
+    color: var(--amarelo);
+}
+
+#entrar .sublinado {
+    text-decoration: none;
+}
+
+.icon {
+    position: absolute;
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--azule);
+    font-size: 20px;
+}
+
+.input_field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+.input_icons {
+    margin-top: 5px;
+}
+
+.input_field_senha {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+.section_input_senha {
+    display: flex;
+}
+
+.section_input_senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_input_senha>div {
+    width: 48%;
+
+}
