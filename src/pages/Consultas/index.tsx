@@ -31,7 +31,7 @@ function Consultas() {
                                         <input name="Chapa" className="input-field" type="number" />
                                     </div>
                                 </div>
-                                <div>
+                                <div className="position_ou">
                                     <p>ou</p>
                                 </div>
                                 <div className="section_pesquisa_resultado_input">
