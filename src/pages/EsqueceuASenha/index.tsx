@@ -3,7 +3,11 @@ import "./style.css"
 import { Icon } from "@iconify/react";
 
 //imagens
-import imgLogo from "../../assets/images/logo_colorida.svg";
+//import imgLogo from "../../assets/images/logo_colorida.svg";
+//import imgLogo from "../../assets/images/logo_colorida.svg"
+
+
+//import background_logados from "../../assets/images/background_logado.svg";
 
 import { Link } from "react-router-dom";
 
@@ -12,7 +16,8 @@ function EsqueceuASenha() {
     <main id="tela_esqueceu_senha">
       <div className="nav_btn_voltar">
         <Link to="../entrar/entrar.html">
-          <Icon icon="clarity:circle-arrow-solid" rotate={270} />
+          <Icon className="icon_entrar" icon="clarity:circle-arrow-solid"   rotate={271} />
+          
         </Link>
       </div>
       <section className="section_esqueceu_password" id="esqueceu_senha">

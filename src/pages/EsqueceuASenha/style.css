@@ -9,6 +9,29 @@
     height: 100vh;
 }
 
+#tela_esqueceu_senha .nav_btn_voltar{
+    display: flex;
+    padding-left: 36px;
+    padding-top: 20px;
+    
+   
+
+}
+
+
+#tela_esqueceu_senha .Botao-seguir{
+   
+    
+   
+
+}
+
+
+#tela_esqueceu_senha .claritycircle-arrow-solid{
+   
+    
+    
+}
 
 
 #tela_esqueceu_senha .section_esqueceu_password {
@@ -21,11 +44,12 @@
 #tela_esqueceu_senha .nav_btn_voltar iconify-icon {
     font-size: 40px;
     padding: 50px 0 0 50px;
-    color: var(--azule);
-    cursor: pointer;
+    color: var(--azule); 
+    cursor: pointer; 
+  
 
 }
-
+ 
 #tela_esqueceu_senha .section_logo {
     width: 25%;
 }
@@ -67,12 +91,14 @@
 #tela_esqueceu_senha .section_btn_confirmar {
     display: flex;
     justify-content: center;
+    padding: 30px; 
+    padding-right: 50px;
 }
 
 #tela_esqueceu_senha .section_btn_confirmar a {
     border-radius: 100px;
     height: 40px;
-    border: none;
+    border: none; 
     color: var(--branco);
     background-color: var(--azule);
     font-family: "VerdanaRegular";
@@ -84,10 +110,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    text-decoration: none; 
+   
+  
+    
 }
 
 
 #tela_esqueceu_senha button:hover {
     background-color: var(--azulc);
+    
 }
