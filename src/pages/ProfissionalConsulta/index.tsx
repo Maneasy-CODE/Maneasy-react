@@ -1,8 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-
 //estilização
 import "./style.css"
+
+//rotas
+import { Link } from "react-router-dom";
+import Menu from "../../components/Menu"
+
+//imagens
+import bolinha_azul from "../../assets/images/bolinha_azul.svg"
 
 import { Icon } from '@iconify/react';
 
@@ -10,32 +14,24 @@ function ProfissionalConsulta() {
 
     return (
 
-        <>
             <main id="profissional_consulta">
+                <Menu></Menu>
                 <section className="conteudo_princiapal">
                     <div className="container_grid">
                         <div className="section_titulo">
-                            <img src="../assets/images/bolinha_azul.svg" alt="circulo azul" />
+                            <img src={bolinha_azul} alt="circulo azul" />
                             <h1>Profissionais</h1>
                         </div>
                         <div className="conteudo">
                             <nav className="nav_cad_cons">
-                                <a
-                                    className="btn_cad"
-                                    href="../profissional_cadastro/profissional_cadastro.html"
-                                >
-                                    Cadastrar
-                                </a>
-                                <a className="btn_cons" href="#">
-                                    Consultar
-                                </a>
+                                <Link to={""} className="btn_cad">Cadastrar</Link>
+                                <Link to={""} className="btn_cons">Consultar</Link>
                             </nav>
                             <div className="section_pesquisa">
                                 <div className="section_pesquisa_resultado_input">
                                     <label htmlFor="Chapa">Chapa</label>
                                     <div className="input-icons">
                                         <Icon icon="ic:outline-badge" />
-
                                         <input name="Chapa" className="input-field" type="number" />
                                     </div>
                                 </div>
@@ -46,13 +42,12 @@ function ProfissionalConsulta() {
                                     <label htmlFor="Consultar">Consultar</label>
                                     <div className="input-icons">
                                         <Icon icon="mingcute:user-4-fill" />
-
                                         <input name="Consultar" className="input-field" type="text" />
                                     </div>
                                 </div>
-                                <a href="" className="section_pesquisa_btn">
+                                <Link to={""} className="section_pesquisa_btn">
                                     <img src="../assets/images/btn_pesquisar.svg" alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <section className="secao_lista">
                                 <h2>Lista de Profissionais</h2>
@@ -197,7 +192,6 @@ function ProfissionalConsulta() {
                     </div>
                 </section>
             </main>
-        </>
 
     )
 }
