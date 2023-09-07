@@ -1,18 +1,10 @@
-////estilização
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+//estilização
 import "./style.css"
 
-
 import { Icon } from '@iconify/react';
-
-{/* <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maneasy</title>
-  <link rel="stylesheet" href="./profissional_consulta.css" />
-  <link rel="stylesheet" href="../css/imports_fonts.css" />
-  <link rel="stylesheet" href="../css/menu.css" />
-  <link rel="icon" href="../assets/images/icon_logo.svg" /> */}
-
 
 function ProfissionalConsulta() {
 
@@ -43,7 +35,7 @@ function ProfissionalConsulta() {
                                     <label htmlFor="Chapa">Chapa</label>
                                     <div className="input-icons">
                                         <Icon icon="ic:outline-badge" />
-                                        
+
                                         <input name="Chapa" className="input-field" type="number" />
                                     </div>
                                 </div>
@@ -207,7 +199,7 @@ function ProfissionalConsulta() {
             </main>
         </>
 
-)
+    )
 }
 
 export default ProfissionalConsulta;
