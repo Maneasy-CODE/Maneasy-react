@@ -29,15 +29,8 @@ function ChamadoAtualizar() {
                             <h1>Demandas</h1>
                         </div>
                         <div className="buttons-grid">
-                            <a href="#" className="button-cadastrar">
-                                Atualizar
-                            </a>
-                            <a
-                                href="../demanda_consulta/demanda_consulta.html"
-                                className="button-consultar"
-                            >
-                                Consultar
-                            </a>
+                            <Link className="button-cadastrar" to={""}>Atualizar</Link>
+                            <Link className="button-consultar" to={""}>Consultar</Link>
                         </div>
                         <div className="demanda">
                             <span>Nome da Demanda</span>
