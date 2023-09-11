@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-       { /*<Route path='/' element={<ProfissionalCadastro />} />*/}
+        { /*<Route path='/' element={<ProfissionalCadastro />} />*/}
         <Route path='/profissionalCadastro' element={<ProfissionalCadastro />} />
       </Routes>
     </BrowserRouter>

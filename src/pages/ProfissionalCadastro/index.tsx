@@ -25,15 +25,12 @@ function ProfissionalCadastro() {
           </div>
           <section className="conteudo">
             <nav className="nav_cad_cons">
-              <a className="btn_cad" href="#">
+              <Link to={""} className="btn_cad" >
                 Cadastrar
-              </a>
-              <a
-                className="btn_cons"
-                href="../profissional_consulta/profissional_consulta.html"
-              >
+              </Link>
+              <Link to={""} className="btn_cons">
                 Consultar
-              </a>
+              </Link>
             </nav>
             <div className="posicao_conteudo">
               <div>
