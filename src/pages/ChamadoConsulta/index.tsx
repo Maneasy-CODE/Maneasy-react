@@ -8,8 +8,43 @@ import Pesquisar from "../../assets/images/btn_pesquisar.svg"
 
 //rotas
 import { Link } from "react-router-dom";
+import LinhaChamado from "../../components/Menu/LinhaChamado";
 
 function ChamadoConsulta() {
+    const listaChamados: any = [
+        {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            nome: "Atualização do Cadastro para MySQL"
+        },
+    ]
+
     return (
         <main id="chamado_consulta">
             <Menu />
@@ -52,174 +87,16 @@ function ChamadoConsulta() {
                         <div className="tabela_scroll">
                             <table>
                                 <tbody>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Atualização do Cadastro para MySQL</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do onboarding</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do sistema de organiza...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">
-                                            Atualização do Cadastro de Clientes par...
-                                        </td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Atualização do Cadastro para MySQL</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do onboarding</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do sistema de organiza...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">
-                                            Atualização do Cadastro de Clientes par...
-                                        </td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Atualização do Cadastro para MySQL</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do onboarding</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Implementação do sistema de organiza...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">
-                                            Atualização do Cadastro de Clientes par...
-                                        </td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="c1">01010101</td>
-                                        <td className="c2">Criação do novo sistema de gerenciame...</td>
-                                        <td className="c3">
-                                            <a href="../chamado_atualizar/chamado_atualizar.html">
-                                                <img src="../assets/images/btn_editar.svg" />
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    {
+                                        listaChamados.map((chamado: any) => {
+                                            return <tr key={chamado.id}>
+                                                <LinhaChamado
+                                                    id = {chamado.id}
+                                                    nome = {chamado.nome}
+                                                />
+                                            </tr>
+                                        })
+                                    }
                                 </tbody>
                             </table>
                         </div>

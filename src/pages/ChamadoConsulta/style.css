@@ -1,3 +1,11 @@
+#chamado_consulta{
+    display: flex;
+}
+
+#chamado_consulta > section{
+    width: 100%;
+}
+
 #chamado_consulta label {
     font-family: "VerdanaRegular";
 }
@@ -197,31 +205,11 @@
     margin: 40px 0 20px;
 }
 
-#chamado_consulta td {
-    border-bottom: #27272729 solid 1px;
-    height: 50px;
-    border-collapse: collapse;
-}
-
 #chamado_consulta .section_table tr {
     font-family: "VerdanaRegular";
     font-size: 16px;
     color: var(--preto);
     width: 100%;
-}
-
-#chamado_consulta .c1{
-    width: 30%;
-}
-
-#chamado_consulta .c2{
-    width: 60%;
-}
-
-#chamado_consulta .c3{
-    display: flex;
-    justify-content: end;
-    align-items: center;
 }
 
 #chamado_consulta .tabela_scroll {
