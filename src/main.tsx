@@ -4,12 +4,13 @@ import './index.css'
 
 import Menu from './components/Menu'
 import Entrar from './pages/Entrar'
+import Dashboard from './pages/Dashboard'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
 
-    <Entrar/>
+    <Dashboard/>
     
   </React.StrictMode>
 )
