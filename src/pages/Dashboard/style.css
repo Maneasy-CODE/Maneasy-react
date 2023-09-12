@@ -523,3 +523,11 @@ html ::-webkit-scrollbar-track {
 .span_status {
     font-family: "VerdanaRegular";
 }
+
+.container_dashboard {
+    background-image: url(../../assets/images/background_logado.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
