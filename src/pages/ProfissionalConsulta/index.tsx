@@ -7,6 +7,7 @@ import Menu from "../../components/Menu"
 
 //imagens
 import bolinha_azul from "../../assets/images/bolinha_azul.svg"
+import imagemPesquisar from "../../assets/images/btn_pesquisar.svg"
 
 import { Icon } from '@iconify/react';
 
@@ -32,21 +33,21 @@ function ProfissionalConsulta() {
                                 <label htmlFor="Chapa">Chapa</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="ic:outline-badge" />
-                                    <input name="Chapa" className="input-field" type="number" />
+                                    <input id="Chapa" name="Chapa" className="input-field" type="number" />
                                 </div>
                             </div>
                             <div>
                                 <p>ou</p>
                             </div>
                             <div className="section_pesquisa_resultado_input">
-                                <label htmlFor="Consultar">Consultar</label>
+                                <label htmlFor="Nome">Nome</label>
                                 <div className="input-icons">
-                                    <Icon /*className="icon"*/ icon="mingcute:user-4-fill" />
-                                    <input name="Consultar" className="input-field" type="text" />
+                                    <Icon className="icon" icon="mingcute:user-4-fill" />
+                                    <input id="Nome" name="Nome" className="input-field" type="text" />
                                 </div>
                             </div>
                             <Link to={""} className="section_pesquisa_btn">
-                                <img src="../assets/images/btn_pesquisar.svg" alt="" />
+                                <img src={imagemPesquisar} alt="" />
                             </Link>
                         </div>
                         <section className="secao_lista">
