@@ -51,6 +51,9 @@
     padding: 50px 0px 30px 0px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #demanda_atualizar section .conteudo{
