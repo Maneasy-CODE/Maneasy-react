@@ -10,9 +10,42 @@ import bolinha_azul from "../../assets/images/bolinha_azul.svg"
 import imagemPesquisar from "../../assets/images/btn_pesquisar.svg"
 
 import { Icon } from '@iconify/react';
+import LinhaProfissional from "../../components/LinhaProfissional"
 
 function ProfissionalConsulta() {
-
+    const listaProfissional: any = [
+        {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        }, {
+            chapa: 1010101010,
+            nome: "Priscila Laurentino"
+        },
+    ]
     return (
 
         <main id="profissional_consulta" className="main_profissional_consulta">
@@ -55,136 +88,17 @@ function ProfissionalConsulta() {
                             <div className="tabela_scroll">
                                 <table>
                                     <tbody>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Priscila Laurentino</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">
-                                                Hosmairys Yuriannys Holder Rodriguez
-                                            </td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Gustavo Luiz Miranda</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Claudio Francisco Porto</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Jhonatan Pereira Ferreira</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Marcel de Lima Brito</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Lucas Oliveira</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Priscila Laurentino</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">
-                                                Hosmairys Yuriannys Holder Rodriguez
-                                            </td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Gustavo Luiz Miranda</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Claudio Francisco Porto</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Jhonatan Pereira Ferreira</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Marcel de Lima Brito</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="numero_chapa">01010101</td>
-                                            <td className="nome">Lucas Oliveira</td>
-                                            <td className="lapis_lista">
-                                                <Link to={""}>
-                                                    <img src="../assets/images/btn_editar.svg" alt="" />
-                                                </Link>
-                                            </td>
-                                        </tr>
+                                        {
+                                            listaProfissional.map((profissional: any) => {
+                                                return <tr key={profissional.chapa}>
+                                                    <LinhaProfissional
+                                                        chapa={profissional.chapa}
+                                                        nome={profissional.nome}
+                                                    />
+                                                </tr>
+                                            })
+                                        }
+
                                     </tbody>
                                 </table>
                             </div>

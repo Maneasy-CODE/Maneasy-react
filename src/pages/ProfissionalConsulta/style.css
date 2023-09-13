@@ -38,6 +38,9 @@
 
 #profissional_consulta .conteudo_princiapal {
     width: 80%;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #profissional_consulta .container_grid {
