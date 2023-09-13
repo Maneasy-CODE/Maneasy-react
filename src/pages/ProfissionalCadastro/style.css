@@ -1,3 +1,37 @@
+.main_profissional_cadastro
+{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ICONES */
+#profissional_cadastro .icon {
+    position: absolute;
+    /* padding: 10.5px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: #474545;
+    font-size: 20px;
+}
+
+#profissional_cadastro .input-icons {
+    width: 30%;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+#profissional_cadastro .input-field {
+    background: transparent;
+    border-radius: 100px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+    height: 40px;
+}
+
+
+
 
 /*TITULO*/
 
@@ -16,6 +50,10 @@
 #profissional_cadastro .conteudo_princiapal{
     overflow-y: scroll;
     scroll-behavior: smooth;  
+    width: 100%;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -24,7 +62,7 @@
     border-radius: 40px 0 0 40px;
     margin: 0 auto 50px auto;
     margin-bottom: 50px;
-
+  
 
 
 }
