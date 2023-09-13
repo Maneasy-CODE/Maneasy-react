@@ -5,13 +5,46 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import Menu from "../../components/Menu"
 
-import imagemEditar from "../../assets/images/btn_editar.svg"
 import imagemIconeTitulo from "../../assets/images/icone_titulo.svg"
 import imagemPesquisar from "../../assets/images/btn_pesquisar.svg"
 import { Icon } from '@iconify/react';
+import LinhaProjeto from "../../components/LinhaProjeto";
 
 
 function ProjetoConsulta() {
+    const listaProjetos: any = [
+        {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        }, {
+            id: 1010101010,
+            nome: "Criar Menu da Loja"
+        },
+    ]
     return (
 
         <div id="projeto_consulta">
@@ -57,26 +90,20 @@ function ProjetoConsulta() {
                         <div className="lista-projetos">
                             <h2>Lista de Projetos</h2>
                             <div className="container_lista_projetos">
-                                <ul className="num-projetos">
-                                    <li>01010101</li>
-                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
-                                </ul>
-                                <ul className="num-projetos">
-                                    <li>01010101</li>
-                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
-                                </ul>
-                                <ul className="num-projetos">
-                                    <li>01010101</li>
-                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>
-                                </ul>
-                                <ul className="num-projetos">
-                                    <li>01010101</li>
-                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                    <Link className="btn_editar" to={""}><img className="btn_editar" src={imagemEditar} alt="" /></Link>    
-                                </ul>
+                            <table>
+                                <tbody>
+                                    {
+                                        listaProjetos.map((chamado: any) => {
+                                            return <tr key={chamado.id}>
+                                                <LinhaProjeto
+                                                    id = {chamado.id}
+                                                    nome = {chamado.nome}
+                                                />
+                                            </tr>
+                                        })
+                                    }
+                                </tbody>
+                            </table>
                             </div>
 
                         </div>
