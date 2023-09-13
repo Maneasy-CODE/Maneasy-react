@@ -4,6 +4,10 @@
 
 #chamado_consulta > section{
     width: 100%;
+    
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #chamado_consulta label {
@@ -34,16 +38,16 @@
 
 #chamado_consulta .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
     align-items: center;
     color: var(--preto);
-    min-width: 40px;
     font-size: 20px;
 }
 
 #chamado_consulta .input-icons {
-    width: 100%;
     margin-top: 10px;
+    position: relative;
 }
 
 
