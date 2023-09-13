@@ -9,6 +9,8 @@ import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";
 import btn_confirmar from "../../assets/images/btn_confirmar.svg";
 import btn_squad from "../../assets/images/btn_squad.svg";
+// IMPORT REACT ROUTER DOM
+import { Link } from "react-router-dom";
 
 
 function Squadmontar() {
@@ -30,9 +32,9 @@ function Squadmontar() {
                             </div>
                         </div>
                         <div>
-                            <a href="#" className="section_cadastro_squad_btn">
+                            <Link to={"#"} className="section_cadastro_squad_btn">
                                 <img src={lupa} alt="" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <div className="section_pesquisa">
@@ -114,9 +116,9 @@ function Squadmontar() {
                                 <input name="Consultar" className="input-field" type="text" />
                             </div>
                         </div>
-                        <a href="" className="section_pesquisa_btn">
+                        <Link to={"#"} className="section_pesquisa_btn">
                             <img src={lupa} alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="section_resultado">
                         <h2>Lista de profissionais</h2>
@@ -128,9 +130,9 @@ function Squadmontar() {
                                         Claudio Francisco Porto
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_confirmar} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
@@ -139,9 +141,9 @@ function Squadmontar() {
                                         Gustavo Luiz Miranda
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_confirmar} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
@@ -150,9 +152,9 @@ function Squadmontar() {
                                         Hosmairys Yuriannys Holder Rodriguez
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_squad} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
@@ -161,18 +163,18 @@ function Squadmontar() {
                                         Jhonatan Pereira Ferreira
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_squad} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
                                     <p className="section_resultado_dados_id">010105</p>
                                     <p className="section_resultado_dados_nome">Lucas Oliveira</p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_squad} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
@@ -181,9 +183,9 @@ function Squadmontar() {
                                         Priscila Laurentino
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_squad} alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="section_resultado_dados">
                                 <div>
@@ -192,9 +194,9 @@ function Squadmontar() {
                                         Marcel de Lima Brito
                                     </p>
                                 </div>
-                                <a href="" className="section_resultado_dados_btn">
+                                <Link to={"#"} className="section_resultado_dados_btn">
                                     <img src={btn_squad} alt="" />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
