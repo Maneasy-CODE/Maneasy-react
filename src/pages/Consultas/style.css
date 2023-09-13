@@ -1,7 +1,7 @@
-main {
+.container_consulta {
     display: flex;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
 }
 
 #consulta section{
@@ -104,13 +104,6 @@ main {
     border-spacing: 0;
 }
 
-#consulta td {
-
-    border-bottom: #27272729 solid 1px;
-    height: 50px;
-    border-collapse: collapse;
-}
-
 #consulta select {
     border-radius: 100px;
     padding: 4px;
@@ -173,9 +166,6 @@ main {
     color: var(--preto);
 }
 
-
-
-
 html ::-webkit-scrollbar {
     width: 6px;
 }
@@ -189,8 +179,30 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
+#consulta .tabela_scroll {
+    width: 100%;
+    height: 298px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5%;
+}
+
+
 #consulta select {
     -webkit-appearance: none;
 }
 
+#consulta .lista_consultas {
+    font-family: "VerdanaRegular";
+    font-size: 16px;
+    color: var(--preto);
 
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5%;
+    width: 100%;
+}
+
+#consulta table {
+    width: 100%;
+}

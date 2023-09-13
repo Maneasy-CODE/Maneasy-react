@@ -1,28 +1,25 @@
 import './style.css'
 // IMPORT DE IMAGEM
 import impressora from "../../assets/images/btn_impressora.svg";
+import { Link } from 'react-router-dom';
 
-function Consulta_status() {
+function Consulta_status(props: any) {
     return (
-        <main id="consulta">
-            <div className="lista_consultas">
-                <div className="linha_consultas">
-                    <p className="linha_consultas_id">0101</p>
-                    <p className="linha_consultas_tipo">Projetos</p>
-                    <select className="linha_consultas_status">
-                        <option value="ativos">Ativos</option>
-                        <option value="finalizados">Finalizados</option>
-                        <option value="todos">Todos</option>
-                    </select>
-                    <button>
-                        {" "}
-                        <a href="">
-                            <img src={impressora} alt="" />
-                        </a>
-                    </button>
-                </div>
-            </div>
-        </main>
+        <tr id="consulta" className='consulta_lista'>
+            <td className="linha_consultas_id">{props.id}</td>
+            <td className="linha_consultas_tipo">{props.nome}</td>
+            <select className="linha_consultas_status">
+                <option value="ativos">Ativos</option>
+                <option value="finalizados">Finalizados</option>
+                <option value="todos">Todos</option>
+            </select>
+            <td className='button_consulta'>
+                {" "}
+                <Link to={"#"}>
+                    <img src={impressora} />
+                </Link>
+            </td>
+        </tr>
     );
 }
 

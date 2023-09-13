@@ -9,12 +9,56 @@ import Consulta_status from "../../components/Consulta_status";
 import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";
 
-
-
 function Consultas() {
+    const listaConsultaStatus: any = [
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+        {
+            id: 1010,
+            nome: "Projeto"
+        },
+    ]
     return (
         <>
-            <main id="consulta">
+            <main id="consulta" className="container_consulta">
                 <Menu></Menu>
                 <section className="section_pesquisa">
                     <div className="container">
@@ -47,7 +91,23 @@ function Consultas() {
                             </div>
                             <section className="section_table">
                                 <h2>Consultas</h2>
-                                <Consulta_status></Consulta_status>
+                                <div className="tabela_scroll">
+                                    <table>
+                                        <tbody>
+                                            {
+                                                listaConsultaStatus.map((consulta: any) => {
+                                                    return <tr key={consulta.id}>
+                                                        <Consulta_status
+                                                            id={consulta.id}
+                                                            nome={consulta.nome}
+                                                        />
+                                                    </tr>
+                                                })
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+
                             </section>
                         </div>
                     </div>
