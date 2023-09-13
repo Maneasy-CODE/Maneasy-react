@@ -4,8 +4,11 @@ import { Icon } from "@iconify/react";
 
 //imagens
 //import imgLogo from "../../assets/images/logo_colorida.svg";
-//import imgLogo from "../../assets/images/logo_colorida.svg"
-
+//import imgLogo from "../../assets/images/logo_colorida.svg";
+import imgLogo from "../../assets/images/background_deslogado1.svg"
+import imgLogo1 from "../../assets/images/logo_colorida1.svg";
+//import entrar_logo from "../../assets/images/logo_colorida.svg";
+//import imgLogo from "../../assets/images/background_logado.svg"
 
 //import background_logados from "../../assets/images/background_logado.svg";
 
@@ -13,17 +16,21 @@ import { Link } from "react-router-dom";
 
 function EsqueceuASenha() {
   return (
-    <main id="tela_esqueceu_senha">
+    <main id="tela_esqueceu_senha" className="background_maneasy">
       <div className="nav_btn_voltar">
-        <Link to="../entrar/entrar.html">
+        <Link to={"#"}>
           <Icon className="icon_entrar" icon="clarity:circle-arrow-solid"   rotate={271} />
-          
+  
         </Link>
-      </div>
+      </div> 
       <section className="section_esqueceu_password" id="esqueceu_senha">
         <section className="section_logo">
           <div className="section_img_logo">
-            <img src={imgLogo} alt="" />
+            
+            <div className="section_img_logo1">
+              
+            </div>
+            <img src={imgLogo1} alt="" />
           </div>
         </section>
         <section className="section_esqueceu_senha">
