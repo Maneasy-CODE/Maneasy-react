@@ -3,13 +3,14 @@ import "./style.css"
 
 //imagens
 import imagemIconeTitulo from "./../../assets/images/icone_titulo.svg"
-import imagemEditar from "../../assets/images/btn_editar.svg"
 import imagemPesquisar from "./../../assets/images/btn_pesquisar.svg"
 
 //rotas
 import Menu from './../../components/Menu'
 import { Icon } from '@iconify/react';
 import { Link } from "react-router-dom";
+
+import Demanda_consulta_status from "../../components/Demanda_consulta_status";
 
 
 function DemandaConsulta() {
@@ -54,11 +55,7 @@ function DemandaConsulta() {
                         <div className="lista-demandas">
                             <h2>Lista de Demandas</h2>
                             <div className="scroll">
-                                <ul className="num-demanda">
-                                    <li>01010101</li>
-                                    <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-                                    <Link to={""}><img src={imagemEditar} alt=""/></Link>
-                                </ul>
+                                <Demanda_consulta_status/>
                             </div>
 
                         </div>
