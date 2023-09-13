@@ -3,7 +3,7 @@ import './style.css'
 import impressora from "../../assets/images/btn_impressora.svg";
 import { Link } from 'react-router-dom';
 
-function Consulta_status(props: any) {
+function Lista_consulta(props: any) {
     return (
         <tr id="consulta" className='consulta_lista'>
             <td className="linha_consultas_id">{props.id}</td>
@@ -23,4 +23,4 @@ function Consulta_status(props: any) {
     );
 }
 
-export default Consulta_status;
+export default Lista_consulta;
