@@ -10,13 +10,58 @@ import bolinha_azul from "../../assets/images/bolinha_azul.svg"
 
 import { Icon } from '@iconify/react';
 
+//Hook
+import { useState } from "react";
+
 
 function ProfissionalCadastro() {
 
+  const [techs, setTechs] = useState<string[]>(
+    [
+      "HTML",
+      "CSS",
+      "JAVASCRIPT",
+      "JAVA"
+    ]
+  );
+
+  const [select, setSelect] = useState<string>("");
+
+  const [skillsSelecionadas, setSkillsSelecionadas] = useState<string[]>([]);
+
+  function adicionarSkill() {
+    console.log("entrou");
+
+    if (select === "") {
+
+      alert("Selecione uma skill para adicionar");
+    } else {
+
+      if (skillsSelecionadas.includes(select)) {
+
+        alert("Essa skill já foi selecionada");
+      }
+      else {
+
+        let novaListaSkillsSelecionadas = [...skillsSelecionadas];
+
+        novaListaSkillsSelecionadas.push(select);
+
+        setSkillsSelecionadas(novaListaSkillsSelecionadas);
+      }
+    }
+  }
+
+  function excluirSkill(skill: string) {
+
+    const novaListaSkillsSelecionadas = skillsSelecionadas.filter(item => item !== skill);
+
+    setSkillsSelecionadas(novaListaSkillsSelecionadas);
+  };
   return (
 
     <main id="profissional_cadastro" className="main_profissional_cadastro">
-      <Menu></Menu>
+      <Menu />
       <section className="conteudo_princiapal">
         <div className="container_grid">
           <div className="section_titulo">
@@ -116,20 +161,48 @@ function ProfissionalCadastro() {
                 </div>
               </div>
             </div>
-            <div className="section_objetivo_projeto">
-              <div className="section_objetivo_projeto_label_textarea">
-                <label className="label_hard_skill" htmlFor="objetivo_projeto">
-                  Hard Skill
-                </label>
-                <div>
-                  <textarea
-                    id="objetivo_projeto"
-                    name="objetivo_projeto"
-                    rows={4}
-                    cols={130}
-                    defaultValue={""}
-                  />
-                </div>
+            <div className="hard_skills">
+              <div className="section_objetivo_projeto">
+                <select
+                  name=""
+                  id="cad_select_skill"
+                  onChange={(e) => { setSelect(e.target.value); adicionarSkill() }}
+                  defaultValue={select}
+                >
+                  <option disabled value="">Selecione</option>
+                  {
+                    techs.map((tech: any, index: number) => {
+                      return <option
+                        key={index}
+                        value={tech}
+                      >
+                        {tech}
+                      </option>
+                    })
+                  }
+                </select>
+              </div>
+              <hr />
+              <div id="cad_lista_skills" className="cad_skills">
+                {
+                  skillsSelecionadas.length > 0 ? skillsSelecionadas.map((el: any, index: number) => {
+                    return <div key={index} className="cad_item_skill">
+                      <span className="cad_span_skill">{el}</span>
+                      <button
+                        type="button"
+                        id="cad_item_excluir"
+                        onClick={() => excluirSkill(el)}
+                        className="cad_item_excluir">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                          height="1em"
+                          viewBox="0 0 384 512">
+                          <path
+                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                        </svg>
+                      </button>
+                    </div>
+                  }) : <span className="cad_span_skill">Nenhuma skill cadastrada</span>
+                }
               </div>
             </div>
             <div className="posicao_conteudo">
@@ -228,8 +301,8 @@ function ProfissionalCadastro() {
             </div>
           </section>
         </div>
-      </section>
-    </main>
+      </section >
+    </main >
 
   )
 }

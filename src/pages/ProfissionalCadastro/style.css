@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-/* ICONES */
+/* ICONES */ 
 #profissional_cadastro .icon {
     position: absolute;
     /* padding: 10.5px 20px 7.5px 10px; */
@@ -240,11 +240,54 @@
 
 /*Hard Skill*/
 
+#profissional_cadastro .hard_skills{
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: "VerdanaRegular";
+}
+
 #profissional_cadastro .section_objetivo_projeto {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
 }
+
+#profissional_cadastro .section_objetivo_projeto > select {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+
+#profissional_cadastro .section_objetivo_projeto button {
+    width: 465px;
+    height: 40px;
+    background: transparent;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid black;
+}
+
+#profissional_cadastro .cad_skills{
+    border-radius: 100px;
+    height: 50px;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 15px;
+    font-family: "VerdanaRegular";
+}
+
 
 #profissional_cadastro .section_objetivo_projeto p {
     padding: 30px 10px 10px 10px;
