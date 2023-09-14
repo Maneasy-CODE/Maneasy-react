@@ -2,15 +2,7 @@ import "./style.css"
 
 import { Icon } from "@iconify/react";
 
-//imagens
-//import imgLogo from "../../assets/images/logo_colorida.svg";
-//import imgLogo from "../../assets/images/logo_colorida.svg";
-import imgLogo from "../../assets/images/background_deslogado1.svg"
 import imgLogo1 from "../../assets/images/logo_colorida1.svg";
-//import entrar_logo from "../../assets/images/logo_colorida.svg";
-//import imgLogo from "../../assets/images/background_logado.svg"
-
-//import background_logados from "../../assets/images/background_logado.svg";
 
 import { Link } from "react-router-dom";
 
@@ -26,10 +18,8 @@ function EsqueceuASenha() {
       <section className="section_esqueceu_password" id="esqueceu_senha">
         <section className="section_logo">
           <div className="section_img_logo">
-            
             <div className="section_img_logo1">
-              
-            </div>
+             </div>
             <img src={imgLogo1} alt="" />
           </div>
         </section>
@@ -48,7 +38,6 @@ function EsqueceuASenha() {
               </div>
             </div>
             <div>
-
               <label htmlFor="E-mail">E-mail</label>
               <div className="input-icons">
                 <Icon className="icon" icon="mingcute:user-4-fill" />
@@ -63,9 +52,6 @@ function EsqueceuASenha() {
       </section>
     </main>
   )
-
-
-
 
 }
 
