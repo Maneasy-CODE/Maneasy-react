@@ -1,28 +1,27 @@
 import "./style.css";
 import btn_squad from "../../assets/images/btn_squad.svg";
+import { Link } from "react-router-dom";
 
-function ListaSquadCadastros() {
+function ListaSquadCadastros(props: any) {
     return (
         <>
-            <main id="squad_atualizar">
-                <div className="lista_consultas">
-                    <div className="section_resultado_dados">
-                        <div>
-                            <p className="section_resultado_dados_id">010101</p>
-                            <p className="section_resultado_dados_tipo">Projeto</p>
-                            <p className="section_resultado_dados_nome">
-                                Implementação do onboarding{" "}
-                            </p>
-                        </div>
-                        <a
-                            href="../squad_cadastro/squad_cadastro.html"
+            <table id="squad_atualizar_lista">
+                <thead className="lista_consultas">
+                    <tr className="section_resultado_dados">
+                        <tr>
+                            <td className="section_resultado_dados_id">{props.id}</td>
+                            <td className="section_resultado_dados_tipo">{props.tipo}</td>
+                            <td className="section_resultado_dados_nome">{props.nome}</td>
+                        </tr>
+                        <Link
+                            to={"#"}
                             className="section_resultado_dados_btn"
                         >
                             <img src={btn_squad} alt="" />
-                        </a>
-                    </div>
-                </div>
-            </main>
+                        </Link>
+                    </tr>
+                </thead>
+            </table>
         </>
     );
 }

@@ -8,10 +8,70 @@ import ListaSquadCadastros from "../../components/Lista_squad_cadastros";
 // IMPORT DAS IMAGENS
 import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";
+import { Link } from "react-router-dom";
 
 
 
 function SquadCadastros() {
+    const listaSquadCadastro: any =
+        [
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+            {
+                id: 10101010,
+                tipo: "Projeto",
+                nome: "Atualização de Cadastro para MySQL"
+            },
+        ]
+
     return (
         <main id="squad_atualizar">
             <Menu></Menu>
@@ -39,16 +99,27 @@ function SquadCadastros() {
                                 <input name="Consultar" className="input-field" type="text" />
                             </div>
                         </div>
-                        <a href="" className="section_pesquisa_btn">
+                        <Link to={"#"} className="section_pesquisa_btn">
                             <img src={lupa} alt="" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="section_resultado">
-
                         <h2>Lista de Serviços</h2>
-
-                        <ListaSquadCadastros></ListaSquadCadastros>
-
+                        <div className="tabela_scroll">
+                            <table>
+                                {
+                                    listaSquadCadastro.map((cadastro: any) => {
+                                        return <tr key={cadastro.id}>
+                                            <ListaSquadCadastros
+                                                id={cadastro.id}
+                                                tipo={cadastro.tipo}
+                                                nome={cadastro.nome}
+                                            />
+                                        </tr>
+                                    })
+                                }
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,9 @@
 
-#squad_atualizar .section_resultado_dados {
+#squad_atualizar table {
+    width: 100%;
+}
+
+#squad_atualizar_lista .section_resultado_dados {
     display: flex;
     height: 50px;
     align-items: center;
@@ -8,36 +12,37 @@
 
 }
 
-#squad_atualizar .section_resultado_dados div {
+#squad_atualizar_lista .section_resultado_dados>tr {
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    gap: 70px;
+    width: 100%;
 }
 
-#squad_atualizar .section_resultado_dados img {
+#squad_atualizar_lista .section_resultado_dados img {
     margin: 0;
     width: 34px;
 }
 
-#squad_atualizar .section_resultado_dados_id {
+#squad_atualizar_lista .section_resultado_dados_id {
     width: 20%;
 }
 
-#squad_atualizar .section_resultado_dados_tipo {
+#squad_atualizar_lista .section_resultado_dados_tipo {
     width: 20%;
 }
 
-#squad_atualizar .section_resultado_dados_nome {
+#squad_atualizar_lista .section_resultado_dados_nome {
     width: 60%;
 }
 
-#squad_atualizar .section_resultado_dados_btn {
+#squad_atualizar_lista .section_resultado_dados_btn {
     width: 10%;
     display: flex;
     justify-content: flex-end;
 }
 
-#squad_atualizar .lista_consultas {
+#squad_atualizar_lista .lista_consultas {
     font-family: "VerdanaRegular";
     font-size: 16px;
     color: var(--preto);
@@ -45,7 +50,4 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     width: 100%;
-    padding-right: 5%;
-
-
 }

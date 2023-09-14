@@ -1,4 +1,4 @@
-main {
+#squad_atualizar {
     display: flex;
     height: 100vh;
     width: 100%;
@@ -108,3 +108,4 @@ html ::-webkit-scrollbar-thumb {
 #squad_atualizar .section_resultado{
     width: 100%;
 }
+
