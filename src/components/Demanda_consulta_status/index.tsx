@@ -3,12 +3,18 @@ import imagemEditar from "../../assets/images/btn_editar.svg"
 import { Link } from "react-router-dom";
 
 
-function Demanda_consulta_status() {
-    <ul className="num-demanda">
-        <li>01010101</li>
-        <li className="alinhamento-texto">Atualização do Cadastro para MySQL</li>
-        <Link to={""}><img src={imagemEditar} alt="" /></Link>
-    </ul>
+function Demanda_consulta_status(props: any) {
+    return (
+        <>
+            <td className="c1 fontes">{props.id}</td>
+            <td className="c2 fontes">{props.descricao}</td>
+            <td className="c3 fontes">
+                <Link to={"#"}>
+                    <img src={imagemEditar} />
+                </Link>
+            </td>
+        </>
+    )
 }
 
 export default Demanda_consulta_status;

@@ -14,9 +14,50 @@ import Demanda_consulta_status from "../../components/Demanda_consulta_status";
 
 
 function DemandaConsulta() {
+
+    const listaDemandas: any = [
+        {
+            id: 1010101010,
+            descricao: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do onboarding"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do sistema de organiza..."
+        }, {
+            id: 1010101010,
+            descricao: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do onboarding"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do sistema de organiza..."
+        },  {
+            id: 1010101010,
+            descricao: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do onboarding"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do sistema de organiza..."
+        }, {
+            id: 1010101010,
+            descricao: "Atualização do Cadastro para MySQL"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do onboarding"
+        }, {
+            id: 1010101010,
+            descricao: "Implementação do sistema de organiza..."
+        },
+    ]
+
     return (
         <main id="demanda_consulta">
-            <Menu/>
+            <Menu />
             <section>
                 <div className="container-grid">
                     <div className="conteudo">
@@ -55,7 +96,21 @@ function DemandaConsulta() {
                         <div className="lista-demandas">
                             <h2>Lista de Demandas</h2>
                             <div className="scroll">
-                                <Demanda_consulta_status/>
+                                <table>
+                                    <tbody>
+                                        {
+                                            listaDemandas.map((demandas: any) => {
+                                                return <tr key={demandas.id}>
+                                                    <Demanda_consulta_status
+                                                        id={demandas.id}
+                                                        descricao={demandas.descricao}
+                                                    />
+                                                </tr>
+                                            })
+                                        }
+
+                                    </tbody>
+                                </table>
                             </div>
 
                         </div>
