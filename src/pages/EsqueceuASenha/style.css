@@ -12,14 +12,18 @@
 
 #tela_esqueceu_senha .nav_btn_voltar{
     display: flex;
+    width: 35px;
     padding-left: 36px;
     padding-top: 20px;
+    
 }
 
 #tela_esqueceu_senha .icon_entrar{
 display: flex;
-width: 5%;
-height: 5%;
+width: 35px;
+height: 35px;
+color: var(--azule);;
+
 }
 
 #tela_esqueceu_senha .section_esqueceu_password {
@@ -118,6 +122,8 @@ height: 5%;
     font-size: 20px;
 }
 
+
+
 #tela_esqueceu_senha .input-icons {
     margin-top: 10px;
     position: relative;
@@ -135,3 +141,4 @@ height: 5%;
 /* #tela_esqueceu_senha .section_input>div{
     margin-bottom: 5px;
 } */
+
