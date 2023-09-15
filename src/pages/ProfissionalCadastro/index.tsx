@@ -29,27 +29,36 @@ function ProfissionalCadastro() {
 
   const [skillsSelecionadas, setSkillsSelecionadas] = useState<string[]>([]);
 
-  function adicionarSkill() {
-    console.log("entrou");
+  function adicionarSkill(entry: string[]) {
 
-    if (select === "") {
+    console.log(entry);
+
+    if (entry.length === 0) {
 
       alert("Selecione uma skill para adicionar");
     } else {
 
-      if (skillsSelecionadas.includes(select)) {
+      if (skillsSelecionadas.includes(entry.toString())) {
 
         alert("Essa skill já foi selecionada");
       }
       else {
 
-        let novaListaSkillsSelecionadas = [...skillsSelecionadas];
+        let novaLista = skillsSelecionadas
 
-        novaListaSkillsSelecionadas.push(select);
+        novaLista = novaLista.concat(entry)
 
-        setSkillsSelecionadas(novaListaSkillsSelecionadas);
+        setSkillsSelecionadas(novaLista)
       }
     }
+  }
+
+  function adicionar(entry: string[]) {
+    let novaLista = skillsSelecionadas
+
+    novaLista = novaLista.concat(entry)
+
+    setSkillsSelecionadas(novaLista)
   }
 
   function excluirSkill(skill: string) {
@@ -166,7 +175,8 @@ function ProfissionalCadastro() {
                 <select
                   name=""
                   id="cad_select_skill"
-                  onChange={(e) => { setSelect(e.target.value); adicionarSkill() }}
+                  onChange={(e) => { adicionarSkill(e.target.value.split(" ")) }
+                  }
                   defaultValue={select}
                 >
                   <option disabled value="">Selecione</option>
@@ -186,7 +196,9 @@ function ProfissionalCadastro() {
               <div id="cad_lista_skills" className="cad_skills">
                 {
                   skillsSelecionadas.length > 0 ? skillsSelecionadas.map((el: any, index: number) => {
-                    return <div key={index} className="cad_item_skill">
+                    console.log(skillsSelecionadas);
+
+                    return (<div key={index} className="cad_item_skill">
                       <span className="cad_span_skill">{el}</span>
                       <button
                         type="button"
@@ -200,7 +212,7 @@ function ProfissionalCadastro() {
                             d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
                         </svg>
                       </button>
-                    </div>
+                    </div>)
                   }) : <span className="cad_span_skill">Nenhuma skill cadastrada</span>
                 }
               </div>
