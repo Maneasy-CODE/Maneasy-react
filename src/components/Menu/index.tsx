@@ -1,10 +1,8 @@
 /* Importar css do componente Menu */
 import "./style.css";
 import "../../index.css";
-
 import { Icon } from '@iconify/react';
 import logo_branca from "../../assets/images/logo_branca.svg";
-
 
 function Menu() {
     return (
