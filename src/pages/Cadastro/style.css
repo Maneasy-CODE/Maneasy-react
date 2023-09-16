@@ -11,7 +11,7 @@
     margin-bottom: 10px;
 }
 
-#entrar {
+#cadastro {
 
     background-image: url("../../assets/images/background_deslogado.svg");
     background-size: cover;
@@ -28,7 +28,7 @@
 
 
 
-#entrar main {
+#cadastro main {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,17 +36,17 @@
     justify-content: space-around;
 }
 
-#entrar .section_logo {
+#cadastro .section_logo {
     width: 25%;
 }
 
-#entrar .section_img_logo {
+#cadastro .section_img_logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#entrar .section_img_logo img {
+#cadastro .section_img_logo img {
     margin: auto;
     width: 100%;
     max-width: 700px;
@@ -56,36 +56,36 @@
     width: 40%;
 }
 
-#entrar .section_esqueceu_senha h1 {
+#cadastro .section_esqueceu_senha h1 {
     font-size: 100px;
     font-family: "SpartanBold";
     color: var(--azule);
     padding-bottom: 50px;
 }
 
-#entrar .section_esqueceu_senha span {
+#cadastro .section_esqueceu_senha span {
     font-size: 100px;
     font-family: "SpartanBold";
     color: var(--amarelo);
 }
 
-#entrar .section_input label {
+#cadastro .section_input label {
     color: var(--azule);
     font-family: "VerdanaRegular";
     gap: 10px;
 }
 
-#entrar .email {
+#cadastro .email {
     margin-bottom: 30px;
 
 }
 
-#entrar .section_btn_confirmar {
+#cadastro .section_btn_confirmar {
     display: flex;
     justify-content: center;
 }
 
-#entrar .section_btn_confirmar a {
+#cadastro .section_btn_confirmar button{
     border-radius: 100px;
     height: 40px;
     border: none;
@@ -105,11 +105,11 @@
 }
 
 
-#entrar button:hover {
+#cadastro button:hover {
     background-color: var(--azulc);
 }
 
-#entrar .nav_esqueceu_senha {
+#cadastro .nav_esqueceu_senha {
     font-family: "VerdanaRegular";
     text-align: right;
     padding: 5px;
@@ -118,11 +118,11 @@
     text-decoration: none;
 }
 
-#entrar .nav_esqueceu_senha:hover {
+#cadastro .nav_esqueceu_senha:hover {
     color: var(--amarelo);
 }
 
-#entrar .nav_cadastro {
+#cadastro .nav_cadastro {
     margin-top: 40px;
     font-family: "VerdanaRegular";
     text-align: center;
@@ -131,11 +131,11 @@
     text-decoration: none;
 }
 
-#entrar .nav_cadastro:hover {
+#cadastro .nav_cadastro:hover {
     color: var(--amarelo);
 }
 
-#entrar .sublinado {
+#cadastro .sublinado {
     text-decoration: none;
 }
 
@@ -183,4 +183,8 @@
 .section_input_senha>div {
     width: 48%;
 
+}
+
+#cadastro input::placeholder {
+    color: var(--azule);
 }
