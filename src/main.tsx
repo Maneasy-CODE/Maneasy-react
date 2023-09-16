@@ -1,15 +1,23 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 
+//estilização
+import './index.css'
 import Menu from './components/Menu'
-import Entrar from './pages/Entrar'
+
+//pagina
+import DemandaCadastro from './pages/DemandaCadastro';
+
+//rotas
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-
-    <Entrar/>
-    
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<DemandaCadastro />}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 )
