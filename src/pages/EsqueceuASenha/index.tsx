@@ -34,14 +34,14 @@ function EsqueceuASenha() {
               <label htmlFor="Chapa">Chapa</label>
               <div className="input-icons">
                 <Icon className="icon" icon="ic:outline-badge" />
-                <input name="Chapa" className="input-field" type="text" placeholder="Digite aqui a sua chapa:" />
+                <input name="Chapa" className="input-field" type="text" required placeholder="Digite aqui a sua chapa:" />
               </div>
             </div>
             <div className="input_com_label">
               <label htmlFor="E-mail">E-mail</label>
               <div className="input-icons">
                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                <input name="E-mail" className="input-field" type="email" placeholder="Digite aqui a sua senha:" />
+                <input name="E-mail" className="input-field" type="email" required placeholder="Digite aqui a sua senha:" />
               </div>
             </div>
             <div className="section_btn_confirmar">
