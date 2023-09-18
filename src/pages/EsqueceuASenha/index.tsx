@@ -15,7 +15,7 @@ function EsqueceuASenha() {
   
         </Link>
       </div> 
-      <section className="section_esqueceu_password" id="esqueceu_senha">
+      <section className="section_esqueceu_password" id="esqueceu_senha" >
         <section className="section_logo">
           <div className="section_img_logo">
             <div className="section_img_logo1">
@@ -23,32 +23,32 @@ function EsqueceuASenha() {
             <img src={imgLogo1} alt="" />
           </div>
         </section>
-        <section className="section_esqueceu_senha">
+        <form className="section_esqueceu_senha">
           <h1>
             Esqueceu
             <br />
             <span>sua senha?</span>
           </h1>
           <div className="section_input">
-            <div>
+            <div className="input_com_label">
               <label htmlFor="Chapa">Chapa</label>
               <div className="input-icons">
                 <Icon className="icon" icon="ic:outline-badge" />
-                <input name="Chapa" className="input-field" type="text" />
+                <input name="Chapa" className="input-field" type="text" placeholder="Digite aqui a sua chapa:" />
               </div>
             </div>
-            <div>
+            <div className="input_com_label">
               <label htmlFor="E-mail">E-mail</label>
               <div className="input-icons">
                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                <input name="E-mail" className="input-field" type="email" />
+                <input name="E-mail" className="input-field" type="email" placeholder="Digite aqui a sua senha:" />
               </div>
             </div>
             <div className="section_btn_confirmar">
-              <Link to="../entrar/entrar.html">Confirmar</Link>
+              <button type="submit">Confirmar</button>
             </div>
           </div>
-        </section>
+        </form>
       </section>
     </main>
   )
