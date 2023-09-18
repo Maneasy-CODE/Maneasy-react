@@ -72,21 +72,21 @@ function DemandaCadastro() {
                             <div className="orcamento-demanda">
                                 <span>Orçamento de demanda</span>
                                 <div className="data-conte">
-                                <Icon className="icon" icon="bx:calendar"/>
+                                <Icon className="icon" icon="fa:dollar"/>
                                     <input className="input-field" name="criacao" type="date" />
                                 </div>
                             </div>
                             <div className="tempo-demanda">
                                 <span>Tempo de demanda</span>
                                 <div className="data-conte">
-                                <Icon className="icon" icon="bx:calendar"/>
+                                <Icon className="icon" icon="ps:clock"/>
                                     <input className="input-field" name="criacao" type="date" />
                                 </div>
                             </div>
                             <div className="select_status">
                                 <span>Status da Demanda</span>
                                 <div className="select-icons">
-                                <Icon className="icon" icon="el:ok-sign"/>
+                                <Icon className="icon_confirmar" icon="el:ok-sign"/>
                                     <select className="data-conte" name="status" id="">
                                         <option value="">Aberto</option>
                                         <option value="">Em andamento</option>

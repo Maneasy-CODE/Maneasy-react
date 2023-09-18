@@ -181,7 +181,7 @@
 #demanda_cadastro section .data-conte{
     width: 100%;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 10px 0 0 10px;
     display: flex;
     align-items: center;
     position: relative;
@@ -309,6 +309,7 @@
 }
 
 #demanda_cadastro .select_status{
+    line-height: 28px;
     width: 45%;
     flex-direction: column;
     font-family: "VerdanaRegular";
@@ -333,5 +334,52 @@
 
 #demanda_cadastro textarea {
     resize: none;
+}
+
+/* ICON */
+
+
+
+.icon {
+    position: absolute;
+    margin: 0px 0 0 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+.icon_confirmar{
+    position: absolute;
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+.input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+.input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+input[type="date"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "VerdanaRegular";
+    width: 100%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
 
