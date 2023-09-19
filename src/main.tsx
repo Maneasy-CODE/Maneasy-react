@@ -15,6 +15,7 @@ import ProfissionalCadastro from "./pages/ProfissionalCadastro"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProfissionalConsulta from './pages/ProfissionalConsulta';
 import ProfissionalAtualizar from './pages/ProfissionalAtualizar';
+import ProjetoCadastro from './pages/ProjetoCadastro';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/profissional/cadastro' element={<ProfissionalCadastro/>} />
         <Route path='/pagina/profissional/consulta' element={<ProfissionalConsulta/>} />
         <Route path='/pagina/profissional/atualizar' element={<ProfissionalAtualizar/>} />
+        <Route path='/pagina/projeto/cadastro' element={<ProjetoCadastro/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
