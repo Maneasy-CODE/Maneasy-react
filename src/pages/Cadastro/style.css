@@ -1,30 +1,52 @@
-#entrar main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100vh;    
+#cadastro .icon_voltar {
+    font-size: 40px;
+    color: var(--azule);
+    cursor: pointer;
+    rotate: -90deg;
+    margin-left: 50px;
+}
+
+
+#cadastro .section_cadastro {
+    margin-bottom: 10px;
+}
+
+#cadastro {
+
     background-image: url("../../assets/images/background_deslogado.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
     overflow: hidden;
+    width: 100%;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;    
+    flex-direction: column;
+    justify-content: center;
 }
 
-#entrar .section_logo {
+
+
+#cadastro main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#cadastro .section_logo {
     width: 25%;
 }
 
-#entrar .section_img_logo {
+#cadastro .section_img_logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#entrar .section_img_logo img {
+#cadastro .section_img_logo img {
     margin: auto;
     width: 100%;
     max-width: 700px;
@@ -34,37 +56,36 @@
     width: 40%;
 }
 
-#entrar .section_esqueceu_senha h1 {
+#cadastro .section_esqueceu_senha h1 {
     font-size: 100px;
     font-family: "SpartanBold";
     color: var(--azule);
     padding-bottom: 50px;
 }
 
-#entrar .section_esqueceu_senha span {
+#cadastro .section_esqueceu_senha span {
     font-size: 100px;
     font-family: "SpartanBold";
     color: var(--amarelo);
 }
 
-#entrar .section_input label {
+#cadastro .section_input label {
     color: var(--azule);
     font-family: "VerdanaRegular";
+    gap: 10px;
 }
 
-#entrar .email{
+#cadastro .email {
     margin-bottom: 30px;
 
 }
 
-#entrar .section_btn_confirmar {
+#cadastro .section_btn_confirmar {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
-
 }
 
-#entrar .section_btn_confirmar button {
+#cadastro .section_btn_confirmar button{
     border-radius: 100px;
     height: 40px;
     border: none;
@@ -76,7 +97,7 @@
     max-width: 250px;
     width: 60%;
     margin: 40px 0 40px 0;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,49 +105,51 @@
 }
 
 
-#entrar button:hover {
+#cadastro button:hover {
     background-color: var(--azulc);
 }
 
-#entrar .nav_esqueceu_senha{
+#cadastro .nav_esqueceu_senha {
     font-family: "VerdanaRegular";
     text-align: right;
     padding: 5px;
     color: var(--azule);
     cursor: pointer;
-    text-decoration:none; 
+    text-decoration: none;
 }
 
-#entrar .nav_esqueceu_senha:hover{
+#cadastro .nav_esqueceu_senha:hover {
     color: var(--amarelo);
 }
 
-#entrar .nav_cadastro{
+#cadastro .nav_cadastro {
     margin-top: 40px;
     font-family: "VerdanaRegular";
     text-align: center;
     color: var(--azule);
     cursor: pointer;
-    text-decoration:none; 
-}
-
-#entrar .nav_cadastro:hover{
-    color: var(--amarelo);
-}
-
-#entrar .sublinado{
     text-decoration: none;
 }
 
-#entrar .icon {
+#cadastro .nav_cadastro:hover {
+    color: var(--amarelo);
+}
+
+#cadastro .sublinado {
+    text-decoration: none;
+}
+
+#cadastro .icon {
     position: absolute;
-    margin: 10px 0  0 10px;
+    margin: 10px 0 0 10px;
     align-items: center;
     color: var(--azule);
     font-size: 20px;
 }
 
-#entrar .input_field {
+
+
+#cadastro .input_field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -135,10 +158,33 @@
     border: 1px solid var(--azule);
 }
 
-#entrar .input_icons{
+#cadastro .input_icons {
     margin-top: 5px;
 }
 
-#entrar input::placeholder {
+#cadastro .input_field_senha {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid var(--azule);
+}
+
+#cadastro .section_input_senha {
+    display: flex;
+}
+
+#cadastro .section_input_senha {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cadastro .section_input_senha>div {
+    width: 48%;
+
+}
+
+#cadastro input::placeholder {
     color: var(--azule);
 }
