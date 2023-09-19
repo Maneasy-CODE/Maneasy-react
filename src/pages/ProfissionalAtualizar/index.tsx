@@ -95,6 +95,8 @@ function ProfissionalAtualizar() {
                     name="Chapa"
                     className="input_chapa input-field"
                     type="text"
+                    placeholder="Digite a chapa:"
+                    required
                   />
                 </div>
               </div>
@@ -106,6 +108,8 @@ function ProfissionalAtualizar() {
                     name="Consultar"
                     className="input_nome input-field"
                     type="text"
+                    placeholder="Digite o nome:"
+                    required
                   />
                 </div>
               </div>
@@ -121,6 +125,7 @@ function ProfissionalAtualizar() {
                     className="input-field input_status"
                     name="status"
                     id="status"
+                    required
                   >
                     <option value="" >
                       Ativo
@@ -140,6 +145,8 @@ function ProfissionalAtualizar() {
                     id="e-mail"
                     className="input-field input_email"
                     type="email"
+                    placeholder="Digite o e-mail:"
+                    required
                   />
                 </div>
               </div>
@@ -154,6 +161,7 @@ function ProfissionalAtualizar() {
                     id="ini_ferias"
                     className="input_ini_ferias input-field"
                     type="date"
+                    required
                   />
                 </div>
               </div>
@@ -166,6 +174,8 @@ function ProfissionalAtualizar() {
                     id="fim_ferias"
                     className="input_fim_ferias input-field"
                     type="date"
+                    required
+
                   />
                 </div>
               </div>
@@ -175,9 +185,11 @@ function ProfissionalAtualizar() {
                 <select
                   name=""
                   id="cad_select_skill"
+                  
                   onChange={(e) => { adicionarSkill(e.target.value.split(" ")) }
                   }
                   defaultValue={select}
+                  required
                 >
                   <option disabled value="">Selecione</option>
                   {
@@ -228,6 +240,9 @@ function ProfissionalAtualizar() {
                       id="jorn_tra"
                       className="input_jorn_tra input-field"
                       type="number"
+                      placeholder="Digite a jornada de trabalho:"
+                      required
+
                     />
                   </div>
                 </div>
@@ -240,6 +255,8 @@ function ProfissionalAtualizar() {
                       id="hora_ext"
                       className="input_hora_ext input-field"
                       type="number"
+                      placeholder="Digite as horas extras:"
+                      required
                     />
                   </div>
                 </div>
