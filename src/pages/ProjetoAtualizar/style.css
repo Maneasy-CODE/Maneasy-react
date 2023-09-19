@@ -1,8 +1,21 @@
 /*SECTION PROJETO*/
+#projeto_atualizar{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#projeto_atualizar section{
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 #projeto_atualizar .container{
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
 }
 
 
