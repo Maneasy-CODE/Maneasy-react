@@ -1,3 +1,7 @@
+
+
+
+
 .main_cadastro{
     display: flex;
     height: 100vh;
@@ -340,3 +344,4 @@ html ::-webkit-scrollbar-track {
 #chamado_cadastro textarea {
     resize: none;
 }
+
