@@ -108,6 +108,7 @@ function ProjetoAtualizar() {
                                         name="nome_criacao"
                                         className="input-calendario"
                                         type="text"
+                                        placeholder="Digite o valor do orçamento:"
                                         required
                                     />
                                 </div>
