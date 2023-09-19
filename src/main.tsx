@@ -13,7 +13,8 @@ import ProfissionalCadastro from "./pages/ProfissionalCadastro"
 
 //rotas
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import ProfissionalConsulta from './pages/ProfissionalConsulta';
+import ProfissionalAtualizar from './pages/ProfissionalAtualizar';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
@@ -23,7 +24,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/esqueceu/senha' element={<EsqueceuASenha />} />
         <Route path='/pagina/dashboard' element={<Dashboard />} />
         <Route path='/pagina/profissional/cadastro' element={<ProfissionalCadastro/>} />
-        <Route path='/pagina/profissional/consulta' element={<ProfissionalCadastro/>} />
+        <Route path='/pagina/profissional/consulta' element={<ProfissionalConsulta/>} />
+        <Route path='/pagina/profissional/atualizar' element={<ProfissionalAtualizar/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
