@@ -1,14 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
 import './index.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 //IMPORT PAGINAS
 import Menu from './components/Menu'
 import Entrar from './pages/Entrar';
 import Cadastro from './pages/Cadastro';
 import EsqueceuASenha from './pages/EsqueceuASenha';
 import Dashboard from './pages/Dashboard';
+import ProfissionalCadastro from "./pages/ProfissionalCadastro"
+
+//rotas
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -18,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/cadastro' element={<Cadastro />} />
         <Route path='/pagina/esqueceu/senha' element={<EsqueceuASenha />} />
         <Route path='/pagina/dashboard' element={<Dashboard />} />
+        <Route path='/pagina/profissional/cadastro' element={<ProfissionalCadastro/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)

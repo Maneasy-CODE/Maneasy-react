@@ -1,7 +1,9 @@
+/* FONTS */
+
 /* FONTS SPARTAN */
 @font-face {
     font-family: "SpartanBold" ;
-    src: url(./assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
+    src: url(../src/assets/fonts/League_Spartan/LeagueSpartan_Bold.ttf);
 }
 
 /* FONTS VERDANA */
