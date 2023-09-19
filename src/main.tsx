@@ -8,6 +8,7 @@ import Menu from './components/Menu'
 import Entrar from './pages/Entrar';
 import Cadastro from './pages/Cadastro';
 import EsqueceuASenha from './pages/EsqueceuASenha';
+import Dashboard from './pages/Dashboard';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/entrar' element={<Entrar />} />  //   {/*INDICA O CAMINHO DO COMPONENTE E O NOME DA ROTA DELE */}
         <Route path='/pagina/cadastro' element={<Cadastro />} />
         <Route path='/pagina/esqueceu/senha' element={<EsqueceuASenha />} />
+        <Route path='/pagina/dashboard' element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
