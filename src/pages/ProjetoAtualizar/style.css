@@ -306,4 +306,7 @@
 #projeto_atualizar textarea {
     resize: none;
 }
-
+#projeto_atualizar .container{
+    width: 80%;
+    margin: 0 auto;
+}
