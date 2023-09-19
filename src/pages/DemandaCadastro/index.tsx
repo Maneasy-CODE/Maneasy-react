@@ -73,7 +73,7 @@ function DemandaCadastro() {
                                 <span>Orçamento de demanda</span>
                                 <div className="data-conte">
                                 <Icon className="icon" icon="fa:dollar"/>
-                                    <input className="input-field" name="criacao" type="date" />
+                                    <input className="input-field" name="criacao" type="text" />
                                 </div>
                             </div>
                             <div className="tempo-demanda">
