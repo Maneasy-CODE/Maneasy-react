@@ -6,8 +6,12 @@ import btn_confirmar from "../../assets/images/btn_confirmar.svg"
 import btn_cancelar from "../../assets/images/btn_cancelar.svg"
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+import { useState, useEffect } from "react";
 
 function ProjetoAtualizar() {
+
+    const [nomeProjeto, setNomeProjeto]= useState<string>("");
+
 
     return (
         <>
@@ -33,7 +37,7 @@ function ProjetoAtualizar() {
                                 <div className="input-icons">
                                     <Icon className="icon" icon="la:project-diagram" />
 
-                                    <input name="nome_do_projeto" className="input-field" type="text" />
+                                    <input name="nome_do_projeto" className="input-field" type="text" placeholder="Digite aqui o nome do projeto: " onChange={(e) => setNomeProjeto(e.target.value) } required/>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +50,8 @@ function ProjetoAtualizar() {
                                     <input
                                         name="nome_criacao"
                                         className="input-calendario"
-                                        type="text"
+                                        type="date"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -58,7 +63,8 @@ function ProjetoAtualizar() {
                                     <input
                                         name="nome_criacao"
                                         className="input-calendario"
-                                        type="text"
+                                        type="date"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -70,7 +76,8 @@ function ProjetoAtualizar() {
                                     <input
                                         name="nome_criacao"
                                         className="input-calendario"
-                                        type="text"
+                                        type="date"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -78,7 +85,8 @@ function ProjetoAtualizar() {
                         <div className="campo_objetivo_do_projeto">
                             <div className="input_objetivo">
                                 <label htmlFor="nome_do_projeto">Objetivo do Projeto</label>
-                                <div className="input-icons">
+                                <div className="input-icons"
+                                >
                                     <textarea
                                         className="campo_objetivo"
                                         name="objetivo_projeto"
@@ -100,6 +108,7 @@ function ProjetoAtualizar() {
                                         name="nome_criacao"
                                         className="input-calendario"
                                         type="text"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -108,7 +117,7 @@ function ProjetoAtualizar() {
                                 <div className="select-icons">
                                     <Icon className="icon" icon="el:ok-sign" />
 
-                                    <select name="status" id="">
+                                    <select name="status" id="" required>
                                         <option value="">A iniciar</option>
                                         <option value="">Em andamento</option>
                                         <option value="">Finalizado</option>
