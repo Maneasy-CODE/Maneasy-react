@@ -1,4 +1,4 @@
-.icon_voltar {
+#cadastro .icon_voltar {
     font-size: 40px;
     color: var(--azule);
     cursor: pointer;
@@ -7,7 +7,7 @@
 }
 
 
-.section_cadastro {
+#cadastro .section_cadastro {
     margin-bottom: 10px;
 }
 
@@ -139,7 +139,7 @@
     text-decoration: none;
 }
 
-.icon {
+#cadastro .icon {
     position: absolute;
     margin: 10px 0 0 10px;
     align-items: center;
@@ -149,7 +149,7 @@
 
 
 
-.input_field {
+#cadastro .input_field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -158,11 +158,11 @@
     border: 1px solid var(--azule);
 }
 
-.input_icons {
+#cadastro .input_icons {
     margin-top: 5px;
 }
 
-.input_field_senha {
+#cadastro .input_field_senha {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -171,16 +171,16 @@
     border: 1px solid var(--azule);
 }
 
-.section_input_senha {
+#cadastro .section_input_senha {
     display: flex;
 }
 
-.section_input_senha {
+#cadastro .section_input_senha {
     display: flex;
     justify-content: space-between;
 }
 
-.section_input_senha>div {
+#cadastro .section_input_senha>div {
     width: 48%;
 
 }
