@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 function Cadastro() {
     const [chapa,setChapa] = useState<string>("");
     const [nome,setNome] = useState<string>("");
-    const [email,setEmail] =useState<string>("");
-    const [senha,setSenha] =useState<string>("");
-    const [confirmarSenha, setConfirmarSenha] =useState<string>("");
+    const [email,setEmail] = useState<string>("");
+    const [senha,setSenha] = useState<string>("");
+    const [confirmarSenha, setConfirmarSenha] = useState<string>("");
 
     const VerificarSenha = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
