@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+
+//estilização
 import './index.css'
 //IMPORT PAGINAS
 import Menu from './components/Menu'
@@ -21,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/esqueceu/senha' element={<EsqueceuASenha />} />
         <Route path='/pagina/dashboard' element={<Dashboard />} />
         <Route path='/pagina/profissional/cadastro' element={<ProfissionalCadastro/>} />
+        <Route path='/pagina/profissional/consulta' element={<ProfissionalCadastro/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
