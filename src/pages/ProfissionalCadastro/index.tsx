@@ -77,7 +77,7 @@ function ProfissionalCadastro() {
             <img src={bolinha_azul} alt="circulo azul" />
             <h1>Profissionais</h1>
           </div>
-          <section className="conteudo">
+          <form className="conteudo">
             <nav className="nav_cad_cons">
               <Link to={""} className="btn_cad" >
                 Cadastrar
@@ -95,6 +95,8 @@ function ProfissionalCadastro() {
                     name="Chapa"
                     className="input_chapa input-field"
                     type="text"
+                    placeholder="Digite o número da chapa:"
+                    required
                   />
                 </div>
               </div>
@@ -106,6 +108,8 @@ function ProfissionalCadastro() {
                     name="Consultar"
                     className="input_nome input-field"
                     type="text"
+                    placeholder="Digite o seu nome:"
+                    required
                   />
                 </div>
               </div>
@@ -121,6 +125,7 @@ function ProfissionalCadastro() {
                     className="input-field input_status"
                     name="status"
                     id="status"
+                    required
                   >
                     <option value="" >
                       Ativo
@@ -140,6 +145,8 @@ function ProfissionalCadastro() {
                     id="e-mail"
                     className="input-field input_email"
                     type="email"
+                    placeholder="Digite o e-mail:"
+                    required
                   />
                 </div>
               </div>
@@ -166,6 +173,7 @@ function ProfissionalCadastro() {
                     id="fim_ferias"
                     className="input_fim_ferias input-field"
                     type="date"
+                    required
                   />
                 </div>
               </div>
@@ -228,6 +236,8 @@ function ProfissionalCadastro() {
                       id="jorn_tra"
                       className="input_jorn_tra input-field"
                       type="number"
+                      placeholder="Digite a jornada de trabalho:"
+                      required
                     />
                   </div>
                 </div>
@@ -240,6 +250,8 @@ function ProfissionalCadastro() {
                       id="hora_ext"
                       className="input_hora_ext input-field"
                       type="number"
+                      placeholder="Digite o total de horas extras:"
+                      required
                     />
                   </div>
                 </div>
@@ -311,7 +323,7 @@ function ProfissionalCadastro() {
                 </button>
               </div>
             </div>
-          </section>
+          </form>
         </div>
       </section >
     </main >
