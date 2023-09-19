@@ -118,7 +118,7 @@
     text-decoration: none;
 }
 
-.icon {
+#entrar .icon {
     position: absolute;
     margin: 10px 0  0 10px;
     align-items: center;
@@ -126,7 +126,7 @@
     font-size: 20px;
 }
 
-.input_field {
+#entrar .input_field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -135,7 +135,7 @@
     border: 1px solid var(--azule);
 }
 
-.input_icons{
+#entrar .input_icons{
     margin-top: 5px;
 }
 
