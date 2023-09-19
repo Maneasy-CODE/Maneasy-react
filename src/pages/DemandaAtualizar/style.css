@@ -1,14 +1,22 @@
 /* CLASSES GENERICAS */
+
+#demanda_atualizar .icon_confirmar{
+    position: absolute;
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
 #demanda_atualizar .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
+    /* padding: 11px 20px 7.5px 10px; */
+    margin: 0 0 0 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
 }
 
 #demanda_atualizar .input-icons {
-    width: 30%;
     margin-top: 10px;
     position: relative;
 }

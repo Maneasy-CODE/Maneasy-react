@@ -21,16 +21,16 @@ function DemandaAtualizar() {
                             <img src={iconeTitulo} alt=""/>
                                 <h1>Demandas</h1>
                         </div>
-                        <div className="buttons-grid">
+                        <nav className="buttons-grid">
                             <Link to={""} className="button-cadastrar">Atualizar</Link>
                             <Link to={""} className="button-consultar">Consultar</Link>
-                        </div>
-
+                        </nav>
+                            <form>
                         <div className="demanda">
                             <span>Nome da Demanda</span>
                             <div className="demanda-cadastrar input-icons" >
                                 <Icon className="icon" icon="mdi:clipboard-edit-outline"></Icon>
-                                <input className="input-field" name="nome-demanda" type="text"/>
+                                <input className="input-field" name="nome-demanda" type="text" placeholder="Digite o nome da demanda" required/>
                             </div>
                         </div>
                         <div className="datas">
@@ -38,7 +38,7 @@ function DemandaAtualizar() {
                                 <span>Criação</span>
                                 <div className="data-conte input-icons">
                                     <Icon className="icon" icon="bx:calendar"></Icon>
-                                    <input className="input-field" name="criacao" type="date"/>
+                                    <input className="input-field" name="criacao" type="date" required/>
                                 </div>
                             </div>
 
@@ -46,7 +46,7 @@ function DemandaAtualizar() {
                                 <span>Ínicio</span>
                                 <div className="data-conte input-icons">
                                     <Icon className="icon" icon="bx:calendar"></Icon>
-                                    <input className="input-field" name="criacao" type="date"/>
+                                    <input className="input-field" name="criacao" type="date" required/>
                                 </div>
                             </div>
 
@@ -54,7 +54,7 @@ function DemandaAtualizar() {
                                 <span>Término</span>
                                 <div className="data-conte input-icons">
                                     <Icon className="icon" icon="bx:calendar"></Icon>
-                                    <input className="input-field" name="criacao" type="date"/>
+                                    <input className="input-field" name="criacao" type="date" required/>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,6 @@ function DemandaAtualizar() {
                             </div>
                             <div id="barra-rolamento"></div>
                         </div>
-
                         <div className="objetivo-demanda">
                             <div className="objetivo-demanda">
                                 <span>Consultoria na demanda</span>
@@ -73,28 +72,27 @@ function DemandaAtualizar() {
                             </div>
                             <div id="barra-rolamento"></div>
                         </div>
-
                         <div className="progresso-demanda">
                             <div className="orcamento-demanda">
                                 <span>Orçamento de demanda</span>
                                 <div className="data-conte input-icons">
-                                    <Icon className="icon" icon="bx:calendar"></Icon>
-                                    <input className="input-field" name="criacao" type="date"/>
+                                    <Icon className="icon" icon="fa:dollar"></Icon>
+                                    <input className="input-field" name="criacao" type="text" placeholder="Digite aqui o orçamento de demanda:" required/>
                                 </div>
                             </div>
 
                             <div className="tempo-demanda">
                                 <span>Tempo de demanda</span>
                                 <div className="data-conte input-icons">
-                                    <Icon className="icon" icon="bx:calendar"></Icon>
-                                    <input className="input-field" name="criacao" type="date"/>
+                                    <Icon className="icon" icon="ps:clock"></Icon>
+                                    <input className="input-field" name="criacao" type="text"placeholder="Digite aqui o tempo de demanda:" required/>
                                 </div>
                             </div>
 
                             <div className="select_status">
                                 <span>Status da Demanda</span>
                                 <div className="select-icons">
-                                    <Icon className="icon" icon="el:ok-sign"></Icon>
+                                    <Icon className="icon_confirmar" icon="el:ok-sign"></Icon>
                                     <select className="data-conte" name="status" id="">
                                         <option value="">Aberto</option>
                                         <option value="">Em andamento</option>
@@ -105,6 +103,7 @@ function DemandaAtualizar() {
 
                         </div>
                         <Btn_submit_cancel_squad/>
+                        </form>
                     </div>
                 </div>
             </section>
