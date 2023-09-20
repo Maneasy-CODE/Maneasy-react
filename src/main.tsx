@@ -44,10 +44,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/demanda/atualizar' element={<DemandaAtualizar/>} />
         <Route path='/pagina/consultas' element={<Consultas/>} />
         <Route path='/pagina/chamado/cadastro' element={<ChamadoCadastro/>} />
-        <Route path='/pagina/consulta/chamados' element={<ChamadoConsulta/>} />
+        <Route path='/pagina/chamado/consulta' element={<ChamadoConsulta/>} />
 
-        
-        <Route path='/pagina/atualizar/chamados' element={<ChamadoCadastro/>} />
+
+        <Route path='/pagina/chamado/atualizar' element={<ChamadoCadastro/>} />
         <Route path='/pagina/cadastro/squad' element={<ChamadoCadastro/>}/>
         <Route path='/pagina/montar/squad' element={<ChamadoCadastro/>} />
       </Routes>
