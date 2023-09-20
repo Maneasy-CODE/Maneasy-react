@@ -46,7 +46,6 @@ function ProjetoConsulta() {
         },
     ]
     return (
-
         <div id="projeto_consulta">
             <main>
                 <Menu />
