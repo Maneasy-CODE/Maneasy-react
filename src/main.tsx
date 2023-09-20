@@ -26,6 +26,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ChamadoCadastro from './pages/ChamadoCadastro';
 import ChamadoConsulta from './pages/ChamadoConsulta';
 import ChamadoAtualizar from './pages/ChamadoAtualizar';
+import SquadCadastros from './pages/Squad_cadastros';
+import Squadmontar from './pages/Squad_montar';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
@@ -47,9 +49,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/chamado/cadastro' element={<ChamadoCadastro/>} />
         <Route path='/pagina/chamado/consulta' element={<ChamadoConsulta/>} />
         <Route path='/pagina/chamado/atualizar' element={<ChamadoAtualizar/>} />
-        
-        <Route path='/pagina/cadastro/squad' element={<ChamadoCadastro/>}/>
-        <Route path='/pagina/montar/squad' element={<ChamadoCadastro/>} />
+        <Route path='/pagina/cadastro/squad' element={<SquadCadastros/>}/>
+        <Route path='/pagina/montar/squad' element={<Squadmontar/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)

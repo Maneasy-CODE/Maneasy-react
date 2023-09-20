@@ -1,0 +1,261 @@
+main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#squad_cadastro {
+    font-family: "VerdanaRegular";
+
+}
+
+#squad_cadastro .container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#squad_cadastro .section_titulo {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+
+}
+
+#squad_cadastro  .section_titulo img {
+    padding-right: 20px;
+}
+
+#squad_cadastro form {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+#squad_cadastro .section_nome_projeto {
+    width: 100%;
+}
+
+#squad_cadastro .section_cadastro_squad_btn img {
+    width: 34px;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+
+/*INPUT PESQUISA*/
+
+#squad_cadastro .section_pesquisa_resultado_input {
+    width: 100%;
+}
+
+#squad_cadastro .icon {
+    position: absolute;
+    /* padding: 10.5px 20px 7.5px 10px; */
+    margin: 10px 0 0 10px;
+    align-items: center;
+    color: var(--preto);
+    font-size: 20px;
+}
+
+#squad_cadastro .input-icons {
+    margin-top: 10px;
+    position: relative;
+}
+
+#squad_cadastro .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #474545;
+}
+
+
+
+#squad_cadastro .section_pesquisa p {
+    padding: 0px 10px 10px 10px;
+}
+
+#squad_cadastro .section_pesquisa_btn img {
+    width: 34px;
+    margin-left: 10px;
+}
+
+#squad_cadastro .section_pesquisa_resultado {
+    color: var(--preto);
+    display: flex;
+    flex-direction: column;
+}
+
+#squad_cadastro .section_pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#squad_cadastro .espacamento{
+    margin-top: 30px;
+}
+
+/* Resultado pesquisa*/
+
+#squad_cadastro .section_resultado_dados {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+
+}
+
+#squad_cadastro .section_resultado_dados div {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+#squad_cadastro .section_resultado_dados img {
+    margin: 0;
+    width: 34px;
+}
+
+#squad_cadastro .section_resultado_dados_id {
+    width: 270px;
+}
+
+#squad_cadastro .section_resultado_dados_nome {
+    width: 518px;
+}
+
+#squad_cadastro .section_resultado_dados_btn {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#squad_cadastro .form_date_criacao {
+    width: 30%;
+}
+
+#squad_cadastro .form_date {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#squad_cadastro input[type="date"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "VerdanaRegular";
+    width: 100%;
+}
+
+#squad_cadastro ::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    display: none;
+}
+
+
+#squad_cadastro .section_objetivo_projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#squad_cadastro .section_objetivo_projeto p {
+    padding: 30px 10px 10px 10px;
+}
+
+#squad_cadastro .section_objetivo_projeto_label_textarea {
+    width: 100%;
+}
+
+#squad_cadastro textarea {
+    width: 100%;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #474545;
+}
+
+
+
+#squad_cadastro .form_criacao_inicio_termino {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+}
+
+#squad_cadastro .form_criacao_inicio_termino .icon {
+    font-size: 16px;
+
+}
+
+
+#squad_cadastro .form_date_criacao_inicio_termino {
+    width: 100%;
+}
+
+#squad_cadastro textarea {
+    margin-top: 10px;
+}
+
+#squad_cadastro .section_resultado h2 {
+    font-size: 20px;
+    font-family: "VerdanaRegular";
+    padding: 40px 0 20px 0;
+    color: var(--preto);
+}
+
+#squad_cadastro .form_id {
+    width: 46%;
+    display: flex;
+}
+
+#squad_cadastro .section_pesquisa_resultado_input{
+    margin-bottom: 30px;
+}
+
+#squad_cadastro .form_id .section_pesquisa_resultado_input {
+    width: 70%;
+    
+}
+#squad_cadastro .tabela_scroll {
+    width: 100%;
+    padding-right: 5%;
+    height: 298px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 300px;
+    color: var(--preto);
+
+}
+
+html ::-webkit-scrollbar {
+    width: 6px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--azule);
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+#squad_cadastro textarea {
+    resize: none;
+}
