@@ -20,6 +20,7 @@ import ProjetoConsulta from './pages/ProjetoConsulta';
 import ProjetoAtualizar from './pages/ProjetoAtualizar';
 import DemandaCadastro from './pages/DemandaCadastro';
 import DemandaConsulta from './pages/DemandaConsulta';
+import DemandaAtualizar from './pages/DemandaAtualizar';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -37,6 +38,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/projeto/atualizar' element={<ProjetoAtualizar/>} />
         <Route path='/pagina/demanda/cadastro' element={<DemandaCadastro/>} />
         <Route path='/pagina/demanda/consulta' element={<DemandaConsulta/>} />
+        <Route path='/pagina/demanda/atualizar' element={<DemandaAtualizar/>} />
 
       </Routes>
     </BrowserRouter>
