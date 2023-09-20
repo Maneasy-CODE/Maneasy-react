@@ -10,12 +10,14 @@ import Cadastro from './pages/Cadastro';
 import EsqueceuASenha from './pages/EsqueceuASenha';
 import Dashboard from './pages/Dashboard';
 import ProfissionalCadastro from "./pages/ProfissionalCadastro"
-
-//rotas
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProfissionalConsulta from './pages/ProfissionalConsulta';
 import ProfissionalAtualizar from './pages/ProfissionalAtualizar';
 import ProjetoCadastro from './pages/ProjetoCadastro';
+
+//rotas
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ProjetoConsulta from './pages/ProjetoConsulta';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
@@ -28,6 +30,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/profissional/consulta' element={<ProfissionalConsulta/>} />
         <Route path='/pagina/profissional/atualizar' element={<ProfissionalAtualizar/>} />
         <Route path='/pagina/projeto/cadastro' element={<ProjetoCadastro/>} />
+        <Route path='/pagina/projeto/consulta' element={<ProjetoConsulta/>} />
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
