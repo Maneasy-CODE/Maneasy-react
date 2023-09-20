@@ -21,6 +21,7 @@ import ProjetoAtualizar from './pages/ProjetoAtualizar';
 import DemandaCadastro from './pages/DemandaCadastro';
 import DemandaConsulta from './pages/DemandaConsulta';
 import DemandaAtualizar from './pages/DemandaAtualizar';
+import Consultas from './pages/Consultas';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -39,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/demanda/cadastro' element={<DemandaCadastro/>} />
         <Route path='/pagina/demanda/consulta' element={<DemandaConsulta/>} />
         <Route path='/pagina/demanda/atualizar' element={<DemandaAtualizar/>} />
-
+        <Route path='/pagina/demanda/consultas' element={<Consultas/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
