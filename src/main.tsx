@@ -13,9 +13,6 @@ import ProfissionalCadastro from "./pages/ProfissionalCadastro"
 import ProfissionalConsulta from './pages/ProfissionalConsulta';
 import ProfissionalAtualizar from './pages/ProfissionalAtualizar';
 import ProjetoCadastro from './pages/ProjetoCadastro';
-
-//rotas
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjetoConsulta from './pages/ProjetoConsulta';
 import ProjetoAtualizar from './pages/ProjetoAtualizar';
 import DemandaCadastro from './pages/DemandaCadastro';
@@ -23,6 +20,10 @@ import DemandaConsulta from './pages/DemandaConsulta';
 import DemandaAtualizar from './pages/DemandaAtualizar';
 import Consultas from './pages/Consultas';
 
+//rotas
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ChamadoCadastro from './pages/ChamadoCadastro';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
@@ -40,7 +41,14 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/demanda/cadastro' element={<DemandaCadastro/>} />
         <Route path='/pagina/demanda/consulta' element={<DemandaConsulta/>} />
         <Route path='/pagina/demanda/atualizar' element={<DemandaAtualizar/>} />
-        <Route path='/pagina/demanda/consultas' element={<Consultas/>} />
+        <Route path='/pagina/consultas' element={<Consultas/>} />
+        <Route path='/pagina/chamado/cadastro' element={<ChamadoCadastro/>} />
+
+
+        <Route path='/pagina/consulta/chamados' element={<ChamadoCadastro/>} />
+        <Route path='/pagina/atualizar/chamados' element={<ChamadoCadastro/>} />
+        <Route path='/pagina/cadastro/squad' element={<ChamadoCadastro/>}/>
+        <Route path='/pagina/montar/squad' element={<ChamadoCadastro/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)
