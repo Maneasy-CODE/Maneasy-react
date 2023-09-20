@@ -305,14 +305,14 @@
     border: 1px solid #474545;
 }
 
-input[type="date"] {
+#projeto_cadastro input[type="date"] {
     font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
+#projeto_cadastro input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;

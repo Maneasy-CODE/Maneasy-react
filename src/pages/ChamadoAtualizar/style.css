@@ -1,12 +1,12 @@
 
-section {
+#demanda_atualizar section {
     display: flex;
     height: 100vh;
     width: 100%;
 }
 
 /* CLASSES GENERICAS */
-.icon {
+#demanda_atualizar .icon {
     position: absolute;
     align-items: center;
     color: var(--preto);
@@ -14,7 +14,7 @@ section {
     margin: 0 0  0 10px;
 }
 
-.icon_select{
+#demanda_atualizar .icon_select{
     position: absolute;
     align-items: center;
     color: var(--preto);
@@ -22,13 +22,13 @@ section {
     margin: 10px 0  0 20px;
 }
 
-.input-icons {
+#demanda_atualizar .input-icons {
     
     margin-top: 5px;
    
 }
 
-.input-field {
+#demanda_atualizar .input-field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -37,14 +37,14 @@ section {
     border: 1px solid #474545;
 }
 
-input[type="date"] {
+#demanda_atualizar input[type="date"] {
     font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
+#demanda_atualizar input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;

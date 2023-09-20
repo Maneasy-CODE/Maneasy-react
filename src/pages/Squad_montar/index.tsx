@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 function Squadmontar() {
     return (
-        <main id="squad_cadastro">
+        <main id="squad_cadastro" className="container_squad_cadastro">
             <Menu></Menu>
             <section className="container">
                 <div className="section_titulo">

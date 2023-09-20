@@ -1,5 +1,5 @@
 /* CLASSES GENERICAS */
-.icon {
+#demanda_consulta .icon {
     position: absolute;
     padding: 11px 20px 7.5px 10px;
     align-items: center;
@@ -7,12 +7,12 @@
     font-size: 20px;
 }
 
-.input-icons {
+#demanda_consulta .input-icons {
     margin-top: 10px;
     position: relative;
 }
 
-.input-field {
+#demanda_consulta .input-field {
     width: 100%;
     background: transparent;
     border-radius: 100px;

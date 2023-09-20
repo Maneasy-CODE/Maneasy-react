@@ -331,6 +331,6 @@ html ::-webkit-scrollbar-track {
     width: 40px;
 }
 
-select {
+#profissional_atualizar select {
     -webkit-appearance: none;
 }

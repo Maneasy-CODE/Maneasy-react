@@ -4,81 +4,78 @@ import "../../index.css";
 
 import { Icon } from '@iconify/react';
 import logo_branca from "../../assets/images/logo_branca.svg";
+import { Link } from "react-router-dom"
 
 
 function Menu() {
     return (
         <aside id="aside_menu">
-
-
             <nav className="nav_btn_menu">
 
                 <img className="aside_logo" src={logo_branca} alt="Logo Maneasy" />
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="ph:chart-bar-bold" />
                     </div>
                     Dashboard
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="ion:people-circle" />
                     </div>
 
                     Profissionais
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="la:project-diagram" />
                     </div>
                     Projetos
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="mdi:clipboard-edit-outline" />
                     </div>
                     Demandas
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="mdi:bell-alert-outline" />
                     </div>
                     Chamados
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="mdi:people-group" />
                     </div>
 
                     Squad
-                </a>
+                </Link>
 
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_menu">
                         <Icon icon="mdi:file-report-outline" />
                     </div>
                     Consultas
-                </a>
+                </Link>
 
             </nav>
 
             <footer id="footer_menu">
-                <a href="#">
+                <Link to={""}>
                     <div className="icon_footer">
                         <Icon icon="iconamoon:exit-bold" />
                     </div>
                     Sair
-                </a>
+                </Link>
             </footer>
-
         </aside>
-
     )
 
 }

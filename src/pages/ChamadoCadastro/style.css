@@ -139,7 +139,7 @@
     left: 0;
   }
 
-.icon_select{
+  #chamado_cadastro .icon_select{
     position: absolute;
     align-items: center;
     color: var(--preto);
@@ -147,7 +147,7 @@
     margin: 0 0  0 10px;
 }
 
-.icon {
+#chamado_cadastro .icon {
     position: absolute;
     /* padding: 11px 20px 7.5px 10px; */
     margin: 10px 0 0 10px;
@@ -156,12 +156,12 @@
     font-size: 20px;
 }
 
-.input-icons {
+#chamado_cadastro .input-icons {
     margin-top: 10px;
     position: relative; 
 }
 
-.input-field-medium {
+#chamado_cadastro .input-field-medium {
     background: transparent;
     border-radius: 100px;
     padding: 10px 10px 10px 40px;
@@ -170,7 +170,7 @@
     height: 40px;
 }
 
-.input-field-big{
+#chamado_cadastro .input-field-big{
     background: transparent;
     border-radius: 100px;
     width: 350px;
@@ -180,7 +180,7 @@
     height: 40px;
 }
 
-.input-field-little {
+#chamado_cadastro .input-field-little {
 
     width:100%;
     font-family: verdana;
@@ -193,7 +193,7 @@
     border: 1px solid #474545;
 }
 
-.input-anexo{
+#chamado_cadastro .input-anexo{
     background: transparent;
     border-radius: 100px;
     width: 350px;

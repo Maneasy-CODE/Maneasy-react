@@ -340,7 +340,7 @@
 
 
 
-.icon {
+#demanda_cadastro .icon {
     position: absolute;
     margin: 0px 0 0 10px;
     align-items: center;
@@ -348,7 +348,7 @@
     font-size: 20px;
 }
 
-.icon_confirmar{
+#demanda_cadastro .icon_confirmar{
     position: absolute;
     margin: 10px 0 0 10px;
     align-items: center;
@@ -356,12 +356,12 @@
     font-size: 20px;
 }
 
-.input-icons {
+#demanda_cadastro .input-icons {
     margin-top: 10px;
     position: relative;
 }
 
-.input-field {
+#demanda_cadastro .input-field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -370,14 +370,14 @@
     border: 1px solid #474545;
 }
 
-input[type="date"] {
+#demanda_cadastro input[type="date"] {
     font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
+#demanda_cadastro input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;

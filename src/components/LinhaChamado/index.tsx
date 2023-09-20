@@ -1,6 +1,6 @@
 //estilização
 import { Link } from "react-router-dom";
-import btn_editar from "../../../assets/images/btn_editar.svg";
+import btn_editar from "../../assets/images/btn_editar.svg";
 import "./style.css";
 
 

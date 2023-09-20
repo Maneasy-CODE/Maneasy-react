@@ -19,20 +19,20 @@ import DemandaCadastro from './pages/DemandaCadastro';
 import DemandaConsulta from './pages/DemandaConsulta';
 import DemandaAtualizar from './pages/DemandaAtualizar';
 import Consultas from './pages/Consultas';
-
-//rotas
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ChamadoCadastro from './pages/ChamadoCadastro';
 import ChamadoConsulta from './pages/ChamadoConsulta';
 import ChamadoAtualizar from './pages/ChamadoAtualizar';
 import SquadCadastros from './pages/Squad_cadastros';
 import Squadmontar from './pages/Squad_montar';
+
+//rotas
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>   {/*// INDICA QUE A APLICAÇÃO TERA ROTAS  */}
       <Routes>         {/*// INDICA QUE TEM UMA LISTA DE COMPONENTES, OU SEJA, UMA LISTA DE ROTAS  */}
-        <Route path='/pagina/entrar' element={<Entrar />} />  //   {/*INDICA O CAMINHO DO COMPONENTE E O NOME DA ROTA DELE */}
+        <Route path='/' element={<Entrar />} />  //   {/*INDICA O CAMINHO DO COMPONENTE E O NOME DA ROTA DELE */}
         <Route path='/pagina/cadastro' element={<Cadastro />} />
         <Route path='/pagina/esqueceu/senha' element={<EsqueceuASenha />} />
         <Route path='/pagina/dashboard' element={<Dashboard />} />

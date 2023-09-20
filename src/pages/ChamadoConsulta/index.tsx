@@ -8,7 +8,7 @@ import Pesquisar from "../../assets/images/btn_pesquisar.svg"
 
 //rotas
 import { Link } from "react-router-dom";
-import LinhaChamado from "../../components/Menu/LinhaChamado";
+import LinhaChamado from "../../components/LinhaChamado";
 
 function ChamadoConsulta() {
     const listaChamados: any = [
