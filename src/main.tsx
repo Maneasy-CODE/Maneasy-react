@@ -18,6 +18,7 @@ import ProjetoCadastro from './pages/ProjetoCadastro';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProjetoConsulta from './pages/ProjetoConsulta';
 import ProjetoAtualizar from './pages/ProjetoAtualizar';
+import DemandaCadastro from './pages/DemandaCadastro';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/projeto/cadastro' element={<ProjetoCadastro/>} />
         <Route path='/pagina/projeto/consulta' element={<ProjetoConsulta/>} />
         <Route path='/pagina/projeto/atualizar' element={<ProjetoAtualizar/>} />
+        <Route path='/pagina/demanda/cadastro' element={<DemandaCadastro/>} />
 
       </Routes>
     </BrowserRouter>
