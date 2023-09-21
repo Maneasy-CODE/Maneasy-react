@@ -293,3 +293,7 @@ html ::-webkit-scrollbar-track {
     justify-content: space-between;
     margin: 30px 0 30px 0;
 }
+
+#profissional_consulta input::placeholder {
+    color: black;
+}

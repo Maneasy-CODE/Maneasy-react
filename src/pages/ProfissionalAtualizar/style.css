@@ -197,14 +197,12 @@
 
 #profissional_atualizar  .input_ini_ferias {
     width: 465px;
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
 }
 
 #profissional_atualizar  .input_fim_ferias {
     width: 465px;
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
 }
@@ -324,7 +322,6 @@ html ::-webkit-scrollbar-track {
 
 #profissional_atualizar  select {
     font-family: "VerdanaRegular";
-    font-size: 16px;
 }
 
 #profissional_atualizar  .btn_lupa{
@@ -334,3 +331,48 @@ html ::-webkit-scrollbar-track {
 #profissional_atualizar select {
     -webkit-appearance: none;
 }
+
+#profissional_atualizar input::placeholder {
+    color: black;
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}
+
+#profissional_atualizar .cad_span_skill {
+    font-family: "VerdanaRegular";
+    font-size: 13px;
+}
+
+#profissional_atualizar .cad_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#profissional_atualizar .cad_item_skill {
+    color: white;
+    background-color: #2275acb7;
+    border-radius: 10px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 255, 242, 0);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#profissional_atualizar .cad_item_excluir {
+    display: flex;
+    align-items: center;
+    background-color: #C25348;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#profissional_atualizar .cad_item_excluir svg {
+    fill: white; 
+  }

@@ -50,7 +50,7 @@ function Cadastro() {
                                     name="Chapa" 
                                     className="input_field" 
                                     type="text"
-                                    placeholder="Digite aqui a sua chapa:"
+                                    placeholder="Digite aqui sua chapa"
                                     onChange={(e) => setChapa(e.target.value)}
                                     required
                                      />
@@ -64,7 +64,7 @@ function Cadastro() {
                                     name="Nome" 
                                     className="input_field" 
                                     type="name"
-                                    placeholder="Digite aqui o seu nome:"
+                                    placeholder="Digite aqui seu nome"
                                     onChange={(e) => setNome(e.target.value)}
                                     required
                                      />
@@ -78,7 +78,7 @@ function Cadastro() {
                                     name="Email" 
                                     className="input_field" 
                                     type="email" 
-                                    placeholder="Digite aqui o seu email:"
+                                    placeholder="Digite aqui seu e-mail"
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
                                     />
@@ -93,7 +93,7 @@ function Cadastro() {
                                         name="Senha" 
                                         className="input_field_senha" 
                                         type="password" 
-                                        placeholder="Digite aqui a sua senha:"
+                                        placeholder="Digite aqui sua senha"
                                         onChange={(e) => setSenha(e.target.value)}
                                         required
                                         />
@@ -107,7 +107,7 @@ function Cadastro() {
                                         name="ConfirmarSenha" 
                                         className="input_field_senha" 
                                         type="password" 
-                                        placeholder="Confirme sua senha:"
+                                        placeholder="Confirme sua senha"
                                         onChange={(e) => setConfirmarSenha(e.target.value)}
                                         required
                                         />

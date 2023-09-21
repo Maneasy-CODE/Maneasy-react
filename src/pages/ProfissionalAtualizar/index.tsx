@@ -95,7 +95,7 @@ function ProfissionalAtualizar() {
                     name="Chapa"
                     className="input_chapa input-field"
                     type="text"
-                    placeholder="Digite a chapa:"
+                    placeholder="Digite o número da chapa"
                     required
                   />
                 </div>
@@ -108,7 +108,7 @@ function ProfissionalAtualizar() {
                     name="Consultar"
                     className="input_nome input-field"
                     type="text"
-                    placeholder="Digite o nome:"
+                    placeholder="Digite o nome"
                     required
                   />
                 </div>
@@ -145,7 +145,7 @@ function ProfissionalAtualizar() {
                     id="e-mail"
                     className="input-field input_email"
                     type="email"
-                    placeholder="Digite o e-mail:"
+                    placeholder="Digite o e-mail"
                     required
                   />
                 </div>
@@ -240,7 +240,7 @@ function ProfissionalAtualizar() {
                       id="jorn_tra"
                       className="input_jorn_tra input-field"
                       type="number"
-                      placeholder="Digite a jornada de trabalho:"
+                      placeholder="Digite a jornada de trabalho"
                       required
 
                     />
@@ -255,7 +255,7 @@ function ProfissionalAtualizar() {
                       id="hora_ext"
                       className="input_hora_ext input-field"
                       type="number"
-                      placeholder="Digite as horas extras:"
+                      placeholder="Digite o total de horas extras"
                       required
                     />
                   </div>

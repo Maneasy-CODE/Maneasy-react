@@ -66,7 +66,7 @@ function ProfissionalConsulta() {
                                 <label htmlFor="Chapa">Chapa</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="ic:outline-badge" />
-                                    <input id="Chapa" name="Chapa" className="input-field" type="number" />
+                                    <input id="Chapa" name="Chapa" className="input-field" type="number" placeholder="Digite a chapa do profissional"/>
                                 </div>
                             </div>
                             <div>
@@ -76,7 +76,7 @@ function ProfissionalConsulta() {
                                 <label htmlFor="Nome">Nome</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="mingcute:user-4-fill" />
-                                    <input id="Nome" name="Nome" className="input-field" type="text" />
+                                    <input id="Nome" name="Nome" className="input-field" type="text" placeholder="Digite o nome do profissional"/>
                                 </div>
                             </div>
                             <Link to={""} className="section_pesquisa_btn">

@@ -30,7 +30,7 @@
 :root{
     --amarelo: #ffd100;
     --azule: #2274ac;
-    --azulc: #0094c4;
+    --azulc: rgb(0, 148, 196);
     --preto: #474545;
     --cinza: #BEBCBC;
     --verdee: #2C9123;

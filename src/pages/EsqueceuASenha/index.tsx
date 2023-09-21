@@ -12,7 +12,6 @@ function EsqueceuASenha() {
       <div className="nav_btn_voltar">
         <Link to={"#"}>
           <Icon className="icon_entrar" icon="clarity:circle-arrow-solid"   rotate={271} />
-  
         </Link>
       </div> 
       <section className="section_esqueceu_password" id="esqueceu_senha" >
@@ -34,14 +33,14 @@ function EsqueceuASenha() {
               <label htmlFor="Chapa">Chapa</label>
               <div className="input-icons">
                 <Icon className="icon" icon="ic:outline-badge" />
-                <input name="Chapa" className="input-field" type="text" required placeholder="Digite aqui a sua chapa:" />
+                <input name="Chapa" className="input-field" type="text" required placeholder="Digite aqui sua chapa" />
               </div>
             </div>
             <div className="input_com_label">
               <label htmlFor="E-mail">E-mail</label>
               <div className="input-icons">
                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                <input name="E-mail" className="input-field" type="email" required placeholder="Digite aqui a sua senha:" />
+                <input name="E-mail" className="input-field" type="email" required placeholder="Digite aqui sua senha" />
               </div>
             </div>
             <div className="section_btn_confirmar">

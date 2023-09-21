@@ -1,11 +1,10 @@
-.main_profissional_cadastro
-{
+.main_profissional_cadastro {
     display: flex;
     height: 100vh;
     width: 100%;
 }
 
-/* ICONES */ 
+/* ICONES */
 #profissional_cadastro .icon {
     position: absolute;
     /* padding: 10.5px 20px 7.5px 10px; */
@@ -47,9 +46,9 @@
 
 /* CONTEUDO*/
 
-#profissional_cadastro .conteudo_princiapal{
+#profissional_cadastro .conteudo_princiapal {
     overflow-y: scroll;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth;
     width: 100%;
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
@@ -62,7 +61,7 @@
     border-radius: 40px 0 0 40px;
     margin: 0 auto 50px auto;
     margin-bottom: 50px;
-  
+
 
 
 }
@@ -109,7 +108,7 @@
     border: none;
     text-align: center;
     text-decoration: none;
-    
+
     font-family: "VerdanaRegular";
     font-size: 20px;
     line-height: 34px;
@@ -139,18 +138,20 @@
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}
 
-#profissional_cadastro .btn_cad:hover:before, .btn_cad:focus:before, .btn_cad:active:before {
+#profissional_cadastro .btn_cad:hover:before,
+.btn_cad:focus:before,
+.btn_cad:active:before {
     left: 0;
-  }
+}
 
 #profissional_cadastro .btn_cons:before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 0;
-    right:100%;
+    right: 100%;
     bottom: 0;
     background: var(--azule);
     height: 2px;
@@ -160,11 +161,13 @@
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}
 
-#profissional_cadastro .btn_cons:hover:before, .btn_cons:focus:before, .btn_cons:active:before {
+#profissional_cadastro .btn_cons:hover:before,
+.btn_cons:focus:before,
+.btn_cons:active:before {
     right: 0;
-  }
+}
 
 #profissional_cadastro .posicao_conteudo {
     display: flex;
@@ -173,7 +176,7 @@
     margin-bottom: 20px;
 }
 
-#profissional_cadastro .horas{
+#profissional_cadastro .horas {
     display: flex;
     gap: 40px;
 }
@@ -196,14 +199,12 @@
 
 #profissional_cadastro .input_ini_ferias {
     width: 465px;
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
 }
 
 #profissional_cadastro .input_fim_ferias {
     width: 465px;
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
 }
@@ -215,6 +216,7 @@
     margin: 10px 0 20px;
     border-radius: 25px;
 }
+
 #profissional_cadastro .input_hora_ext {
     width: 260px;
 }
@@ -222,12 +224,13 @@
 #profissional_cadastro .input_jorn_tra {
     width: 260px;
 }
-#profissional_cadastro .btn_conf_e_canc{
+
+#profissional_cadastro .btn_conf_e_canc {
     border: none;
     background: none;
 }
 
-#profissional_cadastro .btn_conf{
+#profissional_cadastro .btn_conf {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
@@ -240,11 +243,12 @@
 
 /*Hard Skill*/
 
-#profissional_cadastro .hard_skills{
+#profissional_cadastro .hard_skills {
     border: 1px solid black;
-    border-radius: 25px;
-    font-size: 15px;
+    border-radius: 10px;
+    font-size: 13px;
     font-family: "VerdanaRegular";
+    margin-bottom: 20px;
 }
 
 #profissional_cadastro .section_objetivo_projeto {
@@ -252,11 +256,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 60px;
-    border-radius: 20px;
+    height: 40px;
+    border-radius: 10px;
 }
 
-#profissional_cadastro .section_objetivo_projeto > select {
+#profissional_cadastro .section_objetivo_projeto>select {
     width: 100%;
     height: 40px;
     background: transparent;
@@ -275,7 +279,7 @@
     border: 1px solid black;
 }
 
-#profissional_cadastro .cad_skills{
+#profissional_cadastro .cad_skills {
     border-radius: 100px;
     height: 50px;
     border: none;
@@ -310,23 +314,22 @@
 
 html ::-webkit-scrollbar {
     width: 6px;
-  }
+}
 
 html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: var(--azule);
-  }
-  
+}
+
 html ::-webkit-scrollbar-track {
     background: #ededed;
-  }
+}
 
 #profissional_cadastro select {
     font-family: "VerdanaRegular";
-    font-size: 16px;
 }
 
-#profissional_cadastro .btn_lupa{
+#profissional_cadastro .btn_lupa {
     width: 40px;
 }
 
@@ -334,7 +337,47 @@ html ::-webkit-scrollbar-track {
     -webkit-appearance: none;
 }
 
+#profissional_cadastro input::placeholder {
+    color: black;
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}
 
+#profissional_cadastro .cad_span_skill {
+    font-family: "VerdanaRegular";
+    font-size: 13px;
+}
 
+#profissional_cadastro .cad_skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+#profissional_cadastro .cad_item_skill {
+    color: white;
+    background-color: #2275acb7;
+    border-radius: 10px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 255, 242, 0);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
+#profissional_cadastro .cad_item_excluir {
+    display: flex;
+    align-items: center;
+    background-color: #C25348;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#profissional_cadastro .cad_item_excluir svg {
+    fill: white; 
+  }

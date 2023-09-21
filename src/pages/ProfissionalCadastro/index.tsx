@@ -67,6 +67,7 @@ function ProfissionalCadastro() {
 
     setSkillsSelecionadas(novaListaSkillsSelecionadas);
   };
+
   return (
 
     <main id="profissional_cadastro" className="main_profissional_cadastro">
@@ -95,7 +96,7 @@ function ProfissionalCadastro() {
                     name="Chapa"
                     className="input_chapa input-field"
                     type="text"
-                    placeholder="Digite o número da chapa:"
+                    placeholder="Digite o número da chapa"
                     required
                   />
                 </div>
@@ -108,7 +109,7 @@ function ProfissionalCadastro() {
                     name="Consultar"
                     className="input_nome input-field"
                     type="text"
-                    placeholder="Digite o seu nome:"
+                    placeholder="Digite o nome"
                     required
                   />
                 </div>
@@ -145,7 +146,7 @@ function ProfissionalCadastro() {
                     id="e-mail"
                     className="input-field input_email"
                     type="email"
-                    placeholder="Digite o e-mail:"
+                    placeholder="Digite o e-mail"
                     required
                   />
                 </div>
@@ -206,7 +207,7 @@ function ProfissionalCadastro() {
                   skillsSelecionadas.length > 0 ? skillsSelecionadas.map((el: any, index: number) => {
                     console.log(skillsSelecionadas);
 
-                    return (<div key={index} className="cad_item_skill">
+                    return (<div key={index} className="cad_item_skill" >
                       <span className="cad_span_skill">{el}</span>
                       <button
                         type="button"
@@ -236,7 +237,7 @@ function ProfissionalCadastro() {
                       id="jorn_tra"
                       className="input_jorn_tra input-field"
                       type="number"
-                      placeholder="Digite a jornada de trabalho:"
+                      placeholder="Digite a jornada de trabalho"
                       required
                     />
                   </div>
@@ -250,7 +251,7 @@ function ProfissionalCadastro() {
                       id="hora_ext"
                       className="input_hora_ext input-field"
                       type="number"
-                      placeholder="Digite o total de horas extras:"
+                      placeholder="Digite o total de horas extras"
                       required
                     />
                   </div>
