@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin-top: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 #demanda_cadastro .footer-options>div{

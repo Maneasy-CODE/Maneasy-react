@@ -32,7 +32,7 @@ function DemandaCadastro() {
                                 <span>Nome da Demanda</span>
                                 <div className="demanda-cadastrar input-icons">
                                     <Icon className="icon" icon="mdi:clipboard-edit-outline" />
-                                    <input className="input-field" name="nome-demanda" type="text" placeholder="Digite o nome da demanda: " required />
+                                    <input className="input-field" name="nome-demanda" type="text" placeholder="Digite o nome da demanda " required />
                                 </div>
                             </div>
                             <div className="datas">
@@ -75,14 +75,14 @@ function DemandaCadastro() {
                                     <span>Orçamento de demanda</span>
                                     <div className="data-conte">
                                         <Icon className="icon" icon="fa:dollar" />
-                                        <input className="input-field" name="orcamento" type="text" placeholder="Digite aqui o orçamento de demanda:" required />
+                                        <input className="input-field" name="orcamento" type="text" placeholder="Digite o orçamento de demanda" required />
                                     </div>
                                 </div>
                                 <div className="tempo-demanda">
                                     <span>Tempo de demanda</span>
                                     <div className="data-conte">
                                         <Icon className="icon" icon="ps:clock" />
-                                        <input className="input-field" name="tempo" type="text" placeholder="Digite aqui o tempo de demanda:" required />
+                                        <input className="input-field" name="tempo" type="text" placeholder="Digite o tempo de demanda" required />
                                     </div>
                                 </div>
                                 <div className="select_status">

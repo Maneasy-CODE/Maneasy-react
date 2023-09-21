@@ -77,7 +77,7 @@ function DemandaAtualizar() {
                                 <span>Orçamento de demanda</span>
                                 <div className="data-conte input-icons">
                                     <Icon className="icon" icon="fa:dollar"></Icon>
-                                    <input className="input-field" name="criacao" type="text" placeholder="Digite aqui o orçamento de demanda:" required/>
+                                    <input className="input-field" name="criacao" type="text" placeholder="Digite o orçamento de demanda" required/>
                                 </div>
                             </div>
 
@@ -85,7 +85,7 @@ function DemandaAtualizar() {
                                 <span>Tempo de demanda</span>
                                 <div className="data-conte input-icons">
                                     <Icon className="icon" icon="ps:clock"></Icon>
-                                    <input className="input-field" name="criacao" type="text"placeholder="Digite aqui o tempo de demanda:" required/>
+                                    <input className="input-field" name="criacao" type="text"placeholder="Digite o tempo de demanda" required/>
                                 </div>
                             </div>
 

@@ -241,7 +241,7 @@
 
 #profissional_atualizar  .hard_skills{
     border: 1px solid black;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 15px;
     font-family: "VerdanaRegular";
 }

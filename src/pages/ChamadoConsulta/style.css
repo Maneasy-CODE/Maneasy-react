@@ -30,7 +30,6 @@
 }
 
 #chamado_consulta .container {
-    max-width: 900px;
     width: 80%;
     margin: 0 auto;
     /*background-color: aqua;*/
@@ -254,3 +253,10 @@ html ::-webkit-scrollbar-track {
 #chamado_consulta .input_nome{
     width: 45%;
 }
+
+#chamado_consulta input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}
+

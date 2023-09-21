@@ -34,7 +34,7 @@ function ChamadoAtualizar() {
                             <span>Nº do Chamado</span>
                             <div className="num-chamados input-icons">
                                 <Icon className="icon" icon="mdi:bell-alert-outline"></Icon>
-                                <input className="input-field" name="numero-chamados" type="text" required placeholder="Digite o numero do chamado"/>
+                                <input className="input-field" name="numero-chamados" type="text" required placeholder="Digite o número do chamado"/>
                                     <img className="lupa" src={IconLupa} alt=""/>
                                     </div>
                             </div>

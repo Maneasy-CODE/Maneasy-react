@@ -38,7 +38,7 @@ function ProjetoAtualizar() {
                             <div className="input-icons">
                                 <Icon className="icon" icon="la:project-diagram" />
 
-                                <input name="nome_do_projeto" className="input-field" type="text" placeholder="Digite aqui o nome do projeto: " onChange={(e) => setNomeProjeto(e.target.value)} required />
+                                <input name="nome_do_projeto" className="input-field" type="text" placeholder="Digite o nome do projeto " onChange={(e) => setNomeProjeto(e.target.value)} required />
                             </div>
                         </div>
                     </div>
@@ -109,6 +109,7 @@ function ProjetoAtualizar() {
                                     name="nome_criacao"
                                     className="input-calendario"
                                     type="text"
+                                    placeholder="Digite o orçamento do projeto"
                                     required
                                 />
                             </div>

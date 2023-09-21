@@ -74,7 +74,7 @@ function Consultas() {
                                 <label htmlFor="Chapa">ID</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="ic:outline-badge" />
-                                    <input name="Chapa" className="input-field" type="number" />
+                                    <input name="Chapa" className="input-field" type="number" placeholder="Digite o ID do projeto" required />
                                 </div>
                             </div>
                             <div className="position_ou">
@@ -84,7 +84,7 @@ function Consultas() {
                                 <label htmlFor="Consultar">Consultar</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="mingcute:user-4-fill" />
-                                    <input name="Consultar" className="input-field" type="text" />
+                                    <input name="Consultar" className="input-field" type="text" placeholder="Digite o nome da consulta" />
                                 </div>
                             </div>
                             <Link to={"#"} className="section_pesquisa_btn">

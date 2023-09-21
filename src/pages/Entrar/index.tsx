@@ -30,7 +30,7 @@ function Entrar() {
                 name="Chapa"
                 className="input_field"
                 type="email"
-                placeholder="Digite aqui seu e-mail"
+                placeholder="Digite seu e-mail"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -43,7 +43,7 @@ function Entrar() {
                 name="Senha"
                 className="input_field"
                 type="password"
-                placeholder="Digite aqui sua senha"
+                placeholder="Digite sua senha"
                 onChange={(e) => setSenha(e.target.value)}
               />
             </div>

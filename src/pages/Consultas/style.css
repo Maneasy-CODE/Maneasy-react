@@ -45,7 +45,6 @@
 }
 
 #consulta section .conteudo {
-    height: 100%;
     width: 80%;
     margin: 0 auto;
     /*background-color: aqua;*/
@@ -181,7 +180,7 @@ html ::-webkit-scrollbar-track {
 
 #consulta .tabela_scroll {
     width: 100%;
-    height: 298px;
+    height: 400px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding-right: 5%;
@@ -205,4 +204,10 @@ html ::-webkit-scrollbar-track {
 
 #consulta table {
     width: 100%;
+}
+
+#consulta input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
 }

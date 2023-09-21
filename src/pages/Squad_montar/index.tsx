@@ -28,7 +28,7 @@ function Squadmontar() {
                             <label htmlFor="id">ID</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="id" className="input-field" type="number" />
+                                <input name="id" className="input-field" type="number" placeholder="Digite o ID do squad"/>
                             </div>
                         </div>
                         <div>
@@ -42,7 +42,7 @@ function Squadmontar() {
                             <label htmlFor="nome_projeto">Nome do Projeto</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="la:project-diagram" />
-                                <input name="nome_projeto" className="input-field" type="text" />
+                                <input name="nome_projeto" className="input-field" type="text" placeholder="Digite o nome do projeto"/>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@ function Squadmontar() {
                                         className="icon icon_calendario"
                                         icon="zondicons:calendar"
                                     />
-                                    <input name="criacao" className="input-field" type="date" />
+                                    <input name="criacao" className="input-field" type="date" required/>
                                 </div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ function Squadmontar() {
                                         className="icon icon_calendario"
                                         icon="zondicons:calendar"
                                     />
-                                    <input name="inicio" className="input-field" type="date" />
+                                    <input name="inicio" className="input-field" type="date" required/>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ function Squadmontar() {
                                         className="icon icon_calendario"
                                         icon="zondicons:calendar"
                                     />
-                                    <input name="termino" className="input-field" type="date" />
+                                    <input name="termino" className="input-field" type="date" required/>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@ function Squadmontar() {
                             <label htmlFor="Chapa">Chapa</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="Chapa" className="input-field" type="number" />
+                                <input name="Chapa" className="input-field" type="number" placeholder="Digite a chapa" required/>
                             </div>
                         </div>
                         <div>
@@ -113,7 +113,7 @@ function Squadmontar() {
                             <label htmlFor="Consultar">Consultar</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                                <input name="Consultar" className="input-field" type="text" />
+                                <input name="Consultar" className="input-field" type="text" placeholder="Digite o nome do squad"/>
                             </div>
                         </div>
                         <Link to={"#"} className="section_pesquisa_btn">

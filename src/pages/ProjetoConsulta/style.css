@@ -338,3 +338,9 @@ html ::-webkit-scrollbar-track {
 #projeto_consulta main {
     display: flex;
 }
+
+#projeto_consulta input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}

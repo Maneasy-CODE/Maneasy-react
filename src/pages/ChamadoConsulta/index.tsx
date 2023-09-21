@@ -63,7 +63,7 @@ function ChamadoConsulta() {
                             <label htmlFor="id">ID</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="id" className="input-field" type="text" />
+                                <input name="id" className="input-field" type="text" placeholder="Digite o ID do chamado" required/>
                             </div>
                         </div>
                         <div className="ou">
@@ -73,7 +73,7 @@ function ChamadoConsulta() {
                             <label htmlFor="Nome">Nome</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                                <input name="Nome" className="input-field" type="text" />
+                                <input name="Nome" className="input-field" type="text" placeholder="Digite o nome do chamado" required/>
                             </div>
                         </div>
                         <div>

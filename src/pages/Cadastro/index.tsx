@@ -50,7 +50,7 @@ function Cadastro() {
                                     name="Chapa" 
                                     className="input_field" 
                                     type="text"
-                                    placeholder="Digite aqui sua chapa"
+                                    placeholder="Digite sua chapa"
                                     onChange={(e) => setChapa(e.target.value)}
                                     required
                                      />
@@ -64,7 +64,7 @@ function Cadastro() {
                                     name="Nome" 
                                     className="input_field" 
                                     type="name"
-                                    placeholder="Digite aqui seu nome"
+                                    placeholder="Digite seu nome"
                                     onChange={(e) => setNome(e.target.value)}
                                     required
                                      />
@@ -78,7 +78,7 @@ function Cadastro() {
                                     name="Email" 
                                     className="input_field" 
                                     type="email" 
-                                    placeholder="Digite aqui seu e-mail"
+                                    placeholder="Digite seu e-mail"
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
                                     />
@@ -93,7 +93,7 @@ function Cadastro() {
                                         name="Senha" 
                                         className="input_field_senha" 
                                         type="password" 
-                                        placeholder="Digite aqui sua senha"
+                                        placeholder="Digite sua senha"
                                         onChange={(e) => setSenha(e.target.value)}
                                         required
                                         />

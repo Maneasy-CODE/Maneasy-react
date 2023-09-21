@@ -18,7 +18,6 @@
     height: 100%;
     border-radius: 40px 0 0 40px;
     padding-top: 50px;
-    padding-bottom: 70px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 
@@ -184,7 +183,6 @@
 
     width:100%;
     font-family: verdana;
-    font-size: 15px;
 
     background: transparent;
     border-radius: 100px;
@@ -209,7 +207,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #chamado_cadastro input[type="date"] {
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
@@ -247,7 +244,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     height: 102px;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     border: 1px solid #474545;
     margin-top: 10px;
@@ -283,11 +280,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 100%;
     background: none;
     font-family: Verdana;
-    font-size: 15PX;
     color: var(--preto);
-
-
-
 }
 
 #chamado_cadastro section .selecao{
@@ -343,5 +336,11 @@ html ::-webkit-scrollbar-track {
 
 #chamado_cadastro textarea {
     resize: none;
+}
+
+#chamado_cadastro input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
 }
 

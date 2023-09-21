@@ -154,7 +154,6 @@
 }
 
 #squad_cadastro input[type="date"] {
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
@@ -183,7 +182,7 @@
 #squad_cadastro textarea {
     width: 100%;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     border: 1px solid #474545;
 }
@@ -258,4 +257,10 @@ html ::-webkit-scrollbar-track {
 
 #squad_cadastro textarea {
     resize: none;
+}
+
+#squad_cadastro input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
 }

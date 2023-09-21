@@ -30,7 +30,7 @@ function ChamadoCadastro() {
                                     <div className="input-icons">
                                         <Icon className="icon" icon="ic:outline-badge" />
 
-                                        <input name="setor" className="input-field-medium" type="text" required placeholder="Digite o Setor"/>
+                                        <input name="setor" className="input-field-medium" type="text" required placeholder="Digite o setor"/>
                                     </div>
                                 </div>
                                 <div className="input_solicitante">
@@ -44,7 +44,7 @@ function ChamadoCadastro() {
                                             className="input-field-big"
                                             type="text"
                                             required
-                                            placeholder="Digite o Nome do Solicitante"
+                                            placeholder="Digite o nome do solicitante"
                                         />
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@ function ChamadoCadastro() {
                                             className="input-field-medium"
                                             type="text"
                                             required
-                                            placeholder="Digite a Chapa do Profissional:"
+                                            placeholder="Digite a chapa do profissional"
                                         />
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@ function ChamadoCadastro() {
                                             className="input-field-big"
                                             type="text"
                                             required
-                                            placeholder="Digite o nome do Profissional:"
+                                            placeholder="Digite o nome do profissional"
                                         />
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@ function ChamadoCadastro() {
                                             <Icon className="icon" icon="bi:cloud-arrow-up" />
 
                                         </label>
-                                        <input type="file" id="file" name="file" required/>
+                                        <input type="file" id="file" name="file"  required/>
                                     </div>
                                 </div>
                                 <div className="input_status_chamado">

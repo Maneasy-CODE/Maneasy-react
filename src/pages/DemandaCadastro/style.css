@@ -200,7 +200,7 @@
     width: 100%;
     height: 102px;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     border: 1px solid #474545;
     margin: 10px 0px 30px 0px;
@@ -324,7 +324,6 @@
     border: 1px solid #474545;
     background: transparent;
     font-family: "VerdanaRegular";
-    font-size: 16px;
 }
 
 #demanda_cadastro .select-icons{
@@ -371,7 +370,6 @@
 }
 
 #demanda_cadastro input[type="date"] {
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
@@ -383,3 +381,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 
+#demanda_cadastro input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}

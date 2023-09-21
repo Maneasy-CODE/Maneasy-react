@@ -184,7 +184,6 @@
 }
 
 #projeto_atualizar input[type="date" i] {
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
@@ -225,7 +224,7 @@
     width: 100%;
    /* height: 200px;*/
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #474545;
     background: transparent;
    /* resize: none;*/
@@ -259,7 +258,6 @@
     border-radius: 40px;
     border: 1px solid #474545;
     background: transparent;
-    font-size: 16px;
 }
 
 #projeto_atualizar .icon_start{
@@ -335,7 +333,6 @@
 }
 
 #projeto_atualizar input[type="date"] {
-    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
@@ -347,3 +344,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     -webkit-appearance: none;
 }
 
+#projeto_atualizar input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
+}

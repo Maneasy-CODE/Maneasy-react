@@ -1,7 +1,7 @@
 /* CLASSES GENERICAS */
 #demanda_consulta .icon {
     position: absolute;
-    padding: 11px 20px 7.5px 10px;
+    margin: 0px 0 0 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
@@ -284,9 +284,15 @@ html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
-table{
+#demanda_consulta table{
     width: 100%;
     font-family: "VerdanaRegular";
     font-size: 16px;
     line-height: 28px;    
+}
+
+#demanda_consulta input::placeholder {
+    color: rgb(0, 0, 0);
+    font-family: "VerdanaRegular";
+    font-size: 12px;
 }

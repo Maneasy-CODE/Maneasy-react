@@ -86,7 +86,7 @@ function SquadCadastros() {
                             <label htmlFor="Chapa">Chapa</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="Chapa" className="input-field" type="number" />
+                                <input name="Chapa" className="input-field" type="number" placeholder="Digite o nome da chapa"/>
                             </div>
                         </div>
                         <div>
@@ -96,7 +96,7 @@ function SquadCadastros() {
                             <label htmlFor="Consultar">Consultar</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="mingcute:user-4-fill" />
-                                <input name="Consultar" className="input-field" type="text" />
+                                <input name="Consultar" className="input-field" type="text" placeholder="Digite o nome do serviço"/>
                             </div>
                         </div>
                         <Link to={"#"} className="section_pesquisa_btn">

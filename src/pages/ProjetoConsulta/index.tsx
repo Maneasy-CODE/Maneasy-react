@@ -66,7 +66,7 @@ function ProjetoConsulta() {
                                 <label htmlFor="id">ID</label>
                                 <div className="input-icons_pesquisa">
                                     <Icon className="icon" icon="ic:outline-badge"></Icon>
-                                    <input name="id" className="input-field_pesquisa" type="text" />
+                                    <input name="id" className="input-field_pesquisa" type="text" placeholder="Digite o ID do projeto" required/>
                                 </div>
                             </div>
 
@@ -78,7 +78,7 @@ function ProjetoConsulta() {
                                 <label htmlFor="Nome">Nome</label>
                                 <div className="input-icons_pesquisa">
                                     <Icon className="icon" icon="mingcute:user-4-fill"></Icon>
-                                    <input name="Nome" className="input-field_pesquisa" type="text" />
+                                    <input name="Nome" className="input-field_pesquisa" type="text" placeholder="Digite o nome do projeto" required/>
                                 </div>
                             </div>
                             <div>

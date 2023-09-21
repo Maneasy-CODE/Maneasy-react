@@ -75,7 +75,7 @@ function DemandaConsulta() {
                                 <span className="text-span">Chapa</span>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="ic:outline-badge"></Icon>
-                                    <input className="input-field" name="Chapa" type="text" />
+                                    <input className="input-field" name="Chapa" type="text" placeholder="Digite o nome da chapa" required/>
                                 </div>
                             </div>
 
@@ -85,7 +85,7 @@ function DemandaConsulta() {
                                 <span className="text-span">Nome</span>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="mingcute:user-4-fill"></Icon>
-                                    <input className="input-field" name="Nome" type="text" />
+                                    <input className="input-field" name="Nome" type="text" placeholder="Digite o nome da demanda" required/>
                                 </div>
                             </div>
                             <div className="icon-lupa">
