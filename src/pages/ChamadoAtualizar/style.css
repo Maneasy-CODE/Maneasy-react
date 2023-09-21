@@ -1,34 +1,31 @@
 
-#demanda_atualizar section {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-}
-
 /* CLASSES GENERICAS */
-#demanda_atualizar .icon {
+
+#chamado_atualizar .icon {
     position: absolute;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
-    margin: 0 0  0 10px;
+    margin-left: 10px;
 }
 
-#demanda_atualizar .icon_select{
+#chamado_atualizar .icon_solicitante_profissional {
     position: absolute;
+    /* padding: 10.5px 20px 7.5px 10px;  */
     align-items: center;
-    color: var(--preto);
-    font-size: 20px;
-    margin: 10px 0  0 20px;
+    color: #474545;
+    min-width: 40px;
+    font-size: 20px;    
+    margin-top: 10px;
 }
 
-#demanda_atualizar .input-icons {
-    
-    margin-top: 5px;
-   
+#chamado_atualizar .input-icons {
+    margin-top: 10px;
+    position: relative;
 }
 
-#demanda_atualizar .input-field {
+
+#chamado_atualizar .input-field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -37,42 +34,60 @@
     border: 1px solid #474545;
 }
 
-#demanda_atualizar input[type="date"] {
+#chamado_atualizar{
+    display: flex;
+}
+
+#chamado_atualizar section{
+    width: 100%;
+    height: 100vh;
+}
+
+#chamado_atualizar input[type="date"]::-webkit-inner-spin-button,
+#chamado_atualizar input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+#chamado_atualizar input[type="date"] {
     font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
 }
 
-#demanda_atualizar input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+#chamado_atualizar textarea {
+    width: 100%;
+    background: transparent;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #474545;
+    resize: none;
+    margin: 15px 0 20px 0;
 }
 
 /* TITULO */
-#demanda_atualizar section .container-grid{
+#chamado_atualizar section .container-grid {
     width: 100%;
     height: 100%;
     border-radius: 40px 0 0 40px;
-    margin-left: 50px auto;
     padding: 50px 0px 30px 0px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
-#demanda_atualizar section .conteudo{
+#chamado_atualizar section .conteudo {
     width: 80%;
     margin: 0 auto;
 }
 
-#demanda_atualizar section .cadastrar{
+#chamado_atualizar section .cadastrar {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-#demanda_atualizar section .cadastrar h1{
+#chamado_atualizar section .cadastrar h1 {
     font-family: "SpartanBold";
     font-size: 45px;
     line-height: 44px;
@@ -80,23 +95,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /*BUTTONS*/
-#demanda_atualizar section .buttons-grid{
+#chamado_atualizar section .buttons-grid {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
-    margin:25px 0px 39px 0px;
+    margin: 25px 0px 39px 0px;
 }
 
-#demanda_atualizar section .button-cadastrar{
+#chamado_atualizar section .button-cadastrar {
     width: 130px;
     height: 50px;
     background: none;
     border: none;
     text-align: center;
     text-decoration: none;
-    
+
     font-family: "VerdanaRegular";
     font-size: 20px;
     line-height: 34px;
@@ -111,7 +126,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     overflow: hidden;
 }
 
-#demanda_atualizar .button-cadastrar:before {
+#chamado_atualizar .button-cadastrar:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -126,20 +141,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
+}
 
-#demanda_atualizar .button-cadastrar:hover:before, .button-cadastrar:focus:before, .button-cadastrar:active:before {
+#chamado_atualizar .button-cadastrar:hover:before,
+.button-cadastrar:focus:before,
+.button-cadastrar:active:before {
     left: 0;
-  }
+}
 
-#demanda_atualizar section .button-consultar{
+#chamado_atualizar section .button-consultar {
     width: 130px;
     height: 50px;
     background: none;
     border: none;
     text-align: center;
     text-decoration: none;
-    
+
     font-family: "VerdanaRegular";
     font-size: 20px;
     line-height: 34px;
@@ -151,10 +168,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-#demanda_atualizar .button-consultar:before {
+#chamado_atualizar .button-consultar:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -169,176 +186,169 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transition-duration: 0.6s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-  }
-
-  #demanda_atualizar .button-consultar:hover:before, .button-consultar:focus:before, .button-consultar:active:before {
-    right: 0;
-  }
-
-
-/* DEMANDA */
-#demanda_atualizar section .demanda{
-    width: 100%;
-    margin-bottom: 30px;
 }
 
-#demanda_atualizar section .demanda span{
+#chamado_atualizar .button-consultar:hover:before,
+.button-consultar:focus:before,
+.button-consultar:active:before {
+    right: 0;
+}
+
+/* CHAMADO NUMERO */
+#chamado_atualizar section .chamados {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#chamado_atualizar section .chamados span {
     font-family: "VerdanaRegular";
     font-size: 16px;
     line-height: 28px;
 }
 
-#demanda_atualizar section .demanda-cadastrar{
-    width: 100%;
+#chamado_atualizar section .num-chamados {
+    width: 359px;
     height: 35px;
 
     display: flex;
     align-items: center;
-    position: relative;
 }
 
-/* DATAS */
-#demanda_atualizar section .datas div {
-    width: 100%;
+#chamado_atualizar section .lupa {
+    width: 34px;
+    margin-left: 20px;
 }
 
-#demanda_atualizar section .datas{
+
+/* SOLICITANTE E PROFISSIONAL / NOME */
+#chamado_atualizar section .info-grid {
     width: 100%;
-    
+    height: 90px;
+
     display: flex;
-    gap: 20px;
-
-    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
-#demanda_atualizar section .datas span{
+#chamado_atualizar section .info-grid>span {
+    display: flex;
+    align-items: center;
+
     font-family: "VerdanaRegular";
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
 }
 
-#demanda_atualizar section .data-conte{
+#chamado_atualizar section .text-span {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar .solicitante {
+    width: 48%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+#chamado_atualizar .profissional {
+    width: 48%;
+    flex-direction: column;
+    display: flex;
+}
+
+/* DATAS */
+
+#chamado_atualizar section .datas div {
     width: 100%;
-    height: 40px;
-    margin: 10px 0  0 10px;
+}
+
+#chamado_atualizar section .datas {
+    width: 100%;
+    height: 60px;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#chamado_atualizar section .datas span {
+    font-family: "VerdanaRegular";
+    font-size: 17px;
+    line-height: 28px;
+}
+
+#chamado_atualizar section .data-conte {
+    width: 240px;
+    height: 35px;
 
     display: flex;
     align-items: center;
-    position: relative;
 }
 
-#demanda_atualizar section time{
+#chamado_atualizar section time {
     font-family: "VerdanaRegular";
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
     padding-left: 16px;
 }
 
-/* OBJETIVO */
-#demanda_atualizar section .objetivo-demanda span{
+/* DESCRIÇOES */
+#chamado_atualizar section .chamado-info span {
     font-family: "VerdanaRegular";
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
 }
 
-#demanda_atualizar section textarea{
+#chamado_atualizar section textarea {
     font-family: "VerdanaRegular";
     font-size: 13px;
     line-height: 28px;
     text-align: justify;
-    
+
 }
 
-#demanda_atualizar section .objetivo-demanda .objetivo-form{
+#chamado_atualizar section .chamado-info {
+    margin-top: 30px;
+}
+
+#chamado_atualizar section .chamado-info .chamado-form {
     width: 100%;
-    height: 102px;
-    background: transparent;
+    height: 120px;
+    border: 1px solid var(--preto);
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding: 20px;
-    border: 1px solid #474545;
-    margin: 10px 0px 30px 0px;
 }
 
 
-/* ORÇAMENTO DEMANDA */
-#demanda_atualizar section .progresso-demanda>div{
-    width: 100%;
-}
-
-#demanda_atualizar section .progresso-demanda{
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-#demanda_atualizar section .progresso-demanda span {
-    font-family: "VerdanaRegular";
-    font-size: 16px;
-    line-height: 28px;
-    margin-top: 10px;
-}
-
-#demanda_atualizar section .demanda-criada-status{
-    width: 100%;
-    height: 38.92px;
-    display: flex;
-    align-items: center;
-
-    background: transparent;
-    border-radius: 100px;
-    
-    padding: 10px 10px 10px 10px;
-    border: 1px solid #474545;
-    margin-top: 10px;
-}
-
-#demanda_atualizar section .status-demanda .demanda-criada{
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#demanda_atualizar section .status-demanda .data-conte{
-    display: flex;
-    justify-content: space-between;
-}
-
-#demanda_atualizar section .select-status {
-    width: 100%;
-    margin-left: 15px;
-    font-family: "VerdanaRegular";
-    font-size: 16px;
-    line-height: 28px;
-    border: none;
-    background: none;
-}
-
-/* FOOTER  */
-#demanda_atualizar section .footer-options{
+/* BOTÕES CONFIRMAR  */
+#chamado_atualizar section .footer-options {
     display: flex;
     justify-content: space-between;
 
     margin-top: 20px;
 }
 
-#demanda_atualizar section .footer-options>div{
+#chamado_atualizar section .footer-options>div {
     display: flex;
     gap: 10px;
 }
 
-#demanda_atualizar section .footer-options img{
+#chamado_atualizar section .footer-options img {
     width: 34px;
     height: 34px;
 }
 
-#demanda_atualizar section .footer-options .tamanho-icone{
-    width: 34px;
-    height: 34px;
+#chamado_atualizar section .footer-options .tamanho-icone {
+    width: 30px;
+    height: 30px;
+}
+
+#chamado_atualizar textarea {
+    resize: none;
 }
 
 html ::-webkit-scrollbar {
@@ -351,47 +361,4 @@ html ::-webkit-scrollbar-thumb {
 }
 html ::-webkit-scrollbar-track {
     background: #ededed;
-}
-
-
-#demanda_atualizar select {
-    -webkit-appearance: none;
-}
-
-#demanda_atualizar .select_status{
-    line-height: 28px;
-    width: 45%;
-    flex-direction: column;
-    font-family: "VerdanaRegular";
-}
-
-#demanda_atualizar select{
-    width: 100%;
-    height: 40px;
-    margin-top: 10px;
-    padding: 10px 40px;
-    color: var(--preto);
-    border-radius: 40px;
-    border: 1px solid #474545;
-    background: transparent;
-    font-family: "VerdanaRegular";
-    font-size: 16px;
-}
-
-#demanda_atualizar .select-icons{
-    position: relative;
-
-}
-
-#demanda_atualizar textarea {
-    resize: none;
-}
-
-#demanda_atualizar{
-    display: flex;
-}
-
-#demanda_atualizar > section{
-    width: 100%;
-    
 }
