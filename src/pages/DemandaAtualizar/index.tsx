@@ -22,7 +22,7 @@ function DemandaAtualizar() {
                                 <h1>Demandas</h1>
                         </div>
                         <nav className="buttons-grid">
-                            <Link to={"/pagina/demanda/cadastrar"} className="button-cadastrar">Cadastrar</Link>
+                            <Link to={"/pagina/demanda/cadastro"} className="button-cadastrar">Cadastrar</Link>
                             <Link to={"/pagina/demanda/consulta"} className="button-consultar">Consultar</Link>
                         </nav>
                             <form>
