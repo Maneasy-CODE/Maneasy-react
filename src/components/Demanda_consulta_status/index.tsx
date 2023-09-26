@@ -9,7 +9,7 @@ function Demanda_consulta_status(props: any) {
             <td className="c1 fontes">{props.id}</td>
             <td className="c2 fontes">{props.descricao}</td>
             <td className="c3 fontes">
-                <Link to={"#"}>
+                <Link to={"/pagina/demanda/atualizar"}>
                     <img src={imagemEditar} />
                 </Link>
             </td>

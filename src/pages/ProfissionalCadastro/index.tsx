@@ -83,7 +83,7 @@ function ProfissionalCadastro() {
               <Link to={""} className="btn_cad" >
                 Cadastrar
               </Link>
-              <Link to={""} className="btn_cons">
+              <Link to={"/pagina/profissional/consulta"} className="btn_cons">
                 Consultar
               </Link>
             </nav>

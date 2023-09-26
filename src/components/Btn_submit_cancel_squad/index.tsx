@@ -8,7 +8,7 @@ function Btn_submit_cancel_squad() {
     return (
         <main id="demanda_cadastro">
             <div className="footer-options">
-                <Link to={"#"}>
+                <Link to={"/pagina/squad/cadastro"}>
                     <img src={btn_squad} alt="" />
                 </Link>
                 <div>

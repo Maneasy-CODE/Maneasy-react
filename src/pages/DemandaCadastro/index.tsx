@@ -25,7 +25,7 @@ function DemandaCadastro() {
                         </div>
                         <nav className="buttons-grid">
                             <Link className="button-cadastrar" to={"#"}>Cadastrar</Link>
-                            <Link className="button-consultar" to={"#"}>Consultar</Link>
+                            <Link className="button-consultar" to={"/pagina/demanda/consulta"}>Consultar</Link>
                         </nav>
                         <form action="">
                             <div className="demanda">

@@ -58,7 +58,7 @@ function ProfissionalConsulta() {
                     </div>
                     <div className="conteudo">
                         <nav className="nav_cad_cons">
-                            <Link to={""} className="btn_cad">Cadastrar</Link>
+                            <Link to={"/pagina/profissional/cadastro"} className="btn_cad">Cadastrar</Link>
                             <Link to={""} className="btn_cons">Consultar</Link>
                         </nav>
                         <div className="section_pesquisa">

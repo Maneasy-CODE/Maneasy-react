@@ -55,7 +55,7 @@ function ChamadoConsulta() {
                         <h1>Chamados</h1>
                     </div>
                     <div className="consulta">
-                        <Link className="button-cadastrar" to={""}>Cadastrar</Link>
+                        <Link className="button-cadastrar" to={"/pagina/chamado/cadastro"}>Cadastrar</Link>
                         <Link className="button-consultar" to={""}>Consultar</Link>
                     </div>
                     <div className="pesquisas">

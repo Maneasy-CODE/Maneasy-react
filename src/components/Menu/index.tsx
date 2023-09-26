@@ -14,14 +14,14 @@ function Menu() {
 
                 <img className="aside_logo" src={logo_branca} alt="Logo Maneasy" />
 
-                <Link to={""}>
+                <Link to={"/pagina/dashboard"}>
                     <div className="icon_menu">
                         <Icon icon="ph:chart-bar-bold" />
                     </div>
                     Dashboard
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/profissional/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="ion:people-circle" />
                     </div>
@@ -29,28 +29,28 @@ function Menu() {
                     Profissionais
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/projeto/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="la:project-diagram" />
                     </div>
                     Projetos
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/demanda/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:clipboard-edit-outline" />
                     </div>
                     Demandas
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/chamado/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:bell-alert-outline" />
                     </div>
                     Chamados
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/squad/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:people-group" />
                     </div>
@@ -58,7 +58,7 @@ function Menu() {
                     Squad
                 </Link>
 
-                <Link to={""}>
+                <Link to={"/pagina/consultas"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:file-report-outline" />
                     </div>
@@ -66,15 +66,14 @@ function Menu() {
                 </Link>
 
             </nav>
-
-            <footer id="footer_menu">
-                <Link to={""}>
+            <Link id="text_decoration" to={"/"}>
+                <footer id="footer_menu">
                     <div className="icon_footer">
                         <Icon icon="iconamoon:exit-bold" />
                     </div>
                     Sair
-                </Link>
-            </footer>
+                </footer>
+            </Link>
         </aside>
     )
 

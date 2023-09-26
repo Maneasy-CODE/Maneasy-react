@@ -22,8 +22,8 @@ function DemandaAtualizar() {
                                 <h1>Demandas</h1>
                         </div>
                         <nav className="buttons-grid">
-                            <Link to={""} className="button-cadastrar">Atualizar</Link>
-                            <Link to={""} className="button-consultar">Consultar</Link>
+                            <Link to={"/pagina/demanda/cadastrar"} className="button-cadastrar">Cadastrar</Link>
+                            <Link to={"/pagina/demanda/consulta"} className="button-consultar">Consultar</Link>
                         </nav>
                             <form>
                         <div className="demanda">

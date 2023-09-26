@@ -21,7 +21,7 @@ function ChamadoCadastro() {
                         </div>
                         <nav className="botao">
                             <Link className="button_cadastrar" to={""}>Cadastrar</Link>
-                            <Link className="button_consultar" to={""}>Consultar</Link>
+                            <Link className="button_consultar" to={"/pagina/chamado/consulta"}>Consultar</Link>
                         </nav>
                         <form action="">
                             <div className="section_formulario1">

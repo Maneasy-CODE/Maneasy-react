@@ -26,8 +26,8 @@ function ChamadoAtualizar() {
                                 <h1>Chamados</h1>
                         </div>
                         <div className="buttons-grid">
-                            <Link to="" className="button-cadastrar">Atualizar</Link>
-                            <Link to="" className="button-consultar">Consultar</Link>
+                            <Link to="/pagina/chamado/cadastro" className="button-cadastrar">Cadastrar</Link>
+                            <Link to="/pagina/chamado/consulta" className="button-consultar">Consultar</Link>
                         </div>
 
                         <div className="chamados">

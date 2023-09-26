@@ -10,15 +10,15 @@ function EsqueceuASenha() {
   return (
     <main id="tela_esqueceu_senha" className="background_maneasy">
       <div className="nav_btn_voltar">
-        <Link to={"#"}>
-          <Icon className="icon_entrar" icon="clarity:circle-arrow-solid"   rotate={271} />
+        <Link to={"/"}>
+          <Icon className="icon_entrar" icon="clarity:circle-arrow-solid" rotate={271} />
         </Link>
-      </div> 
+      </div>
       <section className="section_esqueceu_password" id="esqueceu_senha" >
         <section className="section_logo">
           <div className="section_img_logo">
             <div className="section_img_logo1">
-             </div>
+            </div>
             <img src={imgLogo1} alt="" />
           </div>
         </section>
@@ -43,9 +43,11 @@ function EsqueceuASenha() {
                 <input name="E-mail" className="input-field" type="email" required placeholder="Digite sua senha" />
               </div>
             </div>
-            <div className="section_btn_confirmar">
-              <button type="submit">Confirmar</button>
-            </div>
+            <Link to={"/"} className="sublinhado">
+              <div className="section_btn_confirmar">
+                <button type="submit">Confirmar</button>
+              </div>
+            </Link>
           </div>
         </form>
       </section>

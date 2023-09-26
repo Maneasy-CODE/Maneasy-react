@@ -37,7 +37,7 @@ function ProjetoCadastro() {
                             Cadastrar
                         </Link>
 
-                        <Link className="btn_consultar" to={"#"}>
+                        <Link className="btn_consultar" to={"/pagina/projeto/consulta"}>
                             Consultar
                         </Link>
                     </nav>

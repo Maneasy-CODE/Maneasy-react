@@ -24,11 +24,11 @@ function ProjetoAtualizar() {
                         <h1>Projeto</h1>
                     </div>
                     <nav className="atualizar_e_consultar">
-                        <Link className="btn_atualizar" to={"#"}>
-                            Atualizar
+                        <Link className="btn_atualizar" to={"/pagina/projeto/cadastro"}>
+                            Cadastrar
                         </Link>
                         <Link
-                            className="btn_consultar" to={"#"}>
+                            className="btn_consultar" to={"/pagina/projeto/consultar"}>
                             Consultar
                         </Link>
                     </nav>

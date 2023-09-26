@@ -173,3 +173,6 @@ color: var(--azule);;
 #tela_esqueceu_senha .input_com_label{
     padding-bottom: 10px;
 }
+#tela_esqueceu_senha .sublinhado{
+    text-decoration: none;
+}

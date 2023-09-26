@@ -56,7 +56,7 @@ function ProjetoConsulta() {
                             <h1>Projeto</h1>
                         </div>
                         <div className="buttons-grid">
-                            <Link to={""} className="button-cadastrar">Cadastrar</Link>
+                            <Link to={"/pagina/projeto/cadastro"} className="button-cadastrar">Cadastrar</Link>
                             <Link to={""} className="button-consultar">Consultar</Link>
                         </div>
 

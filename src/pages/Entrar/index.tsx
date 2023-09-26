@@ -32,6 +32,7 @@ function Entrar() {
                 type="email"
                 placeholder="Digite seu e-mail"
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -45,16 +46,19 @@ function Entrar() {
                 type="password"
                 placeholder="Digite sua senha"
                 onChange={(e) => setSenha(e.target.value)}
+                required
               />
             </div>
           </div>
-          <Link className="sublinado" to={"#"}>
+          <Link className="sublinado" to={"/pagina/esqueceu/senha"}>
             <p className="nav_esqueceu_senha">Esqueceu sua senha?</p>
           </Link>
-          <div className="section_btn_confirmar">
-            <button type="submit">Confirmar</button>
-          </div>
-          <Link to={"#"} className="sublinado">
+          <Link className="sublinado" to={"/pagina/dashboard"}>
+            <div className="section_btn_confirmar">
+              <button type="submit">Confirmar</button>
+            </div>
+          </Link>
+          <Link to={"/pagina/cadastro"} className="sublinado">
             <p className="nav_cadastro">
               Ainda não tem uma conta?
               <br />
