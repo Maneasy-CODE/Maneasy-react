@@ -12,15 +12,15 @@ function Entrar() {
 
   return (
     <main id="entrar" className="main_entrar">
-      <section className="section_logo">
-        <div className="section_img_logo">
-          <img src={entrar_logo} alt="Logo Maneasy" />
-        </div>
-      </section>
-      <section className="section_esqueceu_senha">
-        <h1>
-          Bem<span>-vindo</span>
-        </h1>
+
+      <div className="section_img_logo">
+        <img src={entrar_logo} alt="Logo Maneasy" />
+      </div>
+
+      <section className="section_conteudo">
+        <h2>
+          Bem-<span>vindo</span>
+        </h2>
         <form className="section_input">
           <div className="email">
             <label htmlFor="Chapa">E-mail</label>
@@ -50,21 +50,25 @@ function Entrar() {
               />
             </div>
           </div>
-          <Link className="sublinado" to={"/pagina/esqueceu/senha"}>
-            <p className="nav_esqueceu_senha">Esqueceu sua senha?</p>
-          </Link>
-          <Link className="sublinado" to={"/pagina/dashboard"}>
-            <div className="section_btn_confirmar">
-              <button type="submit">Confirmar</button>
-            </div>
-          </Link>
-          <Link to={"/pagina/cadastro"} className="sublinado">
-            <p className="nav_cadastro">
-              Ainda não tem uma conta?
-              <br />
-              Cadastre-se
-            </p>
-          </Link>
+          <div className="div_esqueceu_senha">
+            <Link className=" link_esqueceu_senha sublinado" to={"/pagina/esqueceu/senha"}>
+              <p>Esqueceu sua senha?</p>
+            </Link>
+          </div>
+          <div className="div_btn_confirmar">
+            <Link className="link_btn_confirmar sublinado" to={"/pagina/dashboard"}>
+              <button className="btn_confimar" type="submit">Confirmar</button>
+            </Link>
+          </div>
+          <div className="div_cadastro">
+            <Link to={"/pagina/cadastro"} className="link_cadastro sublinado">
+              <p>
+                Ainda não tem uma conta?
+                <br />
+                Cadastre-se
+              </p>
+            </Link>
+          </div>
         </form>
       </section>
     </main>
