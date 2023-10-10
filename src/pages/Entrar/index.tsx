@@ -11,23 +11,21 @@ function Entrar() {
   const [senha, setSenha] = useState<string>("");
 
   return (
-    <main id="entrar" className="main_entrar">
-
-      <div className="section_img_logo">
-        <img src={entrar_logo} alt="Logo Maneasy" />
-      </div>
-
+    <main id="entrar">
+      <section className="section_img_logo">
+        <img src={entrar_logo} alt="Logo Maneasy"/>
+      </section>
       <section className="section_conteudo">
         <h2>
           Bem-<span>vindo</span>
         </h2>
         <form className="section_input">
           <div className="email">
-            <label htmlFor="Chapa">E-mail</label>
+            <label htmlFor="Email">E-mail</label>
             <div className="input_icons">
               <Icon className="icon" icon="mingcute:user-4-fill" />
               <input
-                name="Chapa"
+                name="Email"
                 className="input_field"
                 type="email"
                 placeholder="Digite seu e-mail"
@@ -51,17 +49,17 @@ function Entrar() {
             </div>
           </div>
           <div className="div_esqueceu_senha">
-            <Link className=" link_esqueceu_senha sublinado" to={"/pagina/esqueceu/senha"}>
+            <Link className=" link_esqueceu_senha" to={"/pagina/esqueceu/senha"}>
               <p>Esqueceu sua senha?</p>
             </Link>
           </div>
           <div className="div_btn_confirmar">
-            <Link className="link_btn_confirmar sublinado" to={"/pagina/dashboard"}>
+            <Link className="link_btn_confirmar" to={"/pagina/dashboard"}>
               <button className="btn_confimar" type="submit">Confirmar</button>
             </Link>
           </div>
           <div className="div_cadastro">
-            <Link to={"/pagina/cadastro"} className="link_cadastro sublinado">
+            <Link to={"/pagina/cadastro"} className="link_cadastro">
               <p>
                 Ainda não tem uma conta?
                 <br />

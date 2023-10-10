@@ -1,3 +1,4 @@
+/* GERAL */
 #entrar {
     display: flex;
     justify-content: space-around;
@@ -36,7 +37,7 @@
 #entrar input::placeholder {
     color: var(--azule);
 }
-
+/* LOGO */
 #entrar .section_img_logo {
     width: 25%;
     display: flex;
@@ -52,6 +53,7 @@
 #entrar .section_conteudo {
     width: 40%;
     min-width: 480px;
+    max-width: 730px;
 }
 
 #entrar .section_conteudo h2 {
@@ -93,7 +95,6 @@
     font-family: "VerdanaRegular";
     font-size: 16px;
     cursor: pointer;
-    max-width: 250px;
     width: 250px;
     display: flex;
     justify-content: center;
@@ -102,7 +103,7 @@
 }
 
 #entrar button:hover {
-    background-color: var(--azulc);
+   background-color: var(--azulc); 
 }
 
 #entrar .link_esqueceu_senha {
@@ -121,7 +122,7 @@
 }
 
 #entrar .link_esqueceu_senha:hover {
-    color: var(--amarelo);
+    color: var(--azulc);
 }
 
 #entrar .div_btn_confirmar {
@@ -145,9 +146,10 @@
 }
 
 #entrar .link_cadastro:hover {
-    color: var(--amarelo);
+    color: var(--azulc);
 }
 
+/* RESPONSIVIDADE */
 @media screen and (max-width: 1200px) {
     #entrar .section_img_logo {
         display: none;
