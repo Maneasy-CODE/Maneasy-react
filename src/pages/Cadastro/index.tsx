@@ -24,11 +24,9 @@ function Cadastro() {
 
     return (
         <main id="cadastro" >
-            {/* 
-                    <Link to={"/"}>
-                        <Icon className="icon_voltar" icon="clarity:circle-arrow-solid" />
-                    </Link>
-                */}
+            <Link to={"/"} className="link_btn_voltar">
+                <Icon className="btn_voltar" icon="clarity:circle-arrow-solid" />
+            </Link>
             <section className="section_img_logo">
                 <img src={entrar_logo} alt="Logo Maneasy" />
             </section>
