@@ -87,7 +87,7 @@ function Cadastro() {
                                 <Icon className="icon" icon="mdi:password" />
                                 <input
                                     name="Senha"
-                                    className="input_field_senha"
+                                    className="input_field"
                                     type="password"
                                     placeholder="Digite sua senha"
                                     onChange={(e) => setSenha(e.target.value)}
@@ -101,7 +101,7 @@ function Cadastro() {
                                 <Icon className="icon" icon="mdi:password" />
                                 <input
                                     name="ConfirmarSenha"
-                                    className="input_field_senha"
+                                    className="input_field"
                                     type="password"
                                     placeholder="Confirme sua senha"
                                     onChange={(e) => setConfirmarSenha(e.target.value)}
@@ -111,7 +111,7 @@ function Cadastro() {
                         </div>
                     </div>
                     <div className="section_btn_confirmar">
-                        <Link to={"/"} className="link_cadastrar">
+                        <Link to={"/"} className="link_confirmar">
                             <button type="submit">Confirmar</button>
                         </Link>
                     </div>

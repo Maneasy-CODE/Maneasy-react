@@ -92,28 +92,14 @@
     gap: 10px;
 }
 
-#cadastro .nav_esqueceu_senha {
-    font-family: "VerdanaRegular";
-    text-align: right;
-    padding: 5px;
-    color: var(--azule);
-    cursor: pointer;
-    text-decoration: none;
-}
-
-#cadastro .nav_esqueceu_senha:hover {
-    color: var(--amarelo);
-}
-
-#cadastro .nav_cadastro:hover {
-    color: var(--amarelo);
-}
-
 #cadastro .section_input_senha {
     display: flex;
     justify-content: space-between;
 }
 
+#cadastro .input_senha {
+    width: 48%;
+}
 
 #cadastro .input_field_senha {
     width: 100%;
@@ -129,7 +115,7 @@
     justify-content: center;
 }
 
-#cadastro .link_cadastrar {
+#cadastro .link_confirmar {
     text-decoration: none;
 }
 
@@ -179,5 +165,6 @@
     }
     #cadastro .input_senha{
         margin-top: 10px;
+        width: 100%;
     }
 }
