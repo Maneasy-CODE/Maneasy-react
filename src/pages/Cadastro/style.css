@@ -136,7 +136,7 @@
 }
 
 #cadastro button:hover {
-    background-color: black;
+    background-color: var(--azulc);
 }
 
 /* RESPONSIVIDADE */

@@ -81,6 +81,26 @@
 
 }
 
+#entrar .link_esqueceu_senha {
+    font-family: "VerdanaRegular";
+    text-align: right;
+    padding: 5px;
+    color: var(--azule);
+    cursor: pointer;
+    text-decoration: none;
+    width: 190px;
+    text-decoration: none;
+}
+
+#entrar .div_esqueceu_senha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#entrar .link_esqueceu_senha:hover {
+    color: black;
+}
+
 #entrar .link_btn_confirmar {
     margin: 40px 0;
     text-decoration: none;
@@ -103,26 +123,7 @@
 }
 
 #entrar button:hover {
-   background-color: black; 
-}
-
-#entrar .link_esqueceu_senha {
-    font-family: "VerdanaRegular";
-    text-align: right;
-    padding: 5px;
-    color: var(--azule);
-    cursor: pointer;
-    text-decoration: none;
-    width: 190px;
-    text-decoration: none;
-}
-#entrar .div_esqueceu_senha{
-    display: flex;
-    justify-content: flex-end;
-}
-
-#entrar .link_esqueceu_senha:hover {
-    color: black;
+   background-color: var(--azulc); 
 }
 
 #entrar .div_btn_confirmar {
