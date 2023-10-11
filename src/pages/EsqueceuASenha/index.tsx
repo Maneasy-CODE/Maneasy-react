@@ -9,22 +9,18 @@ import { Link } from "react-router-dom";
 function EsqueceuASenha() {
   return (
     <main id="tela_esqueceu_senha">
-      {/* <div className="nav_btn_voltar">
-        <Link to={"/"}>
-          <Icon className="icon_entrar" icon="clarity:circle-arrow-solid" rotate={271} />
-        </Link>
-      </div> */}
+      <Link to={"/"} className="link_btn_voltar">
+        <Icon className="btn_voltar" icon="clarity:circle-arrow-solid" />
+      </Link>
       <section className="section_img_logo">
         <img src={entrar_logo} alt="Logo Maneasy" />
       </section>
       <section className="section_conteudo">
-        
         <h2>
           Esqueceu
-          
           <span>sua senha?</span>
         </h2>
-        
+
         <form className="section_input">
           <div className="section_cadastro div_chapa">
             <label htmlFor="Chapa">Chapa</label>

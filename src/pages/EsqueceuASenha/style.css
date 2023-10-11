@@ -13,6 +13,22 @@
     overflow: hidden;
 }
 
+#tela_esqueceu_senha .btn_voltar {
+    font-size: 40px;
+    color: var(--azule);
+    cursor: pointer;
+    rotate: -90deg;
+    /* margin-left: 50px; */
+    
+}
+
+#tela_esqueceu_senha .link_btn_voltar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 60px 0 0 60px;
+}
+
 #tela_esqueceu_senha .icon {
     position: absolute;
     margin: 10px 0 0 10px;
@@ -67,7 +83,7 @@
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 #tela_esqueceu_senha .section_conteudo span {
