@@ -50,6 +50,7 @@
     max-width: 700px;
 }
 
+/* CONTEUDO */
 #entrar .section_conteudo {
     width: 40%;
     min-width: 480px;
@@ -76,7 +77,7 @@
     font-family: "VerdanaRegular";
 }
 
-#entrar .email {
+#entrar .div_email {
     margin-bottom: 30px;
 
 }

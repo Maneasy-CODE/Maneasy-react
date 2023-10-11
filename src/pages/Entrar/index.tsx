@@ -20,7 +20,7 @@ function Entrar() {
           Bem-<span>vindo</span>
         </h2>
         <form className="section_input">
-          <div className="email">
+          <div className="div_email">
             <label htmlFor="Email">E-mail</label>
             <div className="input_icons">
               <Icon className="icon" icon="mingcute:user-4-fill" />

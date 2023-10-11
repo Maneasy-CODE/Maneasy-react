@@ -1,135 +1,27 @@
-
+/* GERAL */
 #tela_esqueceu_senha {
-    background-image: url(../../assets/images/background_deslogado1.svg);
-    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/background_deslogado.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
     overflow: hidden;
-    height: 100vh;
-}
-
-#tela_esqueceu_senha .nav_btn_voltar{
-    display: flex;
-    width: 35px;
-    padding-left: 36px;
-    padding-top: 20px;
-    
-}
-
-#tela_esqueceu_senha .icon_entrar{
-display: flex;
-width: 35px;
-height: 35px;
-color: var(--azule);;
-
-}
-
-#tela_esqueceu_senha .section_esqueceu_password {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 80px;
-}
-
-#tela_esqueceu_senha .nav_btn_voltar iconify-icon {
-    font-size: 40px;
-    padding: 50px 0 0 50px;
-    color: var(--azule); 
-    cursor: pointer; 
-
-
-}
- 
-#tela_esqueceu_senha .section_logo {
-    width: 25%;
-    
-}
-
-#tela_esqueceu_senha .section_img_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#tela_esqueceu_senha .section_img_logo img {
-    margin: auto;
-    width: 100%;
-    max-width: 700px;
-}
-
-#tela_esqueceu_senha .section_esqueceu_senha {
-    width: 40%;
-}
-
-#tela_esqueceu_senha .section_esqueceu_senha h1 {
-    font-size: 100px;
-    font-family: "SpartanBold";
-    color: var(--azule);
-    padding-bottom: 50px;
-}
-
-#tela_esqueceu_senha .section_esqueceu_senha span {
-    font-size: 100px;
-    font-family: "SpartanBold";
-    color: var(--amarelo);
-}
-
-#tela_esqueceu_senha .section_input label {
-    color: var(--azule);
-    font-family: "VerdanaRegular";
-    
-}
-
-#tela_esqueceu_senha .section_btn_confirmar {
-    display: flex;
-    justify-content: center;
-    padding: 30px; 
-    padding-right: 50px;
-}
-
-#tela_esqueceu_senha .section_btn_confirmar a {
-    border-radius: 100px;
-    height: 40px;
-    border: none; 
-    color: var(--branco);
-    background-color: var(--azule);
-    font-family: "VerdanaRegular";
-    font-size: 16px;
-    cursor: pointer;
-    max-width: 250px;
-    width: 60%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none; 
-  
-}
-
-#tela_esqueceu_senha button:hover {
-    background-color: var(--azulc);
-    
 }
 
 #tela_esqueceu_senha .icon {
     position: absolute;
-    /* padding: 10.5px 20px 7.5px 10px; */
     margin: 10px 0 0 10px;
     align-items: center;
     color: var(--azule);
     font-size: 20px;
 }
 
-
-
-#tela_esqueceu_senha .input-icons {
-    margin-top: 10px;
-    position: relative;
-}
-
-#tela_esqueceu_senha .input-field {
+#tela_esqueceu_senha .input_field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -138,21 +30,67 @@ color: var(--azule);;
     border: 1px solid var(--azule);
 }
 
-/* #tela_esqueceu_senha .section_input>div{
-    margin-bottom: 5px;
-} */
-
+#tela_esqueceu_senha .input_icons {
+    margin-top: 5px;
+}
 
 #tela_esqueceu_senha input::placeholder {
     color: var(--azule);
 }
 
-#tela_esqueceu_senha #section_btn_confirmar{
+/* LOGO */
+#tela_esqueceu_senha .section_img_logo {
+    width: 25%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
 }
-#tela_esqueceu_senha .section_btn_confirmar button {
+
+#tela_esqueceu_senha .section_img_logo img {
+    width: 100%;
+    max-width: 700px;
+}
+
+/* CONTEUDO */
+#tela_esqueceu_senha .section_conteudo {
+    width: 40%;
+    min-width: 480px;
+    max-width: 730px;
+}
+#tela_esqueceu_senha .titulo{
+    
+}
+#tela_esqueceu_senha .section_conteudo h2 {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#tela_esqueceu_senha .section_conteudo span {
+    font-size: 100px;
+    font-family: "SpartanBold";
+    color: var(--amarelo);
+}
+
+#tela_esqueceu_senha .section_input label {
+    color: var(--azule);
+    font-family: "VerdanaRegular";
+}
+
+#tela_esqueceu_senha .div_chapa {
+    margin-bottom: 30px;
+}
+
+#tela_esqueceu_senha .link_btn_confirmar {
+    margin: 40px 0;
+    text-decoration: none;
+}
+
+#tela_esqueceu_senha .btn_confimar {
     border-radius: 100px;
     height: 40px;
     border: none;
@@ -161,18 +99,19 @@ color: var(--azule);;
     font-family: "VerdanaRegular";
     font-size: 16px;
     cursor: pointer;
-    max-width: 250px;
-    width: 60%;
-    margin: 40px 0 40px 0;
-    
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
-#tela_esqueceu_senha .input_com_label{
-    padding-bottom: 10px;
+
+#tela_esqueceu_senha button:hover {
+   background-color: var(--azulc); 
 }
-#tela_esqueceu_senha .sublinhado{
-    text-decoration: none;
+
+#tela_esqueceu_senha .div_btn_confirmar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(39, 39, 39, 0.162);
 }
