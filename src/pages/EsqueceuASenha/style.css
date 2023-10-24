@@ -73,9 +73,7 @@
     min-width: 480px;
     max-width: 730px;
 }
-#tela_esqueceu_senha .titulo{
-    
-}
+
 #tela_esqueceu_senha .section_conteudo h2 {
     font-size: 100px;
     font-family: "SpartanBold";
@@ -90,6 +88,7 @@
     font-size: 100px;
     font-family: "SpartanBold";
     color: var(--amarelo);
+    display: flex;
 }
 
 #tela_esqueceu_senha .section_input label {
@@ -130,4 +129,25 @@
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(39, 39, 39, 0.162);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1200px) {
+    #tela_esqueceu_senha .section_img_logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #tela_esqueceu_senha .section_conteudo {
+        min-width: 90%;
+    }
+
+    #tela_esqueceu_senha .section_conteudo h2 {
+        font-size: 60px;
+    }
+
+    #tela_esqueceu_senha .section_conteudo span {
+        font-size: 60px;
+    }
 }

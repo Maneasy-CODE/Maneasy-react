@@ -6,7 +6,7 @@ import bolinha from "../../assets/images/icone_titulo.svg";
 
 //rotas
 import { Link } from "react-router-dom";
-import Btn_submit_cancel_squad from "../../components/Btn_submit_cancel_squad";
+import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad";
 
 function ChamadoCadastro() {
     return (
@@ -149,7 +149,7 @@ function ChamadoCadastro() {
                             </div>
                         </form>
                         <div className="icones">
-                            <Btn_submit_cancel_squad></Btn_submit_cancel_squad>
+                            <BtnSubmitCancelSquad/>
                         </div>
                     </div>
                 </div>

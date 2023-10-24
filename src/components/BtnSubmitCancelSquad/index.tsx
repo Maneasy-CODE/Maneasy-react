@@ -4,7 +4,7 @@ import btn_confirmar from "../../assets/images/btn_confirmar.svg";
 import btn_cancelar from "../../assets/images/btn_cancelar.svg";
 import { Link } from "react-router-dom";
 
-function Btn_submit_cancel_squad() {
+function BtnSubmitCancelSquad() {
     return (
         <main id="demanda_cadastro">
             <div className="footer-options">
@@ -24,4 +24,4 @@ function Btn_submit_cancel_squad() {
     )
 }
 
-export default Btn_submit_cancel_squad;
+export default BtnSubmitCancelSquad;

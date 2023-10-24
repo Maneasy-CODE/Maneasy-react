@@ -1,9 +1,9 @@
+//estilização
 import "./style.css"
-
 import { Icon } from "@iconify/react";
-
 import entrar_logo from "../../assets/images/logo_colorida.svg";
 
+//hooks
 import { Link } from "react-router-dom";
 
 function EsqueceuASenha() {
@@ -51,7 +51,7 @@ function EsqueceuASenha() {
             </div>
           </div>
           <div className="div_btn_confirmar">
-            <Link className="link_btn_confirmar" to={"/pagina/dashboard"}>
+            <Link className="link_btn_confirmar" to={"/"}>
               <button className="btn_confimar" type="submit">Confirmar</button>
             </Link>
           </div>

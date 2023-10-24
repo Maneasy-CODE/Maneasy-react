@@ -10,63 +10,52 @@ import { Link } from "react-router-dom"
 function Menu() {
     return (
         <aside id="aside_menu">
+            <img className="logo" src={logo_branca} alt="Logo Maneasy" />
             <nav className="nav_btn_menu">
-
-                <img className="aside_logo" src={logo_branca} alt="Logo Maneasy" />
-
                 <Link to={"/pagina/dashboard"}>
                     <div className="icon_menu">
                         <Icon icon="ph:chart-bar-bold" />
                     </div>
                     Dashboard
                 </Link>
-
                 <Link to={"/pagina/profissional/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="ion:people-circle" />
                     </div>
-
                     Profissionais
                 </Link>
-
                 <Link to={"/pagina/projeto/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="la:project-diagram" />
                     </div>
                     Projetos
                 </Link>
-
                 <Link to={"/pagina/demanda/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:clipboard-edit-outline" />
                     </div>
                     Demandas
                 </Link>
-
                 <Link to={"/pagina/chamado/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:bell-alert-outline" />
                     </div>
                     Chamados
                 </Link>
-
                 <Link to={"/pagina/squad/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:people-group" />
                     </div>
-
                     Squad
                 </Link>
-
                 <Link to={"/pagina/consultas"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:file-report-outline" />
                     </div>
                     Consultas
                 </Link>
-
             </nav>
-            <Link id="text_decoration" to={"/"}>
+            <Link className="link_footer" to={"/"}>
                 <footer id="footer_menu">
                     <div className="icon_footer">
                         <Icon icon="iconamoon:exit-bold" />
@@ -76,7 +65,5 @@ function Menu() {
             </Link>
         </aside>
     )
-
 }
-
 export default Menu;

@@ -4,31 +4,34 @@ import icone_titulo from "../../assets/images/icone_titulo.svg"
 import icone_squad from "../../assets/images/btn_squad.svg"
 import btn_confirmar from "../../assets/images/btn_confirmar.svg"
 import btn_cancelar from "../../assets/images/btn_cancelar.svg"
+
+//hooks
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import Menu from "../../components/Menu";
 import { useState, useEffect } from "react";
 
+//rotas
+import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad"
+import Menu from "../../components/Menu";
 
 
 function ProjetoCadastro() {
 
-   const [nomeProjeto, setNomeProjeto]= useState<string>("");
-//    const [dataCriacao, setDataCriacao]= useState<Date | null>();
-//    const [dataInicio, setDataInicio]= useState<Date>();
-//    const [dataTermino, setDataTermino]= useState<Date>();
-   const [objetivoProjeto, setObjetivoProjeto]= useState<string>("");
-   const [orcametoProjeto, setOrcamentoProjeto]= useState<string>("");
-   const [statusProjeto, setStatusProjeto]= useState<string>("");
+    const [nomeProjeto, setNomeProjeto] = useState<string>("");
+    //    const [dataCriacao, setDataCriacao]= useState<Date | null>();
+    //    const [dataInicio, setDataInicio]= useState<Date>();
+    //    const [dataTermino, setDataTermino]= useState<Date>();
+    const [objetivoProjeto, setObjetivoProjeto] = useState<string>("");
+    const [orcametoProjeto, setOrcamentoProjeto] = useState<string>("");
+    const [statusProjeto, setStatusProjeto] = useState<string>("");
 
-   
     return (
 
         <main id="projeto_cadastro">
             <Menu />
-            <section>
+            <section className="section_conteudo">
                 <div className="container">
-                    <div className="section_titulo">
+                    <div className="div_titulo">
                         <img src={icone_titulo} alt="" />
                         <h1>Projeto</h1>
                     </div>
@@ -41,20 +44,18 @@ function ProjetoCadastro() {
                             Consultar
                         </Link>
                     </nav>
-                    <form>
-                        <div className="campo_nome_do_projeto">
+                    <form className="form_conteudo">
+                        <div className="div_nome_do_projeto">
                             <div className="input_projeto">
                                 <label htmlFor="nome_do_projeto">Nome do Projeto</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="la:project-diagram" />
-
-                                    <input name="nome_do_projeto" className="input-field" type="text" 
-                                    placeholder="Digite o nome do projeto " onChange={(e) => setNomeProjeto(e.target.value)} required/>
+                                    <input name="nome_do_projeto" className="input-field" type="text" placeholder="Digite o nome do projeto " onChange={(e) => setNomeProjeto(e.target.value)} required />
                                 </div>
                             </div>
                         </div>
-                        <div className="section_calendario">
-                            <div className="input_criacao">
+                        <div className="div_data">
+                            <div className="input_data">
                                 {/*<div class="form_date_criacao_inicio_termino">*/}
                                 <label htmlFor="nome_criacao">Criação</label>
                                 <div className="input-icons">
@@ -62,36 +63,35 @@ function ProjetoCadastro() {
 
                                     <input
                                         name="nome_criacao"
-                                        className="input-calendario"
+                                        className="input-field"
                                         type="date"
                                         // onChange={(e) => setDataCriacao(e.target.value)} 
                                         required
                                     />
                                 </div>
                             </div>
-                            <div className="input_criacao">
+                            <div className="input_data">
                                 {/* <div class="form_date_criacao_inicio_termino">*/}
                                 <label htmlFor="nome_inicio">Ínicio</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="zondicons:calendar" />
 
                                     <input
-                                        name="nome_criacao"
-                                        className="input-calendario"
+                                        name="nome_inicio"
+                                        className="input-field"
                                         type="date"
                                         required
                                     />
                                 </div>
                             </div>
-                            <div className="input_criacao">
-                                {/*  <div class="form_date_criacao_inicio_termino">*/}
+                            <div className="input_data">
                                 <label htmlFor="nome_termino">Término</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="zondicons:calendar" />
 
                                     <input
                                         name="nome_criacao"
-                                        className="input-calendario"
+                                        className="input-field"
                                         type="date"
                                         required
                                     />
@@ -121,7 +121,7 @@ function ProjetoCadastro() {
 
                                     <input
                                         name="nome_criacao"
-                                        className="input-calendario"
+                                        className="input-field"
                                         type="text"
                                         placeholder="Digite o orçamento do projeto"
                                         required

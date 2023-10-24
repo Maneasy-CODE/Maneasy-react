@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client'
 //estilização
 import './index.css'
 //IMPORT PAGINAS
-import Menu from './components/Menu'
 import Entrar from './pages/Entrar';
 import Cadastro from './pages/Cadastro';
 import EsqueceuASenha from './pages/EsqueceuASenha';

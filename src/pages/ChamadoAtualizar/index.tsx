@@ -10,7 +10,7 @@ import IconLupa from "../../assets/images/btn_pesquisar.svg";
 
 // Import component:
 import { Icon } from '@iconify/react';
-import Btn_submit_cancel_squad from "../../components/Btn_submit_cancel_squad";
+import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad";
 import Menu from "../../components/Menu";
 
 function ChamadoAtualizar() {
@@ -91,7 +91,7 @@ function ChamadoAtualizar() {
                                 <span>Observações do Chamado</span>
                                 <textarea className="chamado-form" spellCheck="false" name="" id="" rows={5}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, cupiditate. Quo iste magnam nostrum adipisci! Odit suscipit sit laudantium. Perspiciatis rem, deleniti quas libero ipsa officiis corporis laboriosam temporibus quo.</textarea>
                             </div>
-                            <Btn_submit_cancel_squad/>
+                            <BtnSubmitCancelSquad/>
                         </div>
                     </div>
             </section>

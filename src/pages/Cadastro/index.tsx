@@ -1,6 +1,8 @@
 import "./style.css";
 import { Icon } from '@iconify/react';
 import entrar_logo from "../../assets/images/logo_colorida.svg";
+
+//hooks
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 

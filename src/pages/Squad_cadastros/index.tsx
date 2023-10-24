@@ -4,7 +4,7 @@ import "./style.css"
 import { Icon } from '@iconify/react';
 // IMPORT DE COMPONENTES
 import Menu from '../../components/Menu';
-import ListaSquadCadastros from "../../components/Lista_squad_cadastros";
+import ListaSquadCadastros from "../../components/ListaSquadCadastro";
 // IMPORT DAS IMAGENS
 import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";

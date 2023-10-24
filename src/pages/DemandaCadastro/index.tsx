@@ -4,7 +4,7 @@ import "./style.css"
 //rotas
 import { Link } from "react-router-dom";
 import Menu from "../../components/Menu"
-import Btn_submit_cancel_squad from "../../components/Btn_submit_cancel_squad";
+import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad";
 
 //imagens
 import Bolinha from "../../assets/images/icone_titulo.svg"
@@ -97,7 +97,7 @@ function DemandaCadastro() {
                                     </div>
                                 </div>
                             </div>
-                            <Btn_submit_cancel_squad />
+                            <BtnSubmitCancelSquad />
 
                         </form>
 

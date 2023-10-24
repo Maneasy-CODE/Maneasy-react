@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { useState, useEffect } from "react";
 import Menu from "../../components/Menu";
+import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad"
 
 function ProjetoAtualizar() {
 

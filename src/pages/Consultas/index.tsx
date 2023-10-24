@@ -4,7 +4,7 @@ import "./style.css"
 import { Icon } from '@iconify/react';
 // IMPORT DOS COMPONENTES
 import Menu from '../../components/Menu';
-import Lista_consulta from "../../components/Lista_consulta";
+import Lista_consulta from "../../components/LinhaConsulta";
 // IMPORT DAS IMAGENS
 import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";

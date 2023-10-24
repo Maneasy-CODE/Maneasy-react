@@ -1,10 +1,17 @@
 /* SECTION PROJETO*/ 
 #projeto_cadastro{
     display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 #projeto_cadastro > section{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     width: 100%;
+    background-image: url(../../assets/images/background_logado.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #projeto_cadastro .container{
@@ -119,7 +126,7 @@
 
 /*section calendario*/
 
-#projeto_cadastro .input_criacao{
+#projeto_cadastro .input_data{
     width: 30%;
     margin: 10px 0;
     font-family: "VerdanaRegular";
@@ -128,7 +135,7 @@
     flex-direction: column;
 }
 
-#projeto_cadastro .section_calendario{
+#projeto_cadastro .div_data{
     display: flex;
    /* background-color: rgb(186, 150, 219);*/
     justify-content: space-between;
@@ -259,7 +266,7 @@
 
 }
 
-#projeto_cadastro .section_titulo {
+#projeto_cadastro .div_titulo {
     max-width: 80%;
     display: flex;
     margin: 50px 0;
