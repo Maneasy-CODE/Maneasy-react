@@ -12,7 +12,7 @@
 #squad_cadastro .container {
     overflow-y: scroll;
     scroll-behavior: smooth;
-    width: 100%;
+    width: 80%;
     
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@
 /*INPUT PESQUISA*/
 
 #squad_cadastro .section_pesquisa_resultado_input {
-    width: 100%;
+    width: 80%;
 }
 
 #squad_cadastro .icon {

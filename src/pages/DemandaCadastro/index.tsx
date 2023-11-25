@@ -19,20 +19,20 @@ function DemandaCadastro() {
             <section className="section-width">
                 <div className="container-grid">
                     <div className="conteudo">
-                        <div className="cadastrar">
+                        <div className="section_titulo">
                             <img src={Bolinha} alt="" />
-                            <h1>Demandas</h1>
+                            <h1>Serviços</h1>
                         </div>
                         <nav className="buttons-grid">
                             <Link className="button-cadastrar" to={"#"}>Cadastrar</Link>
-                            <Link className="button-consultar" to={"/pagina/demanda/consulta"}>Consultar</Link>
+                            <Link className="button-consultar" to={"/pagina/servico/consulta"}>Consultar</Link>
                         </nav>
                         <form action="">
                             <div className="demanda">
-                                <span>Nome da Demanda</span>
+                                <span>Nome</span>
                                 <div className="demanda-cadastrar input-icons">
                                     <Icon className="icon" icon="mdi:clipboard-edit-outline" />
-                                    <input className="input-field" name="nome-demanda" type="text" placeholder="Digite o nome da demanda " required />
+                                    <input className="input-field" name="nome-demanda" type="text" placeholder="Digite o nome do serviço" required />
                                 </div>
                             </div>
                             <div className="datas">
@@ -59,7 +59,7 @@ function DemandaCadastro() {
                                 </div>
                             </div>
                             <div className="objetivo-demanda">
-                                <span>Objetivo de demanda</span>
+                                <span>Objetivo</span>
             
                                 <textarea
                                     className="objetivo-form"
@@ -72,21 +72,22 @@ function DemandaCadastro() {
                             </div>
                             <div className="progresso-demanda">
                                 <div className="orcamento-demanda">
-                                    <span>Orçamento de demanda</span>
+                                    <span>Orçamento</span>
                                     <div className="data-conte">
                                         <Icon className="icon" icon="fa:dollar" />
-                                        <input className="input-field" name="orcamento" type="text" placeholder="Digite o orçamento de demanda" required />
+                                        <input className="input-field" name="orcamento" type="text" placeholder="Digite o orçamento previsto para o serviço" required />
                                     </div>
                                 </div>
                                 <div className="tempo-demanda">
-                                    <span>Tempo de demanda</span>
+                                    <span>Tempo do Serviço</span>
                                     <div className="data-conte">
                                         <Icon className="icon" icon="ps:clock" />
-                                        <input className="input-field" name="tempo" type="text" placeholder="Digite o tempo de demanda" required />
+                                        <input className="input-field" name="tempo" type="text" placeholder="Digite o tempo que será investido no serviço" required />
                                     </div>
                                 </div>
+
                                 <div className="select_status">
-                                    <span>Status da Demanda</span>
+                                    <span>Status</span>
                                     <div className="select-icons">
                                         <Icon className="icon_confirmar" icon="el:ok-sign" />
                                         <select className="data-conte" name="status" id="">
@@ -97,6 +98,25 @@ function DemandaCadastro() {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="progresso-demanda">
+                                <div className="orcamento-demanda">
+                                    <span>Consultoria</span>
+                                    <div className="data-conte">
+                                        <Icon className="icon" icon="solar:user-id-outline" />
+                                        <input className="input-field" name="orcamento" type="text" placeholder="Adicione o link do arquivo em nuvem" required />
+                                    </div>
+                                </div>
+
+                                <div className="tempo-demanda">
+                                    <span>Anexo</span>
+                                    <div className="data-conte">
+                                        <Icon className="icon" icon="bi:cloud-arrow-up" />
+                                        <input className="input-field" name="tempo" type="text" placeholder="Adicione o link do arquivo em nuvem" required />
+                                    </div>
+                                </div>
+                            </div>
+
                             <BtnSubmitCancelSquad />
 
                         </form>

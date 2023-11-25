@@ -3,8 +3,7 @@
 }
 
 #chamado_consulta > section{
-    width: 100%;
-    
+    width: 80%;    
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
     background-size: cover;

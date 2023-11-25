@@ -63,16 +63,16 @@ function DemandaConsulta() {
                     <div className="conteudo">
                         <div className="cadastrar">
                             <img src={imagemIconeTitulo} alt="" />
-                            <h1>Demandas</h1>
+                            <h1>Serviços</h1>
                         </div>
                         <div className="buttons-grid">
-                            <Link to={"/pagina/demanda/cadastro"} className="button-cadastrar">Cadastrar</Link>
+                            <Link to={"/pagina/servico/cadastro"} className="button-cadastrar">Cadastrar</Link>
                             <Link to={""} className="button-consultar">Consultar</Link>
                         </div>
 
                         <div className="info-grid">
                             <div className="chapa">
-                                <span className="text-span">Chapa</span>
+                                <span className="text-span">ID</span>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="ic:outline-badge"></Icon>
                                     <input className="input-field" name="Chapa" type="text" placeholder="Digite o nome da chapa" required/>
@@ -94,7 +94,7 @@ function DemandaConsulta() {
                         </div>
 
                         <div className="lista-demandas">
-                            <h2>Lista de Demandas</h2>
+                            <h2>Lista de Serviços</h2>
                             <div className="scroll">
                                 <table>
                                     <tbody>
@@ -108,7 +108,6 @@ function DemandaConsulta() {
                                                 </tr>
                                             })
                                         }
-
                                     </tbody>
                                 </table>
                             </div>

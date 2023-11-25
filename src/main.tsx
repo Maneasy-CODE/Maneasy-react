@@ -11,9 +11,6 @@ import Dashboard from './pages/Dashboard';
 import ProfissionalCadastro from "./pages/ProfissionalCadastro"
 import ProfissionalConsulta from './pages/ProfissionalConsulta';
 import ProfissionalAtualizar from './pages/ProfissionalAtualizar';
-import ProjetoCadastro from './pages/ProjetoCadastro';
-import ProjetoConsulta from './pages/ProjetoConsulta';
-import ProjetoAtualizar from './pages/ProjetoAtualizar';
 import DemandaCadastro from './pages/DemandaCadastro';
 import DemandaConsulta from './pages/DemandaConsulta';
 import DemandaAtualizar from './pages/DemandaAtualizar';
@@ -38,12 +35,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/profissional/cadastro' element={<ProfissionalCadastro/>} />
         <Route path='/pagina/profissional/consulta' element={<ProfissionalConsulta/>} />
         <Route path='/pagina/profissional/atualizar' element={<ProfissionalAtualizar/>} />
-        <Route path='/pagina/projeto/cadastro' element={<ProjetoCadastro/>} />
-        <Route path='/pagina/projeto/consulta' element={<ProjetoConsulta/>} />
-        <Route path='/pagina/projeto/atualizar' element={<ProjetoAtualizar/>} />
-        <Route path='/pagina/demanda/cadastro' element={<DemandaCadastro/>} />
-        <Route path='/pagina/demanda/consulta' element={<DemandaConsulta/>} />
-        <Route path='/pagina/demanda/atualizar' element={<DemandaAtualizar/>} />
+        <Route path='/pagina/servico/cadastro' element={<DemandaCadastro/>} />
+        <Route path='/pagina/servico/consulta' element={<DemandaConsulta/>} />
+        <Route path='/pagina/servico/atualizar' element={<DemandaAtualizar/>} />
         <Route path='/pagina/consultas' element={<Consultas/>} />
         <Route path='/pagina/chamado/cadastro' element={<ChamadoCadastro/>} />
         <Route path='/pagina/chamado/consulta' element={<ChamadoConsulta/>} />

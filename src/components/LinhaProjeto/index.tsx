@@ -9,7 +9,7 @@ function LinhaProjeto(props: any) {
             <td className="c1">{props.id}</td>
             <td className="c2">{props.nome}</td>
             <td className="c3">
-                <Link to={"/pagina/projeto/atualizar"}>
+                <Link to={"/pagina/servico/atualizar"}>
                     <img src={btn_editar} />
                 </Link>
             </td>

@@ -49,7 +49,7 @@
 #profissional_cadastro .conteudo_princiapal {
     overflow-y: scroll;
     scroll-behavior: smooth;
-    width: 100%;
+    width: 80%;
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
     background-size: cover;

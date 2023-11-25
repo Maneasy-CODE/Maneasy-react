@@ -48,7 +48,7 @@
     display: flex;
 }
 #demanda_atualizar section {
-    width: 100%;
+    width: 80%;
     height: 100vh;
 }
 #demanda_atualizar section .container-grid{
@@ -390,4 +390,12 @@ html ::-webkit-scrollbar-track {
     color: rgb(0, 0, 0);
     font-family: "VerdanaRegular";
     font-size: 12px;
+}
+
+#demanda_atualizar .progresso-demanda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
 }

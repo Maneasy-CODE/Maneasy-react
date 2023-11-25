@@ -5,7 +5,7 @@
 }
 
 #demanda_cadastro .section-width{
-    width: 100%;
+    width: 80%;
 }
 
 /* TITULO */
@@ -13,7 +13,6 @@
     width: 100%;
     height: 100%;
     border-radius: 40px 0 0 40px;
-    padding: 50px 0px 0 0;
     overflow-y: scroll;
     scroll-behavior: smooth;
 
@@ -385,4 +384,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgb(0, 0, 0);
     font-family: "VerdanaRegular";
     font-size: 12px;
+}
+
+
+#demanda_cadastro .section_titulo {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    font-family: "SpartanBold";
+    color: var(--azule);
+    font-size: 30px;
+}
+
+#demanda_cadastro .section_titulo img {
+    padding-right: 20px;
 }

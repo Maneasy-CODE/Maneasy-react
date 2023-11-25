@@ -4,8 +4,13 @@
     height: 100vh;
 }
 
-#consulta section{
-    width: 100%;
+.section_ID_Consultar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+    font-family: "VerdanaRegular";
+
 }
 
 #consulta label {
@@ -36,9 +41,6 @@
 #consulta .container {
     overflow-y: scroll;
     scroll-behavior: smooth;
-    width: 100%;
-   
-    
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,6 +165,7 @@
     display: flex;
     justify-content: space-between;
     color: var(--preto);
+    width: 80%;
 }
 
 html ::-webkit-scrollbar {

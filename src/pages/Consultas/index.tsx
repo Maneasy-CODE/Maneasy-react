@@ -69,7 +69,7 @@ function Consultas() {
                             <img src={bolinha_titulo} alt="" />
                             <h1>Consultas</h1>
                         </div>
-                        <div className="section_pesquisa">
+                        <div className="section_ID_Consultar">
                             <div className="section_pesquisa_resultado_input">
                                 <label htmlFor="Chapa">ID</label>
                                 <div className="input-icons">
@@ -91,6 +91,7 @@ function Consultas() {
                                 <img src={lupa} alt="" />
                             </Link>
                         </div>
+                        
                         <section className="section_table">
                             <h2>Consultas</h2>
                             <div className="tabela_scroll">

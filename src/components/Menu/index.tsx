@@ -18,31 +18,25 @@ function Menu() {
                     </div>
                     Dashboard
                 </Link>
-                <Link to={"/pagina/profissional/consulta"}>
+                <Link to={"/pagina/profissional/cadastro"}>
                     <div className="icon_menu">
                         <Icon icon="ion:people-circle" />
                     </div>
                     Profissionais
                 </Link>
-                <Link to={"/pagina/projeto/consulta"}>
+                <Link to={"/pagina/servico/cadastro"}>
                     <div className="icon_menu">
                         <Icon icon="la:project-diagram" />
                     </div>
-                    Projetos
+                    Serviços
                 </Link>
-                <Link to={"/pagina/demanda/consulta"}>
-                    <div className="icon_menu">
-                        <Icon icon="mdi:clipboard-edit-outline" />
-                    </div>
-                    Demandas
-                </Link>
-                <Link to={"/pagina/chamado/consulta"}>
+                <Link to={"/pagina/chamado/cadastro"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:bell-alert-outline" />
                     </div>
                     Chamados
                 </Link>
-                <Link to={"/pagina/squad/consulta"}>
+                <Link to={"/pagina/squad/cadastro"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:people-group" />
                     </div>
