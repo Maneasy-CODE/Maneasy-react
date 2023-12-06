@@ -5,7 +5,7 @@ import "./style.css"
 import iconeTitulo from "./../../assets/images/icone_titulo.svg"
 
 //rotas
-import Menu from './../../components/Menu'
+import Menu from '../../components/Menu'
 import { Icon } from '@iconify/react';
 import { Link } from "react-router-dom";
 import BtnSubmitCancelSquad from "../../components/BtnSubmitCancelSquad"

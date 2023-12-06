@@ -6,7 +6,7 @@ import imagemIconeTitulo from "./../../assets/images/icone_titulo.svg"
 import imagemPesquisar from "./../../assets/images/btn_pesquisar.svg"
 
 //rotas
-import Menu from './../../components/Menu'
+import Menu from '../../components/Menu'
 import { Icon } from '@iconify/react';
 import { Link } from "react-router-dom";
 
