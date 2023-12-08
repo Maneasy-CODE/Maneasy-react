@@ -7,6 +7,8 @@ import Menu from "../../components/Menu"
 
 //imagens
 import bolinha_azul from "../../assets/images/bolinha_azul.svg"
+import lupa from "../../assets/images/btn_pesquisar.svg";
+
 import imagemPesquisar from "../../assets/images/btn_pesquisar.svg"
 
 import { Icon } from '@iconify/react';
@@ -62,25 +64,14 @@ function ProfissionalConsulta() {
                             <Link to={""} className="btn_cons">Consultar</Link>
                         </nav>
                         <div className="section_pesquisa">
-                            <div className="section_pesquisa_resultado_input">
-                                <label htmlFor="Chapa">Chapa</label>
+                            <div className="input_nome">
+                                <label htmlFor="Pesquisa">Pesquisa</label>
                                 <div className="input-icons">
-                                    <Icon className="icon" icon="ic:outline-badge" />
-                                    <input id="Chapa" name="Chapa" className="input-field" type="number" placeholder="Digite a chapa do profissional"/>
+                                    <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do profissional ou chapa" required />
                                 </div>
                             </div>
-                            <div>
-                                <p>ou</p>
-                            </div>
-                            <div className="section_pesquisa_resultado_input">
-                                <label htmlFor="Nome">Nome</label>
-                                <div className="input-icons">
-                                    <Icon className="icon" icon="mingcute:user-4-fill" />
-                                    <input id="Nome" name="Nome" className="input-field" type="text" placeholder="Digite o nome do profissional"/>
-                                </div>
-                            </div>
-                            <Link to={""} className="section_pesquisa_btn">
-                                <img src={imagemPesquisar} alt="" />
+                            <Link to={"#"} className="section_pesquisa_btn">
+                                <img src={lupa} alt="" />
                             </Link>
                         </div>
                         <section className="secao_lista">

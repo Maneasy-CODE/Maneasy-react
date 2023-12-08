@@ -4,6 +4,8 @@ import "./style.css"
 //imagens
 import imagemIconeTitulo from "./../../assets/images/icone_titulo.svg"
 import imagemPesquisar from "./../../assets/images/btn_pesquisar.svg"
+import lupa from "../../assets/images/btn_pesquisar.svg";
+
 
 //rotas
 import Menu from '../../components/Menu'
@@ -71,21 +73,10 @@ function DemandaConsulta() {
                         </div>
 
                         <div className="info-grid">
-                            <div className="chapa">
-                                <span className="text-span">ID</span>
+                            <div className="pesqusisa">
+                                <span className="text-span">Pesqusisa</span>
                                 <div className="input-icons">
-                                    <Icon className="icon" icon="ic:outline-badge"></Icon>
-                                    <input className="input-field" name="Chapa" type="text" placeholder="Digite o nome da chapa" required/>
-                                </div>
-                            </div>
-
-                            <span>ou</span>
-
-                            <div className="nome">
-                                <span className="text-span">Nome</span>
-                                <div className="input-icons">
-                                    <Icon className="icon" icon="mingcute:user-4-fill"></Icon>
-                                    <input className="input-field" name="Nome" type="text" placeholder="Digite o nome da demanda" required/>
+                                    <input className="input-field" name="Nome" type="text" placeholder="Digite o nome do serviço ou ID" required/>
                                 </div>
                             </div>
                             <div className="icon-lupa">

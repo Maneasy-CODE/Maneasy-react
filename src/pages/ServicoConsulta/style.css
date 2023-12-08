@@ -296,3 +296,12 @@ html ::-webkit-scrollbar-track {
     font-family: "VerdanaRegular";
     font-size: 12px;
 }
+
+#demanda_consulta .input-field {
+    background: transparent;
+    border-radius: 100px;
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 15px;
+    border: 1px solid #474545;
+}

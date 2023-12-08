@@ -177,7 +177,7 @@
     border-radius: 100px;
     width: 100%;
     height: 40px;
-    padding: 10px 10px 10px 40px;
+    padding: 10px 10px 10px 15px;
     border: 1px solid #474545;
 }
 
@@ -250,7 +250,7 @@ html ::-webkit-scrollbar-track {
 }
 
 #chamado_consulta .input_nome{
-    width: 45%;
+    width: 100%;
 }
 
 #chamado_consulta input::placeholder {

@@ -59,21 +59,11 @@ function ChamadoConsulta() {
                         <Link className="button-consultar" to={""}>Consultar</Link>
                     </div>
                     <div className="pesquisas">
-                        <div className="input_id">
-                            <label htmlFor="id">ID</label>
-                            <div className="input-icons">
-                                <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="id" className="input-field" type="text" placeholder="Digite o ID do chamado" required/>
-                            </div>
-                        </div>
-                        <div className="ou">
-                            <p>ou</p>
-                        </div>
+
                         <div className="input_nome">
-                            <label htmlFor="Nome">Nome</label>
+                            <label htmlFor="Pesquisa">Pesquisa</label>
                             <div className="input-icons">
-                                <Icon className="icon" icon="mingcute:user-4-fill" />
-                                <input name="Nome" className="input-field" type="text" placeholder="Digite o nome do chamado" required/>
+                                <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do chamado ou ID" required/>
                             </div>
                         </div>
                         <div>

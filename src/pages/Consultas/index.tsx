@@ -70,28 +70,17 @@ function Consultas() {
                             <h1>Consultas</h1>
                         </div>
                         <div className="section_ID_Consultar">
-                            <div className="section_pesquisa_resultado_input">
-                                <label htmlFor="Chapa">ID</label>
+                            <div className="input_nome">
+                                <label htmlFor="Pesquisa">Pesquisa</label>
                                 <div className="input-icons">
-                                    <Icon className="icon" icon="ic:outline-badge" />
-                                    <input name="Chapa" className="input-field" type="number" placeholder="Digite o ID do projeto" required />
-                                </div>
-                            </div>
-                            <div className="position_ou">
-                                <p>ou</p>
-                            </div>
-                            <div className="section_pesquisa_resultado_input">
-                                <label htmlFor="Consultar">Consultar</label>
-                                <div className="input-icons">
-                                    <Icon className="icon" icon="mingcute:user-4-fill" />
-                                    <input name="Consultar" className="input-field" type="text" placeholder="Digite o nome da consulta" />
+                                    <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do chamado ou ID" required />
                                 </div>
                             </div>
                             <Link to={"#"} className="section_pesquisa_btn">
                                 <img src={lupa} alt="" />
                             </Link>
                         </div>
-                        
+
                         <section className="section_table">
                             <h2>Consultas</h2>
                             <div className="tabela_scroll">
