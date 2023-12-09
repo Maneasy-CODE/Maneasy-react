@@ -2,24 +2,58 @@ import { Icon } from "@iconify/react";
 import "./style.css";
 import "../../index.css";
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import entrar_logo from "../../assets/images/logo_colorida.svg";
+import api from "../../utils/api";
+
+import secureLocalStorage from "react-secure-storage";
 
 function Entrar() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState<string>("");
   const [senha, setSenha] = useState<string>("");
+
+
+  function fazerlogin(event: any) {
+    event.preventDefault();
+
+    const usuario = {
+      email: email,
+      senha: senha
+    };
+
+    api.post("login", usuario)
+      .then((response: any) => {
+        console.log(response.data);
+
+        secureLocalStorage.setItem("user", response.data);
+
+        navigate("/pagina/dashboard/" + response.data.user.id);
+        navigate(0);
+
+        })
+
+        .catch((erro: any)=> {
+
+          alert("Error ao tentar se logar! :(");
+
+        })
+
+  }
+
 
   return (
     <main id="entrar">
       <section className="section_img_logo">
-        <img src={entrar_logo} alt="Logo Maneasy"/>
+        <img src={entrar_logo} alt="Logo Maneasy" />
       </section>
       <section className="section_conteudo">
         <h2>
           Bem-<span>vindo</span>
         </h2>
-        <form className="section_input">
+        <form method="POST" onSubmit={fazerlogin} className="section_input">
           <div className="div_email">
             <label htmlFor="Email">E-mail</label>
             <div className="input_icons">
@@ -54,9 +88,9 @@ function Entrar() {
             </Link>
           </div>
           <div className="div_btn_confirmar">
-            <Link className="link_btn_confirmar" to={"/pagina/dashboard"}>
+            <div className="link_btn_confirmar" /*to={"/pagina/dashboard"}*/>
               <button className="btn_confimar" type="submit">Confirmar</button>
-            </Link>
+            </div>
           </div>
           <div className="div_cadastro">
             <Link to={"/pagina/cadastro"} className="link_cadastro">
