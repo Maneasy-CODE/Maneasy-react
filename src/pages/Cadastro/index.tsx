@@ -14,6 +14,8 @@ function Cadastro() {
     const [senha, setSenha] = useState<string>("");
     const [confirmarSenha, setConfirmarSenha] = useState<string>("");
 
+    //function cadastrarUsuario()
+
     const VerificarSenha = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 

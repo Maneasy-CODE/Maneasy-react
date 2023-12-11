@@ -23,23 +23,24 @@ function Entrar() {
       email: email,
       senha: senha
     };
+    console.log(usuario);
+
 
     api.post("login", usuario)
       .then((response: any) => {
         console.log(response.data);
+       // console.log(response);
 
         secureLocalStorage.setItem("user", response.data);
 
-        navigate("/pagina/dashboard/" + response.data.user.id);
+        navigate("/pagina/dashboard/");
         navigate(0);
+      })
+      .catch((erro: any) => {
 
-        })
-
-        .catch((erro: any)=> {
-
-          alert("Error ao tentar se logar! :(");
-
-        })
+        alert("Error ao tentar se logar! :(");
+       // console.log(erro);
+      })
 
   }
 
