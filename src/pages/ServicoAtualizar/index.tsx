@@ -96,24 +96,6 @@ function DemandaAtualizar() {
                                 </div>
 
                             </div>
-
-                            <div className="progresso-demanda">
-                                <div className="orcamento-demanda">
-                                    <span>Consultoria</span>
-                                    <div className="data-conte">
-                                        <Icon className="icon" icon="solar:user-id-outline" />
-                                        <input className="input-field" name="orcamento" type="text" placeholder="Adicione o link do arquivo em nuvem" required />
-                                    </div>
-                                </div>
-
-                                <div className="tempo-demanda">
-                                    <span>Anexo</span>
-                                    <div className="data-conte">
-                                        <Icon className="icon" icon="bi:cloud-arrow-up" />
-                                        <input className="input-field" name="tempo" type="text" placeholder="Adicione o link do arquivo em nuvem" required />
-                                    </div>
-                                </div>
-                            </div>
                             <BtnSubmitCancelSquad />
                         </form>
                     </div>
