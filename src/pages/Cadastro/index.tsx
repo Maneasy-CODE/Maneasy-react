@@ -5,6 +5,7 @@ import entrar_logo from "../../assets/images/logo_colorida.svg";
 //hooks
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
+import api from "../../utils/api";
 
 
 function Cadastro() {
@@ -14,16 +15,45 @@ function Cadastro() {
     const [senha, setSenha] = useState<string>("");
     const [confirmarSenha, setConfirmarSenha] = useState<string>("");
 
-    //function cadastrarUsuario()
+    function cadastrarUsuario(event: any) {
+        event.preventDefault();
 
-    const VerificarSenha = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        if (senha === confirmarSenha) {
-            alert("As duas senhas se coincidem!");
-        } else {
-            alert("As duas senhas não se coincidem!");
+        const obj = {
+            nome: nome,
+            senha: senha,
+            email: email,
+            chapa: chapa,
+            tipos_usuario: "0"
         }
+        const formData = new FormData();
+
+        formData.append("nome", nome)
+        formData.append("senha", senha)
+        formData.append("email", email)
+        formData.append("chapa", chapa);
+        formData.append("tipos_usuario", "0");
+console.log(formData);
+
+        api.post("usuarios", obj)
+            .then((response: any) => {
+                console.log(response);
+                alert("Usuário cadastrado com sucesso!");
+            })
+            .catch((error: any) => {
+                console.log(error);
+                alert("Falha ao cadastrar um novo usuário")
+            })
+
+        const VerificarSenha = (e: React.FormEvent<HTMLFormElement>) => {
+            e.preventDefault();
+
+            if (senha === confirmarSenha) {
+                alert("As duas senhas se coincidem!");
+            } else {
+                alert("As duas senhas não se coincidem!");
+            }
+        }
+
     }
 
     return (
@@ -38,7 +68,7 @@ function Cadastro() {
                 <h2>
                     Cadastre-<span>se</span>
                 </h2>
-                <form className="section_input" action="" onSubmit={VerificarSenha}>
+                <form method="POST" className="section_input" action="" onSubmit={cadastrarUsuario}>
                     <div className="section_cadastro">
                         <label htmlFor="Chapa">Chapa</label>
                         <div className="input_icons">
@@ -113,9 +143,9 @@ function Cadastro() {
                         </div>
                     </div>
                     <div className="section_btn_confirmar">
-                        <Link to={"/"} className="link_confirmar">
+                        <div className="link_confirmar">
                             <button type="submit">Confirmar</button>
-                        </Link>
+                        </div>
                     </div>
                 </form>
             </section>
