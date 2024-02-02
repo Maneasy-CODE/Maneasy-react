@@ -53,7 +53,7 @@
 /*INPUT PESQUISA*/
 
 #squad_cadastro .section_pesquisa_resultado_input {
-    width: 80%;
+    width: 100%;
 }
 
 #squad_cadastro .icon {
@@ -211,7 +211,7 @@
     margin-top: 10px;
 }
 
-#squad_cadastro .section_resultado h2 {
+#squad_cadastro .section_resultado label {
     font-size: 20px;
     font-family: "VerdanaRegular";
     padding: 40px 0 20px 0;
