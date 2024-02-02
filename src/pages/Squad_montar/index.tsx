@@ -98,8 +98,9 @@ function Squadmontar() {
                             </div>
                         </div>
                     </div>
+                    <h2 className="titulo_lista_prof">Lista de profissionais</h2>
                     <div className="section_pesquisa espacamento">
-                    <label>Lista de profissionais</label>
+                        {/* <div> */}
                         <div className="section_pesquisa_resultado_input">
                             <label htmlFor="Consultar">Pesquisa</label>
                             <div className="input-icons">
@@ -110,6 +111,7 @@ function Squadmontar() {
                         <Link to={"#"} className="section_pesquisa_btn">
                             <img src={lupa} alt="" />
                         </Link>
+                        {/* </div> */}
                     </div>
                     <div className="section_resultado">
                         <div className="tabela_scroll">

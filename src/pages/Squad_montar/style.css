@@ -211,6 +211,12 @@
     margin-top: 10px;
 }
 
+#squad_cadastro .titulo_lista_prof {
+    font-family: "VerdanaBold";
+    margin-top: 20px;
+    font-size: 16px;
+}
+
 #squad_cadastro .section_resultado label {
     font-size: 20px;
     font-family: "VerdanaRegular";
