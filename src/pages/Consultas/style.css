@@ -66,13 +66,6 @@
     font-family: "VerdanaRegular";
 }
 
-#consulta .input-field {
-    background: transparent;
-    border-radius: 100px;
-    width: 350px;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #474545;
-}
 
 #consulta .section_pesquisa_btn {
     /* background-color: blueviolet;  */
@@ -132,14 +125,7 @@
     position: relative;
 }
 
-#consulta .input-field {
-    width: 100%;
-    background: transparent;
-    border-radius: 100px;
-    height: 40px;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #474545;
-}
+
 
 
 
@@ -152,7 +138,6 @@
 
 #consulta .section_pesquisa_btn img {
     width: 34px;
-    margin-left: 10px;
 }
 
 #consulta .section_pesquisa_resultado {
@@ -167,7 +152,7 @@
     color: var(--preto);
     width: 80%;
 }
-
+/* 
 html ::-webkit-scrollbar {
     width: 6px;
 }
@@ -179,7 +164,7 @@ html ::-webkit-scrollbar-thumb {
 
 html ::-webkit-scrollbar-track {
     background: #ededed;
-}
+} */
 
 #consulta .tabela_scroll {
     width: 100%;
@@ -215,7 +200,8 @@ html ::-webkit-scrollbar-track {
     font-size: 12px;
 }
 
-#consulta .input-field {
+
+select{
     background: transparent;
     border-radius: 100px;
     width: 100%;
@@ -224,7 +210,65 @@ html ::-webkit-scrollbar-track {
     border: 1px solid #474545;
 }
 
-#consulta .input_nome{
+.pesquisa_tipo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa_and_filtro{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.section_ID_Consultar{
+    width: 78%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+    font-family: "VerdanaRegular";
+}
+
+
+#consulta .input-field {
+    width: 100%;
+    background: transparent;
+    border-radius: 100px;
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+select .input-field{
+    padding: 10px 10px 10px 10px;
+
+}
+.input_nome{
     width: 100%;
 }
 
+.filtro{
+    padding-bottom: 8px;
+}
+
+.titulos_consulta{
+    display: flex;
+}
+
+.linha_consultas_nome_profissional {
+    width: 30%;
+}
+
+.linha_consultas_nome_projeto {
+    width: 40%;
+}
+
+.linha_consultas_tipo {
+    width: 10%;
+}
+
+.linha_consultas_status {
+    width: 20%;
+}
