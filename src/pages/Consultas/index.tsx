@@ -74,7 +74,7 @@ function Consultas() {
 
 
 
-                            <div className="pesquisa_tipo">
+                            <div className="pesquisa_tipo select-wrapper">
                                 <label htmlFor="filtro" className="filtro">Filtro</label>
                                 <select name="Pesquisa">
                                     <option value="projeto" className="input-field">Projeto</option>
@@ -86,14 +86,14 @@ function Consultas() {
 
                         </div>
 
-                        <section className="section_table">
+                        <section className="section_table ">
                             <h2>Consultas</h2>
 
 
-                            <div className="titulos_consulta">
+                            <div id="consultas_titulo" className="titulos_consulta ">
                                 <p className="linha_consultas_nome_profissional">Nome do Profissional</p>
                                 <p className="linha_consultas_nome_projeto">Nome do Projeto</p>
-                                <p className="linha_consultas_status">Tipo</p>
+                                <p className="linha_consultas_tipo">Tipo</p>
                                 <p className="linha_consultas_status">Status</p>
                             </div>
 

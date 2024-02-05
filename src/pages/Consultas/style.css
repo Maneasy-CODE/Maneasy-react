@@ -131,9 +131,8 @@
 
 #consulta .section_pesquisa p {
     font-family: "VerdanaRegular";
-    font-size: 16px;
-    padding: 30px 10px 10px 10px;
-
+    font-size: 12px;
+    display: flex;
 }
 
 #consulta .section_pesquisa_btn img {
@@ -172,11 +171,6 @@ html ::-webkit-scrollbar-track {
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding-right: 5%;
-}
-
-
-#consulta select {
-    -webkit-appearance: none;
 }
 
 #consulta .lista_consultas {
@@ -253,22 +247,70 @@ select .input-field{
     padding-bottom: 8px;
 }
 
-.titulos_consulta{
-    display: flex;
+#consultas_titulo p{
+    color: gray;
+    font-size: 10px;
 }
 
 .linha_consultas_nome_profissional {
     width: 30%;
+    max-width: 269.91px;
+
 }
 
 .linha_consultas_nome_projeto {
     width: 40%;
+    max-width: 359.88px;
+
+
+
 }
 
 .linha_consultas_tipo {
     width: 10%;
+    max-width: 89.96px;
+
+
 }
 
 .linha_consultas_status {
     width: 20%;
+    max-width: 134.95px;
 }
+
+
+#consultas_titulo{
+    width: 905px;
+    gap: 12px;
+
+}
+
+
+.select-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .select-wrapper select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 10px; /* Adicione o padding desejado aqui */
+    box-sizing: border-box;
+  }
+  
+  .select-wrapper::after {
+    content: '\25BC'; /* Código unicode para a seta para baixo */
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #47454567;
+  }
+
+ .titulos_consulta{
+    display: flex;
+    width: 899.71px;
+  }

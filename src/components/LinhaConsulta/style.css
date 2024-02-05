@@ -1,4 +1,5 @@
 .consulta_lista {
+    width: 905px;
     display: flex;
     width: 100%;
     gap: 12px;
@@ -6,9 +7,8 @@
 
 #consulta select {
     border-radius: 100px;
-    padding: 4px;
+    padding: 10px;
     background: transparent;
-    -webkit-appearance: none;
 }
 
 /*tabela*/
@@ -34,14 +34,21 @@
 
 #consulta .linha_consultas_nome_profissional {
     width: 30%;
+
+
 }
 
 #consulta .linha_consultas_nome_projeto {
     width: 40%;
+
+
+
 }
 
 #consulta .linha_consultas_tipo {
     width: 10%;
+
+
 }
 
 #consulta .linha_consultas_status {
@@ -72,3 +79,4 @@
     align-items: center;
     border-bottom: #27272729 solid 1px;
 }
+
