@@ -75,7 +75,7 @@ function Consultas() {
 
 
                             <div className="pesquisa_tipo select-wrapper">
-                                <label htmlFor="filtro" className="filtro">Filtro</label>
+                                <label htmlFor="filtro" className="filtro">Tipo</label>
                                 <select name="Pesquisa">
                                     <option value="projeto" className="input-field">Projeto</option>
                                     <option value="demanda" className="input-field">Demanda</option>
