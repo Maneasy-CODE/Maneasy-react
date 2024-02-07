@@ -27,30 +27,28 @@ function Squadmontar() {
                 <form>
 
                     <div className="form_id">
-                        <div className="section_pesquisa_resultado_input">
+                        <div className="section_pesquisa_resultado_input_id">
                             <label htmlFor="id">ID</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
                                 <input name="id" className="input-field" type="number" />
                             </div>
                         </div>
-                        <div>
-                            <Link to={"#"} className="section_cadastro_squad_btn"><img src={lupa}
-                                alt=""/></Link>
 
-                        </div>
-                    </div>
-
-                    <div className="section_pesquisa">
-                        <div className="section_pesquisa_resultado_input">
-                            <label htmlFor="nome_projeto">Nome do Projeto</label>
-                            <div className="input-icons">
-                                <Icon className="icon" icon="la:project-diagram" />
-                                <input name="nome_projeto" className="input-field" type="text" />
+                        <div className="section_nome_projeto">
+                            <div className="section_pesquisa_resultado_input_pesquisa">
+                                <label htmlFor="nome_projeto">Nome do Projeto</label>
+                                <div className="input-icons">
+                                    <Icon className="icon" icon="la:project-diagram" />
+                                    <input name="nome_projeto" className="input-field" type="text" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
+                            <Link to={"#"} className="section_cadastro_squad_btn"><img src={lupa}
+                                alt="" /></Link>
+                        </div>
+
+                    </div>
                     <div className="form_date">
                         <div className="form_criacao_inicio_termino">
                             <div className="form_date_criacao_inicio_termino">
@@ -100,7 +98,7 @@ function Squadmontar() {
                             </div>
                         </div>
 
-                        <Link to={"#"} className="section_pesquisa_btn"><img src={lupa} alt=""/></Link>
+                        <Link to={"#"} className="section_pesquisa_btn"><img src={lupa} alt="" /></Link>
 
                     </div>
                     <div className="section_resultado">
@@ -113,7 +111,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_confirmar}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -124,7 +122,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_confirmar}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -135,7 +133,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -146,7 +144,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -157,7 +155,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -168,7 +166,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                             <div className="section_resultado_dados">
@@ -179,7 +177,7 @@ function Squadmontar() {
                                 </div>
 
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt=""/>
+                                    alt="" />
                                 </Link>
                             </div>
                         </div>
