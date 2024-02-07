@@ -139,7 +139,7 @@
 }
 
 .squad_montar .section_resultado_dados_nome {
-    width: 518px;
+    /* width: 518px; */
 }
 
 .squad_montar .section_resultado_dados_btn {
@@ -279,7 +279,7 @@
 
     .form_id,
     .form_id .section_pesquisa_resultado_input,
-    .form_criacao_inicio_termino {
+    .squad_montar .form_criacao_inicio_termino {
         width: 100%;
     }
 
