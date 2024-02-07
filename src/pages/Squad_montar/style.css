@@ -125,7 +125,8 @@
 .squad_montar .section_resultado_dados div {
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    /* width: 700px; */
+    gap: 50px;
 }
 
 .squad_montar .section_resultado_dados img {
@@ -134,7 +135,7 @@
 }
 
 .squad_montar .section_resultado_dados_id {
-    width: 270px;
+    /* width: 270px; */
 }
 
 .squad_montar .section_resultado_dados_nome {
@@ -230,7 +231,7 @@
 }
 
 .squad_montar .section_pesquisa_resultado_input {
-    width: 90%;
+    width: 95%;
     margin-bottom: 30px;
 }
 
@@ -241,7 +242,7 @@
 
 .squad_montar .tabela_scroll {
     width: 100%;
-    padding-right: 9%;
+    /* padding-right: 9%; */
     height: 298px;
     scroll-behavior: smooth;
     height: 300px;
