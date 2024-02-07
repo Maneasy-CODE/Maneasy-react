@@ -1,25 +1,16 @@
-.container_squad_cadastro {
+.squad_montar section {
+    font-family: "VerdanaRegular";
+}
+
+.squad_montar{
     display: flex;
-    height: 100vh;
+}
+.squad_montar .container {
     width: 100%;
 }
 
-#squad_cadastro {
-    font-family: "VerdanaRegular";
 
-}
-
-#squad_cadastro .container {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    width: 80%;
-    
-    background-image: url(../../assets/images/background_logado.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#squad_cadastro .section_titulo {
+.squad_montar .section_titulo {
     display: flex;
     width: 80%;
     margin: 50px auto;
@@ -29,22 +20,22 @@
 
 }
 
-#squad_cadastro  .section_titulo img {
+.squad_montar .section_titulo img {
     padding-right: 20px;
 }
 
-#squad_cadastro form {
+.squad_montar form {
     width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
 
 }
 
-#squad_cadastro .section_nome_projeto {
+.squad_montar .section_nome_projeto {
     width: 100%;
 }
 
-#squad_cadastro .section_cadastro_squad_btn img {
+.squad_montar .section_cadastro_squad_btn img {
     width: 34px;
     padding-top: 30px;
     margin-left: 10px;
@@ -52,25 +43,31 @@
 
 /*INPUT PESQUISA*/
 
-#squad_cadastro .section_pesquisa_resultado_input {
+.squad_montar .section_pesquisa_resultado_input {
     width: 100%;
 }
 
-#squad_cadastro .icon {
+.squad_montar .icon {
     position: absolute;
-    /* padding: 10.5px 20px 7.5px 10px; */
-    margin: 10px 0 0 10px;
+    padding: 10.5px 20px 7.5px 10px;
     align-items: center;
     color: var(--preto);
     font-size: 20px;
 }
 
-#squad_cadastro .input-icons {
+.squad_montar .icon_calendario {
+    padding: 10.5px 20px 7.5px 10px;
+
+}
+
+
+
+.squad_montar .input-icons {
     margin-top: 10px;
     position: relative;
 }
 
-#squad_cadastro .input-field {
+.squad_montar .input-field {
     width: 100%;
     background: transparent;
     border-radius: 100px;
@@ -80,35 +77,43 @@
 }
 
 
+.squad_montar .titulo_lista_prof {
+    font-family: "VerdanaBold";
+    margin-top: 20px;
+    font-size: 16px;
+}
 
-#squad_cadastro .section_pesquisa p {
+
+.squad_montar .section_pesquisa p {
     padding: 0px 10px 10px 10px;
 }
 
-#squad_cadastro .section_pesquisa_btn img {
+.squad_montar .section_pesquisa_btn img {
     width: 34px;
     margin-left: 10px;
 }
 
-#squad_cadastro .section_pesquisa_resultado {
+.squad_montar .section_pesquisa_resultado {
     color: var(--preto);
     display: flex;
     flex-direction: column;
 }
 
-#squad_cadastro .section_pesquisa {
+.squad_montar .section_pesquisa {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#squad_cadastro .espacamento{
+.squad_montar .espacamento {
+    display: flex;
+    justify-content: flex-start;
     margin-top: 30px;
 }
 
 /* Resultado pesquisa*/
 
-#squad_cadastro .section_resultado_dados {
+.squad_montar .section_resultado_dados {
     display: flex;
     height: 50px;
     align-items: center;
@@ -117,79 +122,80 @@
 
 }
 
-#squad_cadastro .section_resultado_dados div {
+.squad_montar .section_resultado_dados div {
     display: flex;
     justify-content: space-between;
     width: 700px;
 }
 
-#squad_cadastro .section_resultado_dados img {
+.squad_montar .section_resultado_dados img {
     margin: 0;
     width: 34px;
 }
 
-#squad_cadastro .section_resultado_dados_id {
+.squad_montar .section_resultado_dados_id {
     width: 270px;
 }
 
-#squad_cadastro .section_resultado_dados_nome {
+.squad_montar .section_resultado_dados_nome {
     width: 518px;
 }
 
-#squad_cadastro .section_resultado_dados_btn {
+.squad_montar .section_resultado_dados_btn {
     width: 10%;
     display: flex;
     justify-content: flex-end;
 }
 
-#squad_cadastro .form_date_criacao {
+.squad_montar .form_date_criacao {
     width: 30%;
 }
 
-#squad_cadastro .form_date {
+.squad_montar .form_date {
     width: 100%;
     display: flex;
     gap: 20px;
     justify-content: space-between;
 }
 
-#squad_cadastro input[type="date"] {
+.squad_montar input[type="date"] {
+    font-size: 16px;
     text-transform: uppercase;
     font-family: "VerdanaRegular";
     width: 100%;
 }
 
-#squad_cadastro ::-webkit-calendar-picker-indicator {
+.squad_montar ::-webkit-calendar-picker-indicator {
     cursor: pointer;
     display: none;
 }
 
 
-#squad_cadastro .section_objetivo_projeto {
+.squad_montar .section_objetivo_projeto {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#squad_cadastro .section_objetivo_projeto p {
+.squad_montar .section_objetivo_projeto p {
     padding: 30px 10px 10px 10px;
 }
 
-#squad_cadastro .section_objetivo_projeto_label_textarea {
+.squad_montar .section_objetivo_projeto_label_textarea {
     width: 100%;
 }
 
-#squad_cadastro textarea {
+.squad_montar textarea {
     width: 100%;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     border: 1px solid #474545;
 }
 
 
 
-#squad_cadastro .form_criacao_inicio_termino {
+.squad_montar .form_criacao_inicio_termino {
     width: 35%;
     display: flex;
     align-items: center;
@@ -197,76 +203,102 @@
     margin: 0 0 30px 0;
 }
 
-#squad_cadastro .form_criacao_inicio_termino .icon {
+.squad_montar .form_criacao_inicio_termino .icon {
     font-size: 16px;
 
 }
 
 
-#squad_cadastro .form_date_criacao_inicio_termino {
+.squad_montar .form_date_criacao_inicio_termino {
     width: 100%;
 }
 
-#squad_cadastro textarea {
+.squad_montar textarea {
     margin-top: 10px;
 }
 
-#squad_cadastro .titulo_lista_prof {
-    font-family: "VerdanaBold";
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-#squad_cadastro .section_resultado label {
+.squad_montar .section_resultado h2 {
     font-size: 20px;
     font-family: "VerdanaRegular";
     padding: 40px 0 20px 0;
     color: var(--preto);
 }
 
-#squad_cadastro .form_id {
+.squad_montar .form_id {
     width: 46%;
     display: flex;
 }
 
-#squad_cadastro .section_pesquisa_resultado_input{
+.squad_montar .section_pesquisa_resultado_input {
+    width: 90%;
     margin-bottom: 30px;
 }
 
-#squad_cadastro .form_id .section_pesquisa_resultado_input {
+.squad_montar .form_id .section_pesquisa_resultado_input {
     width: 70%;
-    
+
 }
-#squad_cadastro .tabela_scroll {
+
+.squad_montar .tabela_scroll {
     width: 100%;
-    padding-right: 5%;
+    padding-right: 9%;
     height: 298px;
-    overflow-y: scroll;
     scroll-behavior: smooth;
     height: 300px;
     color: var(--preto);
 
 }
 
-html ::-webkit-scrollbar {
+.squad_montar html ::-webkit-scrollbar {
     width: 6px;
 }
 
-html ::-webkit-scrollbar-thumb {
+.squad_montar html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
     background: var(--azule);
 }
 
-html ::-webkit-scrollbar-track {
+.squad_montar html ::-webkit-scrollbar-track {
     background: #ededed;
 }
 
-#squad_cadastro textarea {
+.squad_montar textarea {
     resize: none;
 }
 
-#squad_cadastro input::placeholder {
-    color: rgb(0, 0, 0);
-    font-family: "VerdanaRegular";
-    font-size: 12px;
+
+
+/*MIDIA DE 1000px*/
+
+@media screen and (max-width: 1000px) {
+    .form_date {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .form_id,
+    .form_id .section_pesquisa_resultado_input,
+    .form_criacao_inicio_termino {
+        width: 100%;
+    }
+
+    .section_resultado_dados > div{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section_resultado_dados > div p{
+        margin-top: 5px;
+    }
+
+
+}
+
+
+
+/* MIDIA 600PX */
+@media screen and (max-width: 600px){
+    .section_resultado_dados{
+        font-size: 15px;
+    }
 }
