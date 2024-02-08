@@ -36,7 +36,7 @@ function Menu() {
                     </div>
                     Chamados
                 </Link>
-                <Link to={"/pagina/squad/cadastro"}>
+                <Link to={"/pagina/squad/consulta"}>
                     <div className="icon_menu">
                         <Icon icon="mdi:people-group" />
                     </div>

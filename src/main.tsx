@@ -21,6 +21,8 @@ import ChamadoAtualizar from './pages/ChamadoAtualizar';
 import SquadCadastros from './pages/Squad_cadastros';
 import Squadmontar from './pages/Squad_montar';
 
+
+
 //rotas
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";

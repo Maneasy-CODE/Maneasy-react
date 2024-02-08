@@ -2,11 +2,14 @@
     font-family: "VerdanaRegular";
 }
 
-.squad_montar{
+.squad_montar {
     display: flex;
+    overflow: hidden;
 }
+
 .squad_montar .container {
     width: 100%;
+    margin-left: 300px;
 }
 
 
@@ -204,11 +207,11 @@
 
 }
 
-.squad_montar .section_pesquisa_resultado_input{
+.squad_montar .section_pesquisa_resultado_input {
     width: 100%;
 }
 
-.squad_montar .section_pesquisa_btn{
+.squad_montar .section_pesquisa_btn {
     display: flex;
 }
 
@@ -239,13 +242,13 @@
     margin-bottom: 30px;
 }
 
-.squad_montar .section_pesquisa_resultado_input_pesquisa{
+.squad_montar .section_pesquisa_resultado_input_pesquisa {
     width: 100%;
     margin-bottom: 30px;
 
 }
 
-.squad_montar .section_nome_projeto{
+.squad_montar .section_nome_projeto {
     width: 100%;
     display: flex;
 }
@@ -282,6 +285,7 @@
 /*MIDIA DE 1000px*/
 
 @media screen and (max-width: 1000px) {
+
     .form_date,
     .squad_montar .form_id {
         flex-direction: column;
@@ -294,23 +298,26 @@
         width: 100%;
     }
 
-    .section_resultado_dados > div{
+    .section_resultado_dados>div {
         flex-direction: column;
         width: 100%;
     }
 
-    .section_resultado_dados > div p{
+    .section_resultado_dados>div p {
         margin-top: 5px;
     }
 
-
 }
 
-
+@media screen and (max-width: 768px) {
+    .squad_montar .container {
+        margin-left: 0px;
+    }
+}
 
 /* MIDIA 600PX */
-@media screen and (max-width: 600px){
-    .section_resultado_dados{
+@media screen and (max-width: 600px) {
+    .section_resultado_dados {
         font-size: 15px;
     }
 }

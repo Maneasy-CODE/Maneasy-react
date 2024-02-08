@@ -60,6 +60,7 @@
 #containerDashboard {
     display: flex;
     height: 100%;
+    /* position: relative; */
 }
 
 #containerDashboard section {
@@ -68,10 +69,10 @@
     margin: 0 auto;
 }
 
-#containerDashboard .container_dashboard{
-    overflow-y: scroll;
+#containerDashboard .container_dashboard {
+    /* overflow-y: scroll; */
     scroll-behavior: smooth;
-    height: 100vh;
+    overflow: hidden;
 }
 
 #containerDashboard .section_geral {
