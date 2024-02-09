@@ -16,7 +16,7 @@ function Consultas() {
     const listaConsulta: any = [
         {
             nome_profissional: "Nome Profissional Exemplo",
-            nome_projeto: "Nome Projeto Exemplo",
+            nome_projeto: "Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo",
             tipo: "Projeto",
             status: "Em andamento"
 
@@ -89,17 +89,18 @@ function Consultas() {
                         <section className="section_table ">
                             <h2>Consultas</h2>
 
-
-                            <div id="consultas_titulo" className="titulos_consulta ">
-                                <p className="linha_consultas_nome_profissional">Nome do Profissional</p>
-                                <p className="linha_consultas_nome_projeto">Nome do Projeto</p>
-                                <p className="linha_consultas_tipo">Tipo</p>
-                                <p className="linha_consultas_status">Status</p>
-                            </div>
-
                             <div className="tabela_scroll">
                                 <table>
                                     <tbody>
+                                        <thead>
+                                        <tr className="linha_titulo">
+                                            <th className="  linha_consultas_nome_profissional">Profissional</th>
+                                            <th className=" linha_consultas_nome_projeto">Serviço</th>
+                                            <th className=" linha_consultas_tipo">Tipo</th>
+                                            <th className="linha_consultas_status ">Status</th>
+                                        </tr>
+                                        </thead>
+                                    
                                         {
                                             listaConsulta.map((consulta: any) => {
                                                 return <tr key={consulta.id}>
@@ -108,7 +109,6 @@ function Consultas() {
                                                         nome_projeto={consulta.nome_projeto}
                                                         tipo={consulta.tipo}
                                                         status={consulta.status}
-
                                                     />
                                                 </tr>
                                             })
