@@ -14,7 +14,7 @@ import btn_confirmar from "../../assets/images/btn_confirmar.svg";
 import btn_squad from "../../assets/images/btn_squad.svg";
 
 // IMPORT REACT ROUTER DOM
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../../utils/api";
 
@@ -23,31 +23,37 @@ import api from "../../utils/api";
 function Squadmontar() {
 
     const [nomeProjeto, setNomeProjeto] = useState<string>("");
-    const [nomeId, setNomeId] = useState<any>(0);
+    const [nomeId, setNomeId] = useState<string>("");
     const [calendarioCriacao, setCalendarioCriacao] = useState<any>();
     const [calendarioInicio, setCalendarioInicio] = useState<any>();
     const [calendarioTermino, setCalendarioTermino] = useState<any>();
     const [objetoProjeto, setObjetoProjeto] = useState<string>("");
 
+    const { idSquad } = useParams();
 
-    function exibirDetalhesSquad(){
-        api.get("squads")
-        .then((response: any) => {
-            console.log(response);
-            alert("Listado com sucesso!");
-        })
-        .catch((error: any) => {
-            console.log(error);
-            alert("Falha ao listar");
-        })
+    function exibirDetalhesSquad() {
+        
+        api.get("squads/" + idSquad)
+            .then((response: any) => {
+                
+                setNomeId(response.data.id_servicos.id)
+                setNomeProjeto(response.data.id_servicos.nomeServicos)
+                // setCalendarioCriacao(response.data.id_servicos)
+                // setCalendarioInicio(response.data.id_servicos)
+                // setCalendarioTermino(response.data.id_servicos)
+                setObjetoProjeto(response.data.id_servicos)
+            })
+            .catch((error: any) => {
+                console.log(error);
+            })
     };
 
-    useEffect(()=>{
-        exibirDetalhesSquad();
-    },[])
+    useEffect(() => {
+       exibirDetalhesSquad();
+    }, [])
     return (
         <main className="squad_montar">
-            <Menu/>
+            <Menu />
             <section className="container">
 
                 <div className="section_titulo">
@@ -62,7 +68,7 @@ function Squadmontar() {
                             <label htmlFor="id">ID</label>
                             <div className="input-icons">
                                 <Icon className="icon" icon="ic:outline-badge" />
-                                <input name="id" className="input-field" type="number" value={nomeId}/>
+                                <input name="id" className="input-field" type="text" value={nomeId} />
                             </div>
                         </div>
 
@@ -71,7 +77,7 @@ function Squadmontar() {
                                 <label htmlFor="nome_projeto">Nome do Projeto</label>
                                 <div className="input-icons">
                                     <Icon className="icon" icon="la:project-diagram" />
-                                    <input name="nome_projeto" className="input-field" type="text" value={nomeProjeto}/>
+                                    <input name="nome_projeto" className="input-field" type="text" value={nomeProjeto} />
                                 </div>
                             </div>
                         </div>
@@ -83,7 +89,7 @@ function Squadmontar() {
                                 <label htmlFor="criacao">Criação</label>
                                 <div className="input-icons">
                                     <Icon className="icon icon_calendario" icon="zondicons:calendar" />
-                                    <input name="criacao" className="input-field" type="date" value={calendarioCriacao}/>
+                                    <input name="criacao" className="input-field" type="date" value={calendarioCriacao} />
                                 </div>
                             </div>
                         </div>
@@ -92,7 +98,7 @@ function Squadmontar() {
                                 <label htmlFor="inicio">Ínicio</label>
                                 <div className="input-icons">
                                     <Icon className="icon icon_calendario" icon="zondicons:calendar" />
-                                    <input name="inicio" className="input-field" type="date" value={calendarioInicio}/>
+                                    <input name="inicio" className="input-field" type="date" value={calendarioInicio} />
                                 </div>
                             </div>
                         </div>
@@ -101,7 +107,7 @@ function Squadmontar() {
                                 <label htmlFor="termino">Término</label>
                                 <div className="input-icons">
                                     <Icon className="icon icon_calendario" icon="zondicons:calendar" />
-                                    <input name="termino" className="input-field" type="date" value={calendarioTermino}/>
+                                    <input name="termino" className="input-field" type="date" value={calendarioTermino} />
                                 </div>
                             </div>
                         </div>
