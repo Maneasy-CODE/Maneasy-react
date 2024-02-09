@@ -21,6 +21,8 @@ import ChamadoAtualizar from './pages/ChamadoAtualizar';
 import SquadCadastros from './pages/Squad_cadastros';
 import Squadmontar from './pages/Squad_montar';
 
+
+
 //rotas
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -43,7 +45,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/pagina/chamado/consulta' element={<ChamadoConsulta/>} />
         <Route path='/pagina/chamado/atualizar' element={<ChamadoAtualizar/>} />
         <Route path='/pagina/squad/consulta' element={<SquadCadastros/>}/>
-        <Route path='/pagina/squad/cadastro' element={<Squadmontar/>} />
+        <Route path='/pagina/squad/cadastro/:idSquad' element={<Squadmontar/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,)

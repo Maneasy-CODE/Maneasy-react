@@ -1,8 +1,8 @@
 #aside_menu {
+    z-index: 1;
+    position: fixed;
     height: 100vh;
-    max-width: 400px;
-    width: 20vw;
-    min-width: 220px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,4 +87,10 @@
 
 #aside_menu .link_footer {
     text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    #aside_menu {
+        right: -300px;
+    }
 }
