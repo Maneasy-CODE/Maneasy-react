@@ -113,7 +113,7 @@
 
 .squad_montar .section_resultado_dados {
     display: flex;
-    height: 50px;
+    min-height: 50px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(39, 39, 39, 0.162);
@@ -256,9 +256,9 @@
 .squad_montar .tabela_scroll {
     width: 100%;
     /* padding-right: 9%; */
-    height: 298px;
+    /* height: 298px; */
     scroll-behavior: smooth;
-    height: 300px;
+    min-height: 300px;
     color: var(--preto);
 
 }
@@ -298,13 +298,22 @@
         width: 100%;
     }
 
-    .section_resultado_dados>div {
+    .squad_montar .section_resultado_dados{
+        margin-bottom: 10px;
+    }
+
+    .squad_montar .section_resultado_dados>div {
         flex-direction: column;
         width: 100%;
+        gap: 0;
     }
 
     .section_resultado_dados>div p {
         margin-top: 5px;
+    }
+
+    .squad_montar .section_pesquisa_resultado_input_id{
+        width: 100%;
     }
 
 }
