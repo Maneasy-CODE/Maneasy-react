@@ -17,6 +17,7 @@ import btn_squad from "../../assets/images/btn_squad.svg";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../../utils/api";
+import LinhaProfissionalSquad from "../../components/LinhaProfissionalSquad";
 
 
 
@@ -29,28 +30,56 @@ function Squadmontar() {
     const [calendarioTermino, setCalendarioTermino] = useState<any>();
     const [objetoProjeto, setObjetoProjeto] = useState<string>("");
 
+    const [listaProfissionais, setListaProfissionais] = useState<string[]>([]);
+
     const { idSquad } = useParams();
 
     function exibirDetalhesSquad() {
-        
+
         api.get("squads/" + idSquad)
             .then((response: any) => {
-                
+
                 setNomeId(response.data.id_servicos.id)
                 setNomeProjeto(response.data.id_servicos.nomeServicos)
-                // setCalendarioCriacao(response.data.id_servicos)
-                // setCalendarioInicio(response.data.id_servicos)
-                // setCalendarioTermino(response.data.id_servicos)
-                setObjetoProjeto(response.data.id_servicos)
+                setCalendarioCriacao(response.data.id_servicos.dataCriacao)
+                setCalendarioInicio(response.data.id_servicos.dataInicio)
+                setCalendarioTermino(response.data.id_servicos.dataTermino)
+                setObjetoProjeto(response.data.id_servicos.descricaoServicos)
+                console.log(response);
             })
             .catch((error: any) => {
                 console.log(error);
             })
     };
 
+    function listarProfissionais() {
+        api.get("profissional")
+            .then((response: any) => {
+                // if (typeof response.data.listarProfissionais === "string") {
+                //     return setListaProfissionais(JSON.parse(response.data));
+                //     console.log(response);
+
+                // } else {
+                //     return setListaProfissionais(response.data);
+                //     console.log(response);
+
+                // }
+
+                console.log(response);
+                setListaProfissionais(response.data);
+                console.log(listaProfissionais);
+            })
+            .catch((error: any) => {
+                console.log(error);
+            })
+            
+    }
+
     useEffect(() => {
-       exibirDetalhesSquad();
+        exibirDetalhesSquad();
+        listarProfissionais();
     }, [])
+
     return (
         <main className="squad_montar">
             <Menu />
@@ -137,7 +166,20 @@ function Squadmontar() {
                     </div>
                     <div className="section_resultado">
                         <div className="tabela_scroll">
-                            <div className="section_resultado_dados">
+
+                            {
+                                listaProfissionais.map((profissional: any, indice: number) =>{
+                                    return <div key={indice} className="section_resultado_dados">
+                                            <LinhaProfissionalSquad
+                                                chapa={profissional.usuario.chapa}
+                                                nome={profissional.usuario.nome_usuario}
+                                            />
+                                        </div>
+                                })
+                            }
+
+
+                            {/* <div className="section_resultado_dados">
                                 <div>
                                     <p className="section_resultado_dados_id">010101</p>
 
@@ -147,81 +189,12 @@ function Squadmontar() {
                                 <Link to={""} className="section_resultado_dados_btn"><img src={btn_confirmar}
                                     alt="" />
                                 </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010102</p>
+                            </div> */}
 
-                                    <p className="section_resultado_dados_nome">Gustavo Luiz Miranda</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_confirmar}
-                                    alt="" />
-                                </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010103</p>
-
-                                    <p className="section_resultado_dados_nome">Hosmairys Yuriannys Holder Rodriguez</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt="" />
-                                </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010104</p>
-
-                                    <p className="section_resultado_dados_nome">Jhonatan Pereira Ferreira</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt="" />
-                                </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010105</p>
-
-                                    <p className="section_resultado_dados_nome">Lucas Oliveira</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt="" />
-                                </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010106</p>
-
-                                    <p className="section_resultado_dados_nome">Priscila Laurentino</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt="" />
-                                </Link>
-                            </div>
-                            <div className="section_resultado_dados">
-                                <div>
-                                    <p className="section_resultado_dados_id">010107</p>
-
-                                    <p className="section_resultado_dados_nome">Marcel de Lima Brito</p>
-                                </div>
-
-                                <Link to={""} className="section_resultado_dados_btn"><img src={btn_squad}
-                                    alt="" />
-                                </Link>
-                            </div>
                         </div>
                     </div>
-
                 </form>
-
-
             </section>
-
         </main >
     );
 }

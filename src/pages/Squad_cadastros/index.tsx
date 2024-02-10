@@ -99,7 +99,6 @@ function SquadCadastros() {
                 <div className="section_titulo">
                     <img src={bolinha_titulo} alt="" />
                     <h1>Squad</h1>
-                    kkkkkkkkkkkkkkkkkkkkkkkkkkkk
                 </div>
                 <div className="section_pesquisa_resultado">
                     <div className="section_pesquisa">
