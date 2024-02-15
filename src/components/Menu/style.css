@@ -89,8 +89,72 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
+
+#checkbox_menu {
+    position: absolute;
+    opacity: 0;
+}
+
+#menu_hamburguer {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    min-width: 30px;
+    /* perguntar pq só fica fixo com min-width e não com width*/
+    bottom: -20px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+#menu_hamburguer span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: var(--azule);
+    transition: 0.25s ease-in-out;
+}
+
+#menu_hamburguer span:nth-child(1) {
+    top: 0px;
+}
+
+#menu_hamburguer span:nth-child(2) {
+    top: 8px;
+}
+
+#menu_hamburguer span:nth-child(3) {
+    top: 16px;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox_menu:checked+#menu_hamburguer span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@media screen and (max-width: 768px) {
     #aside_menu {
-        right: -300px;
+        left: -300px;
+
+    }
+
+    #checkbox_menu:checked~#aside_menu {
+        left: 0px;
+        transition: 0.25s ease-in-out;
+    }
+
+    #checkbox_menu:checked~#menu_hamburguer span{
+        background: white;
     }
 }
