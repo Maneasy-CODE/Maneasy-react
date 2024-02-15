@@ -85,7 +85,7 @@
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1350px) {
     thead {
         display: none;
     }
@@ -104,9 +104,9 @@
 
     }
 
-    td:first-child {
+    /* td:first-child {
         padding-top: 24px;
-    }
+    } */
 
     /* td:last-child {
         padding-bottom: 24px;
@@ -144,7 +144,6 @@
     #consulta h2 {
         padding-top: 50px;
     }
-
     
 
 }
