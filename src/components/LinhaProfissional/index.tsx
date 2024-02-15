@@ -15,7 +15,6 @@ function LinhaProfissional(props: any) {
                 </Link>
             </td>
         </>
-
     )
 }
 export default LinhaProfissional;

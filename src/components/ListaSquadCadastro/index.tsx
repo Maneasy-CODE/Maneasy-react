@@ -14,7 +14,7 @@ function ListaSquadCadastros(props: any) {
                             <td className="section_resultado_dados_nome">{props.nome}</td>
                         </tr>
                         <Link
-                            to={"/pagina/squad/cadastro"}
+                            to={"/pagina/squad/cadastro/" + props.id_squad}
                             className="section_resultado_dados_btn"
                         >
                             <img src={btn_squad} alt="" />
