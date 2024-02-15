@@ -4,7 +4,7 @@
     height: 100vh;
 }
 
-.section_ID_Consultar{
+.section_ID_Consultar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +12,7 @@
     font-family: "VerdanaRegular";
 
 }
+
 tr {
     width: 100%;
 }
@@ -79,7 +80,7 @@ tr {
     padding: 35px 8px 0 8px;
 }
 
-#consulta .position_ou{
+#consulta .position_ou {
     align-items: center;
     display: flex;
 }
@@ -128,7 +129,7 @@ tr {
     position: relative;
 }
 
-thead{
+thead {
     gap: 12px;
     display: flex;
     width: 100%;
@@ -155,7 +156,9 @@ thead{
     justify-content: space-between;
     color: var(--preto);
     width: 80%;
+    margin-left: 300px;
 }
+
 /* 
 html ::-webkit-scrollbar {
     width: 6px;
@@ -200,7 +203,7 @@ html ::-webkit-scrollbar-track {
 }
 
 
-select{
+select {
     background: transparent;
     border-radius: 100px;
     width: 100%;
@@ -209,20 +212,20 @@ select{
     border: 1px solid #474545;
 }
 
-.pesquisa_tipo{
+.pesquisa_tipo {
     width: 20%;
     display: flex;
     flex-direction: column;
 }
 
-.pesquisa_and_filtro{
+.pesquisa_and_filtro {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2%;
 }
 
-.section_ID_Consultar{
+.section_ID_Consultar {
     width: 78%;
     display: flex;
     align-items: center;
@@ -240,19 +243,20 @@ select{
     padding: 10px 10px 10px 10px;
 }
 
-select .input-field{
+select .input-field {
     padding: 10px 10px 10px 10px;
 
 }
-.input_nome{
+
+.input_nome {
     width: 100%;
 }
 
-.filtro{
+.filtro {
     padding-bottom: 8px;
 }
 
-#consultas_titulo p{
+#consultas_titulo p {
     font-size: 10px;
 }
 
@@ -276,17 +280,17 @@ select .input-field{
     max-width: 134.95px;
 }
 
-.linha_titulo{
+.linha_titulo {
     gap: 12px;
     height: 50px;
 }
 
-.linha_titulo th{
+.linha_titulo th {
     display: flex;
     justify-content: space-between;
 }
 
-#consultas_titulo{
+#consultas_titulo {
     width: 905px;
     gap: 12px;
 }
@@ -295,34 +299,36 @@ select .input-field{
 .select-wrapper {
     position: relative;
     overflow: hidden;
-  }
-  
-  .select-wrapper select {
+}
+
+.select-wrapper select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     width: 100%;
-    padding: 10px; /* Adicione o padding desejado aqui */
+    padding: 10px;
+    /* Adicione o padding desejado aqui */
     box-sizing: border-box;
-  }
-  
-  .select-wrapper::after {
-    content: '\25BC'; /* Código unicode para a seta para baixo */
+}
+
+.select-wrapper::after {
+    content: '\25BC';
+    /* Código unicode para a seta para baixo */
     position: absolute;
     top: 70%;
     right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
     color: #47454567;
-  }
+}
 
- .titulos_consulta{
+.titulos_consulta {
     display: flex;
     width: 899.71px;
-  }
+}
 
 
-  @media screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .conjunto-botoes {
         display: flex;
         justify-content: space-between;
@@ -336,12 +342,16 @@ select .input-field{
         margin-right: 15px;
     }
 
-    .pesquisa_and_filtro{
-    display: flex;
-    flex-direction: column;
+    .pesquisa_and_filtro {
+        display: flex;
+        flex-direction: column;
     }
 
-    
 
+}
 
+@media screen and (max-width: 768px) {
+    #consulta .section_pesquisa {
+        margin-left: 0px;
+    }
 }
