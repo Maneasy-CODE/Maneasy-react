@@ -155,7 +155,7 @@ thead {
     display: flex;
     justify-content: space-between;
     color: var(--preto);
-    width: 80%;
+    width: 100%;
     margin-left: 300px;
 }
 
