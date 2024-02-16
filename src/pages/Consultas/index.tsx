@@ -10,42 +10,62 @@ import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";
 // IMPORT REACT ROUTER DOM
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import api from "../../utils/api";
 
 
 function Consultas() {
-    const listaConsulta: any = [
-        {
-            nome_profissional: "Nome Profissional Exemplo",
-            nome_projeto: "Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo",
-            tipo: "Projeto",
-            status: "Em andamento"
+    // const listaConsulta: any = [
+    //     {
+    //         nome_profissional: "Nome Profissional Exemplo",
+    //         nome_projeto: "Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo",
+    //         tipo: "Projeto",
+    //         status: "Em andamento"
 
-        },
+    //     },
 
-        {
-            nome_profissional: "Nome Profissional Exemplo",
-            nome_projeto: "Nome Demanda Exemplo",
-            tipo: "Demanda",
-            status: "Em andamento"
+    //     {
+    //         nome_profissional: "Nome Profissional Exemplo",
+    //         nome_projeto: "Nome Demanda Exemplo",
+    //         tipo: "Demanda",
+    //         status: "Em andamento"
 
-        },
+    //     },
 
-        {
-            nome_profissional: "Nome Profissional Exemplo",
-            nome_projeto: "Nome Chamado Exemplo",
-            tipo: "Chamado",
-            status: "Em andamento"
+    //     {
+    //         nome_profissional: "Nome Profissional Exemplo",
+    //         nome_projeto: "Nome Chamado Exemplo",
+    //         tipo: "Chamado",
+    //         status: "Em andamento"
 
-        },
+    //     },
 
-        {
-            nome_profissional: "Nome Profissional Exemplo",
-            nome_projeto: "-",
-            tipo: "-",
-            status: "-"
+    //     {
+    //         nome_profissional: "Nome Profissional Exemplo",
+    //         nome_projeto: "-",
+    //         tipo: "-",
+    //         status: "-"
 
-        },
-    ]
+    //     },
+    // ]
+
+    const [listaConsultaServico, setListaConsultaServico] = useState<any[]>([]);
+
+    function listarConsultaServico(){
+        api.get("consulta")
+        .then((response:any)=>{
+            console.log(response);
+            setListaConsultaServico(response.data);
+        })
+        .catch((error: any)=>{
+            console.log(error);
+            alert("Falha ao listar")
+        })
+    };
+    useEffect(()=>{
+        listarConsultaServico();
+    }, [])
+
     return (
         <main id="consulta" className="container_consulta">
             <Menu></Menu>
@@ -102,7 +122,7 @@ function Consultas() {
                                         </thead>
                                     
                                         {
-                                            listaConsulta.map((consulta: any) => {
+                                            listaConsultaServico.map((consulta: any) => {
                                                 return <tr key={consulta.id}>
                                                     <Lista_consulta
                                                         nome_profissional={consulta.nome_profissional}
