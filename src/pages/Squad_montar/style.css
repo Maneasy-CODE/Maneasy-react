@@ -318,6 +318,14 @@
 
 }
 
+
+
+@media screen and (max-width: 920px) {
+    .section_pesquisa_btn {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .squad_montar .container {
         margin-left: 0px;
@@ -329,4 +337,9 @@
     .section_resultado_dados {
         font-size: 15px;
     }
+
+    .section_resultado_dados_btn {
+        margin-left: 15px;
+    }
 }
+

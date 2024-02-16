@@ -12,7 +12,7 @@
 
 
 #squad_atualizar .container{
-    overflow-y: scroll;
+    margin-left: 300px;
     scroll-behavior: smooth;  
     width: 100%;
     background-image: url(../../assets/images/background_logado.svg);
@@ -74,7 +74,7 @@
 }
 
 #squad_atualizar .section_pesquisa_resultado_input {
-    width: 50%;
+    width: 100%;
 }
 
 #squad_atualizar .input-icons {
@@ -118,11 +118,4 @@ html ::-webkit-scrollbar-thumb {
 #squad_atualizar .tabela-scroll{
     overflow-y: scroll;
     scroll-behavior: smooth;
-}
-
-
-@media screen and (max-width: 768px){
-    #squad_atualizar .container{
-        margin-left: 0;
-    }
 }
