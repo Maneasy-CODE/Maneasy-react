@@ -11,10 +11,10 @@
 }
 
 
-#squad_atualizar .container{
-    overflow-y: scroll;
-    scroll-behavior: smooth;  
-    width: 80%;
+#squad_atualizar .container {
+    margin-left: 300px;
+    scroll-behavior: smooth;
+    width: 100%;
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,7 +73,7 @@
 }
 
 #squad_atualizar .section_pesquisa_resultado_input {
-    width: 50%;
+    width: 100%;
 }
 
 #squad_atualizar .input-icons {
@@ -104,7 +104,7 @@ html ::-webkit-scrollbar-thumb {
     background: var(--azule);
 }
 
-#squad_atualizar .section_resultado{
+#squad_atualizar .section_resultado {
     width: 100%;
 }
 
@@ -114,7 +114,13 @@ html ::-webkit-scrollbar-thumb {
     font-size: 12px;
 }
 
-#squad_atualizar .tabela-scroll{
+#squad_atualizar .tabela-scroll {
     overflow-y: scroll;
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 768px) {
+    #squad_atualizar .container {
+        margin-left: 0px;
+    }
 }

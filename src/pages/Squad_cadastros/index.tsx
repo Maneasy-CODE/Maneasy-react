@@ -109,7 +109,7 @@ function SquadCadastros() {
                                 <input name="Chapa" className="input-field" type="number" placeholder="Digite o nome da chapa" />
                             </div>
                         </div>
-                        <div>
+                        <div className="section_p_ou">
                             <p>ou</p>
                         </div>
                         <div className="section_pesquisa_resultado_input">
