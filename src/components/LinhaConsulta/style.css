@@ -84,23 +84,20 @@
     border-bottom: #27272729 solid 1px;
 }
 
-
 @media screen and (max-width: 1350px) {
     thead {
-        display: none;
+       width: 60%;
     }
 
     td {
         display: grid;
         gap: 10px;
-        grid-template-columns: 20ch auto;
     }
 
     td::before {
-        content: attr(data-cell) ": ";
         font-weight: 700;
         text-transform: capitalize;
-        width: 100px;
+        width: 100%;
 
     }
 
