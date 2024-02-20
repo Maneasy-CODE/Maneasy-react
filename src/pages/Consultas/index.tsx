@@ -15,52 +15,16 @@ import api from "../../utils/api";
 
 
 function Consultas() {
-    // const listaConsulta: any = [
-    //     {
-    //         nome_profissional: "Nome Profissional Exemplo",
-    //         nome_projeto: "Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo Nome Projeto Exemplo",
-    //         tipo: "Projeto",
-    //         status: "Em andamento"
-
-    //     },
-
-    //     {
-    //         nome_profissional: "Nome Profissional Exemplo",
-    //         nome_projeto: "Nome Demanda Exemplo",
-    //         tipo: "Demanda",
-    //         status: "Em andamento"
-
-    //     },
-
-    //     {
-    //         nome_profissional: "Nome Profissional Exemplo",
-    //         nome_projeto: "Nome Chamado Exemplo",
-    //         tipo: "Chamado",
-    //         status: "Em andamento"
-
-    //     },
-
-    //     {
-    //         nome_profissional: "Nome Profissional Exemplo",
-    //         nome_projeto: "-",
-    //         tipo: "-",
-    //         status: "-"
-
-    //     },
-    // ]
 
     const [listaConsultaServico, setListaConsultaServico] = useState<any[]>([]);
     const [listaProfissionaisDisponiveis, setListaProfissionaisDisponiveis] = useState<any[]>([]);
     const [listaFiltrada, setListaFiltrada] = useState<any[]>([]);
 
     function filtrarListas() {
-
         listaConsultaServico.forEach(element => {
-            
             setListaFiltrada(listaProfissionaisDisponiveis.filter(item => item.usuario.nome_usuario != element.profissional.usuario.nome_usuario));
-
         });             
-    }
+    };
 
     function listarProfissionaisDisponiveis() {
         api.get("profissional")
@@ -116,9 +80,6 @@ function Consultas() {
                                     <img src={lupa} alt="" />
                                 </Link>
                             </div>
-
-
-
 
                             <div className="pesquisa_tipo select-wrapper">
                                 <label htmlFor="filtro" className="filtro">Tipo</label>
