@@ -50,20 +50,46 @@ function Consultas() {
     // ]
 
     const [listaConsultaServico, setListaConsultaServico] = useState<any[]>([]);
+    const [listaProfissionaisDisponiveis, setListaProfissionaisDisponiveis] = useState<any[]>([]);
+    const [listaFiltrada, setListaFiltrada] = useState<any[]>([]);
 
-    function listarConsultaServico(){
-        api.get("consulta")
-        .then((response:any)=>{
-            console.log(response);
-            setListaConsultaServico(response.data);
-        })
-        .catch((error: any)=>{
-            console.log(error);
-            alert("Falha ao listar")
-        })
+    function filtrarListas() {
+
+        listaConsultaServico.forEach(element => {
+            
+            setListaFiltrada(listaProfissionaisDisponiveis.filter(item => item.usuario.nome_usuario != element.profissional.usuario.nome_usuario));
+
+        });             
+    }
+
+    function listarProfissionaisDisponiveis() {
+        api.get("profissional")
+            .then((response: any) => {
+                console.log(response);
+                setListaProfissionaisDisponiveis(response.data);
+            })
+            .catch((error: any) => {
+                console.log(error);
+                alert("Falha ao listar")
+            })
     };
-    useEffect(()=>{
+
+    function listarConsultaServico() {
+        api.get("profissionalSquads")
+            .then((response: any) => {
+                console.log(response);
+                setListaConsultaServico(response.data);
+            })
+            .catch((error: any) => {
+                console.log(error);
+                alert("Falha ao listar")
+            })
+    };
+
+    useEffect(() => {
         listarConsultaServico();
+        listarProfissionaisDisponiveis();
+        filtrarListas();
     }, [])
 
     return (
@@ -113,26 +139,41 @@ function Consultas() {
                                 <table>
                                     <tbody>
                                         <thead>
-                                        <tr className="linha_titulo">
-                                            <th className="  linha_consultas_nome_profissional">Profissional</th>
-                                            <th className=" linha_consultas_nome_projeto">Serviço</th>
-                                            <th className=" linha_consultas_tipo">Tipo</th>
-                                            <th className="linha_consultas_status ">Status</th>
-                                        </tr>
+                                            <tr className="linha_titulo">
+                                                <th className="  linha_consultas_nome_profissional">Profissional</th>
+                                                <th className=" linha_consultas_nome_projeto">Serviço</th>
+                                                <th className=" linha_consultas_tipo">Tipo</th>
+                                                <th className="linha_consultas_status ">Status</th>
+                                            </tr>
                                         </thead>
-                                    
+
                                         {
                                             listaConsultaServico.map((consulta: any) => {
+                                                console.log(consulta.profissional.usuario.nome_usuario);
+
                                                 return <tr key={consulta.id}>
                                                     <Lista_consulta
-                                                        nome_profissional={consulta.nome_profissional}
-                                                        nome_projeto={consulta.nome_projeto}
-                                                        tipo={consulta.tipo}
-                                                        status={consulta.status}
+                                                        nome_profissional={consulta.profissional.usuario.nome_usuario}
+                                                        nome_projeto={consulta.id_squads.id_servicos.nomeServicos}
+                                                        tipo={consulta.id_squads.id_servicos.tipoServicos}
+                                                        status={consulta.id_squads.id_servicos.statusServicos}
+                                                    />
+                                                </tr>
+                                            })
+
+
+                                        }
+
+                                        {
+                                            listaFiltrada.map((consulta: any) => {
+                                                return <tr key={consulta.id}>
+                                                    <Lista_consulta
+                                                        nome_profissional={consulta.usuario.nome_usuario}
                                                     />
                                                 </tr>
                                             })
                                         }
+
                                     </tbody>
                                 </table>
                             </div>
