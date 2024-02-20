@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(39, 39, 39, 0.162);
-
+    gap: 20px;
 }
 
 #squad_atualizar_lista .section_resultado_dados>tr {
