@@ -1,5 +1,5 @@
 // IMPORT DO CSS
-import "./style.css"
+import "./style.css";
 // IMPORT DOS ICON
 import { Icon } from '@iconify/react';
 // IMPORT DOS COMPONENTES
@@ -10,94 +10,116 @@ import bolinha_titulo from "../../assets/images/icone_titulo.svg";
 import lupa from "../../assets/images/btn_pesquisar.svg";
 // IMPORT REACT ROUTER DOM
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import api from "../../utils/api";
-
-interface UserData {
-    tipoServico: string;
-    nome_usuario: string;
-}
-
+import { useState } from "react";
 
 function Consultas() {
 
-    const [listaConsultaServico, setListaConsultaServico] = useState<any[]>([]);
-    const [listaProfissionaisDisponiveis, setListaProfissionaisDisponiveis] = useState<any[]>([]);
-    const [listaFiltrada, setListaFiltrada] = useState<any[]>([]);
-    const [tipoServicos, setTipoServicos] = useState('');
-    const [dados, setDados] = useState<UserData[]>([]);
-    const [filtroNome, setFiltroNome] = useState('');
+    // Dados fixos para simular a resposta da API
+    const DadosLista = [
+        {
+            id: 1,
+            nome_usuario: "João",
+            nomeServicos: "Consulta 1",
+            tipoServicos: "Projeto",
+            statusServicos: "Concluído"
+        },
+        {
+            id: 2,
+            nome_usuario: "Maria",
+            nomeServicos: "",
+            tipoServicos: "Disponível",
+            statusServicos: "Disponível"
+
+        },
+        {
+            id: 3,
+            nome_usuario: "Carlos",
+            nomeServicos: "Consulta 2",
+            tipoServicos: "Projeto",
+            statusServicos: "Demanda"
+
+        },
+        {
+            id: 4,
+            nome_usuario: "Joana",
+            nomeServicos: "Consulta 4",
+            tipoServicos: "Projeto",
+            statusServicos: "Chamado"
+
+        },
+
+        
+        {
+            id: 5,
+            nome_usuario: "Maria",
+            nomeServicos: "",
+            tipoServicos: "Demanda",
+            statusServicos: "Disponível"
+
+        },
+
+        {
+            id: 6,
+            nome_usuario: "Maria",
+            nomeServicos: "",
+            tipoServicos: " ",
+            statusServicos: "Disponível"
+
+        },
 
 
-    // function filtrarListas() {
-    //     listaConsultaServico.forEach(element => {
-    //         setListaFiltrada(listaProfissionaisDisponiveis.filter(item => item.usuario.nome_usuario != element.profissional.usuario.nome_usuario));
-    //     });
-    // }
-
-    function filtrarListas(valorBusca: any) {
-        const resultados = listaConsultaServico.filter(consulta =>
-            consulta.profissional.usuario.nome_usuario.toLowerCase().includes(valorBusca.toLowerCase())
-        );
-    
-        console.log(resultados);
-        // Faça o que quiser com os resultados, como atualizar o estado, exibir na interface, etc.
-    }
-    
 
 
-    function listarProfissionaisDisponiveis() {
-        api.get("profissional")
-            .then((response: any) => {
-                console.log(response);
-                setListaProfissionaisDisponiveis(response.data);
-            })
-            .catch((error: any) => {
-                console.log(error);
-                alert("Falha ao listar")
-            })
-    }
+        {
+            id: 7,
+            nome_usuario: "Maria",
+            nomeServicos: "",
+            tipoServicos: "Chamado",
+            statusServicos: "Disponível"
 
-    function listarConsultaServico() {
-        api.get("profissionalSquads")
-            .then((response: any) => {
-                console.log(response);
-                setListaConsultaServico(response.data);
-            })
-            .catch((error: any) => {
-                console.log(error);
-                alert("Falha ao listar")
-            })
-    }
+        },
 
-    useEffect(() => {
-        listarConsultaServico();
-        listarProfissionaisDisponiveis();
-        filtrarListas(filtroNome);
-    }, [])
 
-    const getTiposDeServicos = (status: string) => {
+        // Adicione mais dados conforme necessário
+    ];
+
+    // const listaProfissionaisDisponiveis = [
+    //     {
+    //         id: 2,
+    //         usuario: { nome_usuario: "Maria" }
+    //     },
+    // Adicione mais dados conforme necessário
+    // ];
+
+    const [filtroStatus, setFiltroStatus] = useState('');
+    const [filtroTermo, setFiltroTermo] = useState('');
+
+
+    const getStatusClassName = (status: string) => {
         switch (status.toLowerCase()) {
+            case 'todos':
+                return '';
             case 'projeto':
-                return 'status-projeto';
+                return '';
             case 'demanda':
-                return 'status-demanda';
-            case 'chamado':
-                return 'status-chamado';
-            case 'disponivel':
-                return 'status-disponivel';
+                return 'Demanda';
+            case 'Chamado':
+                return 'Chamado';
+            case ' ':
+                return ' ';
             default:
                 return '';
         }
     };
 
     const filtrarDados = () => {
-        return dados.filter(item =>
-            item.tipoServico.toLowerCase().includes(tipoServicos.toLowerCase()) &&
-            (item.nome_usuario.toLocaleLowerCase().includes(filtroNome.toLowerCase()))
+        return DadosLista.filter(item =>
+            filtroStatus.toLowerCase() === 'todos' || item.tipoServicos.toLowerCase().includes(filtroStatus.toLowerCase()) &&
+            (item.nome_usuario.toLowerCase().includes(filtroTermo.toLowerCase()))
         );
     };
 
+    const dadosFiltrados = filtrarDados();
     return (
         <main id="consulta" className="container_consulta">
             <Menu></Menu>
@@ -115,25 +137,26 @@ function Consultas() {
                                 <div className="input_nome">
                                     <label htmlFor="Pesquisa">Pesquisa</label>
                                     <div className="input-icons">
-                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Pesquise pelo nome do profissional" value={filtroNome}
-                                            onChange={(e) => setFiltroNome(e.target.value)} required />
+                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do chamado ou ID" required
+                                            value={filtroTermo}
+                                            onChange={(e) => setFiltroTermo(e.target.value)} />
                                     </div>
                                 </div>
-                                <Link to={"#"} className="section_pesquisa_btn" onClick={() => filtrarListas(filtroNome)}>
+                                <Link to={"#"} className="section_pesquisa_btn">
                                     <img src={lupa} alt="" />
                                 </Link>
                             </div>
 
                             <div className="pesquisa_tipo select-wrapper">
                                 <label htmlFor="filtro" className="filtro">Tipo</label>
-                                <select name="Pesquisa"
-                                    value={tipoServicos}
-                                    onChange={(e) => setTipoServicos(e.target.value)}
+                                <select name="Pesquisa" value={filtroStatus}
+                                    onChange={(e) => setFiltroStatus(e.target.value)}
                                 >
+                                    <option value="todos" className="input-field">Todos</option>
                                     <option value="projeto" className="input-field">Projeto</option>
                                     <option value="demanda" className="input-field">Demanda</option>
-                                    <option value="demanda" className="input-field" >Chamado</option>
-                                    <option value="" className="input-field">Disponível</option>
+                                    <option value="chamado" className="input-field" >Chamado</option>
+                                    <option value=" " className="input-field">Disponível</option>
                                 </select>
                             </div>
 
@@ -144,43 +167,28 @@ function Consultas() {
 
                             <div className="tabela_scroll">
                                 <table>
+                                    <thead>
+                                        <tr className="linha_titulo">
+                                            <th className="  linha_consultas_nome_profissional">Profissional</th>
+                                            <th className=" linha_consultas_nome_projeto">Serviço</th>
+                                            <th className=" linha_consultas_tipo">Tipo</th>
+                                            <th className="linha_consultas_status ">Status</th>
+                                        </tr>
+                                    </thead>
+
                                     <tbody>
-                                        <thead>
-                                            <tr className="linha_titulo">
-                                                <th className="  linha_consultas_nome_profissional">Profissional</th>
-                                                <th className=" linha_consultas_nome_projeto">Serviço</th>
-                                                <th className=" linha_consultas_tipo">Tipo</th>
-                                                <th className="linha_consultas_status ">Status</th>
-                                            </tr>
-                                        </thead>
-
                                         {
-                                            listaConsultaServico.map((consulta: any) => {
-                                                console.log(consulta.profissional.usuario.nome_usuario);
-
-                                                return <tr key={consulta.id}>
+                                            dadosFiltrados.map((consulta) => (
+                                                <tr key={consulta.id}>
                                                     <Lista_consulta
-                                                        nome_profissional={consulta.profissional.usuario.nome_usuario}
-                                                        nome_projeto={consulta.id_squads.id_servicos.nomeServicos}
-                                                        tipo={consulta.id_squads.id_servicos.tipoServicos}
-                                                        status={consulta.id_squads.id_servicos.statusServicos}
+                                                        nome_profissional={consulta.nome_usuario}
+                                                        nome_projeto={consulta.nomeServicos}
+                                                        tipo={consulta.tipoServicos}
+                                                        status={consulta.statusServicos}
                                                     />
                                                 </tr>
-                                            })
-
-
+                                            ))
                                         }
-
-                                        {
-                                            listaFiltrada.map((consulta: any) => {
-                                                return <tr key={consulta.id}>
-                                                    <Lista_consulta
-                                                        nome_profissional={consulta.usuario.nome_usuario}
-                                                    />
-                                                </tr>
-                                            })
-                                        }
-
                                     </tbody>
                                 </table>
                             </div>
