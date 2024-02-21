@@ -13,18 +13,38 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../../utils/api";
 
+interface UserData {
+    tipoServico: string;
+    nome_usuario: string;
+}
+
 
 function Consultas() {
 
     const [listaConsultaServico, setListaConsultaServico] = useState<any[]>([]);
     const [listaProfissionaisDisponiveis, setListaProfissionaisDisponiveis] = useState<any[]>([]);
     const [listaFiltrada, setListaFiltrada] = useState<any[]>([]);
+    const [tipoServicos, setTipoServicos] = useState('');
+    const [dados, setDados] = useState<UserData[]>([]);
+    const [filtroNome, setFiltroNome] = useState('');
 
-    function filtrarListas() {
-        listaConsultaServico.forEach(element => {
-            setListaFiltrada(listaProfissionaisDisponiveis.filter(item => item.usuario.nome_usuario != element.profissional.usuario.nome_usuario));
-        });             
-    };
+
+    // function filtrarListas() {
+    //     listaConsultaServico.forEach(element => {
+    //         setListaFiltrada(listaProfissionaisDisponiveis.filter(item => item.usuario.nome_usuario != element.profissional.usuario.nome_usuario));
+    //     });
+    // }
+
+    function filtrarListas(valorBusca: any) {
+        const resultados = listaConsultaServico.filter(consulta =>
+            consulta.profissional.usuario.nome_usuario.toLowerCase().includes(valorBusca.toLowerCase())
+        );
+    
+        console.log(resultados);
+        // Faça o que quiser com os resultados, como atualizar o estado, exibir na interface, etc.
+    }
+    
+
 
     function listarProfissionaisDisponiveis() {
         api.get("profissional")
@@ -36,7 +56,7 @@ function Consultas() {
                 console.log(error);
                 alert("Falha ao listar")
             })
-    };
+    }
 
     function listarConsultaServico() {
         api.get("profissionalSquads")
@@ -48,13 +68,35 @@ function Consultas() {
                 console.log(error);
                 alert("Falha ao listar")
             })
-    };
+    }
 
     useEffect(() => {
         listarConsultaServico();
         listarProfissionaisDisponiveis();
-        filtrarListas();
+        filtrarListas(filtroNome);
     }, [])
+
+    const getTiposDeServicos = (status: string) => {
+        switch (status.toLowerCase()) {
+            case 'projeto':
+                return 'status-projeto';
+            case 'demanda':
+                return 'status-demanda';
+            case 'chamado':
+                return 'status-chamado';
+            case 'disponivel':
+                return 'status-disponivel';
+            default:
+                return '';
+        }
+    };
+
+    const filtrarDados = () => {
+        return dados.filter(item =>
+            item.tipoServico.toLowerCase().includes(tipoServicos.toLowerCase()) &&
+            (item.nome_usuario.toLocaleLowerCase().includes(filtroNome.toLowerCase()))
+        );
+    };
 
     return (
         <main id="consulta" className="container_consulta">
@@ -73,21 +115,25 @@ function Consultas() {
                                 <div className="input_nome">
                                     <label htmlFor="Pesquisa">Pesquisa</label>
                                     <div className="input-icons">
-                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do chamado ou ID" required />
+                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Pesquise pelo nome do profissional" value={filtroNome}
+                                            onChange={(e) => setFiltroNome(e.target.value)} required />
                                     </div>
                                 </div>
-                                <Link to={"#"} className="section_pesquisa_btn">
+                                <Link to={"#"} className="section_pesquisa_btn" onClick={() => filtrarListas(filtroNome)}>
                                     <img src={lupa} alt="" />
                                 </Link>
                             </div>
 
                             <div className="pesquisa_tipo select-wrapper">
                                 <label htmlFor="filtro" className="filtro">Tipo</label>
-                                <select name="Pesquisa">
+                                <select name="Pesquisa"
+                                    value={tipoServicos}
+                                    onChange={(e) => setTipoServicos(e.target.value)}
+                                >
                                     <option value="projeto" className="input-field">Projeto</option>
                                     <option value="demanda" className="input-field">Demanda</option>
                                     <option value="demanda" className="input-field" >Chamado</option>
-                                    <option value="disponivel" className="input-field">Disponível</option>
+                                    <option value="" className="input-field">Disponível</option>
                                 </select>
                             </div>
 
