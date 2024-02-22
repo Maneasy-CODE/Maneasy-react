@@ -9,13 +9,13 @@
 
 .squad_montar .container {
     width: 100%;
-    margin-left: 300px;
+    margin-left: 370px;
+    margin-right: 60px;
 }
 
 
 .squad_montar .section_titulo {
     display: flex;
-    width: 80%;
     margin: 50px auto;
     font-family: "SpartanBold";
     color: var(--azule);
