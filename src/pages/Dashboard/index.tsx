@@ -2,16 +2,15 @@ import Menu from "../../components/Menu";
 import "./style.css";
 
 import bolinha_titulo from "../../assets/images/icone_titulo.svg";
-import Chart from "react-apexcharts";
-import { useEffect, useState } from "react";
 
 function Dashboard() {
 
-
     return (
+
         <main id="containerDashboard">
 
             <Menu></Menu>
+
             <section className="container_dashboard">
                 <div id="dashboard">
                     <div className="section_titulo">
@@ -323,7 +322,9 @@ function Dashboard() {
                         </div>
                     </section>
                 </div>
+
             </section>
+
         </main>
     )
 

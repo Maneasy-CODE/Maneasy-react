@@ -10,10 +10,10 @@ function ListaSquadCadastros(props: any) {
           <tr className="section_resultado_dados">
             <td className="section_resultado_dados_id">
               {/* Envolve o ID encurtado com a div tooltip */}
-              {/* <div className="tooltip">
+              <div className="tooltip">
                 {props.id.slice(0, 10)}...
                 <span className="tooltip-text">{props.id}</span>
-              </div> */}
+              </div>
             </td>
             <td className="section_resultado_dados_tipo">{props.tipo}</td>
             <td className="section_resultado_dados_nome">{props.nome}</td>

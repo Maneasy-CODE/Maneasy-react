@@ -31,6 +31,22 @@ function Consultas() {
             statusServicos: "Disponível"
 
         },
+        {
+            id: 3,
+            nome_usuario: "Carlos",
+            nomeServicos: "Consulta 2",
+            tipoServicos: "Projeto",
+            statusServicos: "Demanda"
+
+        },
+        {
+            id: 4,
+            nome_usuario: "Joana",
+            nomeServicos: "Consulta 4",
+            tipoServicos: "Projeto",
+            statusServicos: "Chamado"
+
+        },
         // Adicione mais dados conforme necessário
     ];
 
@@ -48,12 +64,16 @@ function Consultas() {
 
     const getStatusClassName = (status: string) => {
         switch (status.toLowerCase()) {
-          case 'projeto':
-            return 'Projeto';
+            case 'projeto':
+            return ''; 
+          case 'concluído':
+            return 'Concluído';
           case 'demanda':
             return 'Demanda';
           case 'chamado':
             return 'Chamado';
+            case 'disponível':
+                return 'Disponível';
           default:
             return '';
         }
@@ -61,7 +81,7 @@ function Consultas() {
 
       const filtrarDados = () => {
         return DadosLista.filter(item =>
-          item.statusServicos.toLowerCase().includes(filtroStatus.toLowerCase()) &&
+            filtroStatus.toLowerCase() === 'projeto' || item.statusServicos.toLowerCase().includes(filtroStatus.toLowerCase()) &&
           (item.nome_usuario.toLowerCase().includes(filtroTermo.toLowerCase()))
         );
       };
@@ -84,7 +104,7 @@ function Consultas() {
                                 <div className="input_nome">
                                     <label htmlFor="Pesquisa">Pesquisa</label>
                                     <div className="input-icons">
-                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do profissional" required
+                                        <input name="Pesquisa" className="input-field" type="text" placeholder="Digite o nome do chamado ou ID" required
                                         value={filtroTermo}
                                         onChange={(e) => setFiltroTermo(e.target.value)} />
                                     </div>
@@ -96,13 +116,14 @@ function Consultas() {
 
                             <div className="pesquisa_tipo select-wrapper">
                                 <label htmlFor="filtro" className="filtro">Tipo</label>
-                                <select name="Pesquisa" value={filtroStatus}
+                                <select name="Pesquisa"value={filtroStatus}
                                     onChange={(e) => setFiltroStatus(e.target.value)}
-                                >
+                                >   
                                     <option value="projeto" className="input-field">Projeto</option>
+                                    <option value="concluído" className="input-field">Concluído</option>
                                     <option value="demanda" className="input-field">Demanda</option>
                                     <option value="chamado" className="input-field" >Chamado</option>
-                                    <option value="disponivel" className="input-field">Disponível</option>
+                                    <option value="disponível" className="input-field">Disponível</option>
                                 </select>
                             </div>
 

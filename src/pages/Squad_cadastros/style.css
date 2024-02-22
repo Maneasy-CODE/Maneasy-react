@@ -12,13 +12,16 @@
 }
 
 
+
 #squad_atualizar .container {
-    margin-left: 10%;
+    margin-left: 300px;
     scroll-behavior: smooth;
     width: 100%;
     background-image: url(../../assets/images/background_logado.svg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    
 }
 
 #squad_atualizar .section_titulo {
@@ -52,7 +55,7 @@
 #squad_atualizar .section_pesquisa_resultado {
     color: var(--preto);
     font-family: "VerdanaRegular";
-    max-width: 80%;
+    max-width: 60%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;

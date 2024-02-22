@@ -3,48 +3,12 @@ import "./style.css";
 import "../../index.css";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import api from "../../utils/api"
+
 import entrar_logo from "../../assets/images/logo_colorida.svg";
 
-import { useNavigate } from "react-router-dom";
-
 function Entrar() {
-
-  const navigate = useNavigate();
-
-
   const [email, setEmail] = useState<string>("");
   const [senha, setSenha] = useState<string>("");
-
-function acesso(event: any){
-  event.preventDefault();
-  const usuario = {
-    email: email,
-    senha: senha
-  };
-    
-    api.post("login", usuario)
-    .then((response: any) => {
-        console.log(response.data);
-
-        // secureLocalStorage.setItem("user", response.data);
-
-        //redirecionar ao componente perfil
-        navigate("/pagina/consultas");
-        //recarrega a tela
-        navigate(0);
-
-    })
-    .catch((error: any) => {
-        alert("Erro ao tentar se logar! :(");
-    })
- 
-
-}
-
-
-
-
 
   return (
     <main id="entrar">
@@ -55,7 +19,7 @@ function acesso(event: any){
         <h2>
           Bem-<span>vindo</span>
         </h2>
-        <form className="section_input"  method="POST" onSubmit={acesso}>
+        <form className="section_input">
           <div className="div_email">
             <label htmlFor="Email">E-mail</label>
             <div className="input_icons">
@@ -90,9 +54,9 @@ function acesso(event: any){
             </Link>
           </div>
           <div className="div_btn_confirmar">
-          
+            <Link className="link_btn_confirmar" to={"/pagina/dashboard"}>
               <button className="btn_confimar" type="submit">Confirmar</button>
-            
+            </Link>
           </div>
           <div className="div_cadastro">
             <Link to={"/pagina/cadastro"} className="link_cadastro">
