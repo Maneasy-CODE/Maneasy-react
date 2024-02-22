@@ -21,7 +21,7 @@ function Menu() {
             <aside id="aside_menu">
                 <img className="logo" src={logo_branca} alt="Logo Maneasy" />
                 <nav className="nav_btn_menu">
-                    <Link to={"/pagina/dashboard"}>
+                    {/* <Link to={"/pagina/dashboard"}>
                         <div className="icon_menu">
                             <Icon icon="ph:chart-bar-bold" />
                         </div>
@@ -44,7 +44,7 @@ function Menu() {
                             <Icon icon="mdi:bell-alert-outline" />
                         </div>
                         Chamados
-                    </Link>
+                    </Link> */}
                     <Link to={"/pagina/squad/consulta"}>
                         <div className="icon_menu">
                             <Icon icon="mdi:people-group" />
